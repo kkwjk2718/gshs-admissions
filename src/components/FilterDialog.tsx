@@ -2,7 +2,7 @@ import { Check, ExternalLink, Search, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { admissionGuides } from "../data/admissionGuides";
 import { useAdmissions } from "../hooks/useAdmissions";
-import { SCITECH_UNIVERSITIES, usePreferences } from "../hooks/usePreferences";
+import { usePreferences } from "../hooks/usePreferences";
 import { CATEGORY_GROUPS, CATEGORY_ORDER, CATEGORY_UI, categoryClass } from "../lib/categories";
 import type { AdmissionGuide } from "../types";
 
@@ -32,8 +32,6 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
     return allUniversities.filter((name) => name.toLocaleLowerCase("ko").includes(needle));
   }, [allUniversities, query]);
 
-  const scitech = SCITECH_UNIVERSITIES.filter((name) => allUniversities.includes(name));
-
   return (
     <dialog
       className="filter-dialog"
@@ -46,7 +44,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
     >
       <div className="filter-dialog__body">
         <header className="filter-dialog__head">
-          <h2 id="filter-dialog-title">내 대학 고르기</h2>
+          <h2 id="filter-dialog-title">내 대학 선택</h2>
           <button type="button" className="icon-button" onClick={onClose} aria-label="닫기">
             <X size={20} />
           </button>
@@ -63,10 +61,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
 
             <div className="preset-row">
               <button type="button" onClick={() => preferences.setUniversities(allUniversities)}>
-                전체 {allUniversities.length}곳
-              </button>
-              <button type="button" onClick={() => preferences.setUniversities(scitech)}>
-                과기원 {scitech.length}곳
+                모두 선택
               </button>
               <button type="button" onClick={() => preferences.setUniversities([])}>
                 모두 해제
@@ -107,7 +102,8 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
                         href={guide.url}
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={`${name} ${guide.label} 새 탭에서 열기`}
+                        title={`${name} 모집요강 바로가기`}
+                        aria-label={`${name} 모집요강 바로가기, 새 탭에서 열림`}
                       >
                         <ExternalLink size={16} />
                       </a>
@@ -129,7 +125,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
 
             <div className="preset-row">
               <button type="button" onClick={() => preferences.setCategories([...CATEGORY_ORDER])}>
-                전체 선택
+                모두 선택
               </button>
               <button type="button" onClick={() => preferences.setCategories([])}>
                 모두 해제
@@ -169,7 +165,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
             처음 상태로
           </button>
           <button type="button" className="button button--primary" onClick={onClose}>
-            {preferences.universities.length}곳으로 보기
+            {preferences.universities.length}곳 적용
           </button>
         </footer>
       </div>

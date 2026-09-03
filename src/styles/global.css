@@ -283,47 +283,20 @@ a {
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: baseline;
+  gap: 4px;
   min-width: 0;
+  color: var(--ink);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
-.brand__home {
-  display: flex;
-  align-items: center;
-  gap: 7px;
+.brand__suffix {
   color: var(--muted);
   font-size: var(--fs-sm);
   font-weight: 600;
-}
-
-.brand__home:hover {
-  color: var(--ink);
-}
-
-.brand__mark {
-  width: 28px;
-  height: 28px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--r-sm);
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-size: var(--fs-base);
-  font-weight: 700;
-}
-
-.brand__divider {
-  width: 1px;
-  height: 18px;
-  background: var(--line-strong);
-}
-
-.brand__title {
-  color: var(--ink);
-  font-size: var(--fs-md);
-  font-weight: 700;
-  white-space: nowrap;
 }
 
 .app-nav {
@@ -375,6 +348,7 @@ a {
   display: block;
   overflow: hidden;
   height: var(--ticker-h);
+  padding-right: 40px;
   border-bottom: 1px solid var(--line);
   background: var(--surface-2);
   color: var(--ink-2);
@@ -386,14 +360,34 @@ a {
   display: flex;
   width: max-content;
   height: 100%;
-  animation-name: ticker;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: ticker var(--ticker-duration, 40s) linear infinite;
 }
 
-.ticker:hover .ticker__track,
-.ticker:focus-visible .ticker__track {
+/* 마우스를 올려도 멈추지 않는다. 멈추는 길은 오른쪽 버튼 하나뿐이다. */
+.ticker.is-paused .ticker__track {
   animation-play-state: paused;
+}
+
+/* 저절로 움직이는 것은 멈출 수단이 있어야 한다 (WCAG 2.2.2). */
+.ticker__toggle {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 7px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.ticker__toggle:hover {
+  border-color: var(--line-strong);
+  color: var(--ink);
 }
 
 @keyframes ticker {
@@ -1069,6 +1063,16 @@ a {
   gap: 6px;
 }
 
+.calendar-toolbar__right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.panel-toggle {
+  border-color: var(--line);
+}
+
 .month-control h2 {
   min-width: 140px;
   font-size: var(--fs-xl);
@@ -1137,6 +1141,22 @@ a {
 .calendar__day.is-outside .day-number {
   color: var(--muted);
   font-size: var(--fs-sm);
+}
+
+/* 오늘 = 위쪽 파란 줄 + 옅은 바탕. 진행 중 = 아래쪽 회색 줄.
+   위아래로, 파랑과 회색으로 갈라 둬야 한 칸에 겹쳐도 서로 읽힌다. */
+.calendar__day.is-today {
+  background: var(--surface-2);
+}
+
+.calendar__day.is-today::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
 }
 
 /* 선택 칸의 2px 테두리를 덮지 않도록 안쪽으로 들여 둔다. */
@@ -1948,13 +1968,25 @@ dialog::backdrop {
   line-height: var(--lh-loose);
 }
 
-.site-footer__source {
-  color: var(--ink-2);
-  font-weight: 600;
+/* 이 앱이 틀릴 수 있다는 사실은 화면에서 가장 크게 말해야 한다. */
+.site-footer__warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--danger);
+  border-left: 5px solid var(--danger);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: var(--lh-tight);
 }
 
-.site-footer__coverage {
-  font-variant-numeric: tabular-nums;
+.site-footer__warning svg {
+  flex: 0 0 auto;
 }
 
 .site-footer__actions {
@@ -2002,6 +2034,11 @@ dialog::backdrop {
     align-items: start;
   }
 
+  /* 접으면 달력이 폭을 전부 가져간다 — 열이 138px 에서 190px 가까이 넓어진다. */
+  .calendar-layout.is-collapsed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .day-panel {
     position: sticky;
     top: calc(var(--chrome-h) + 20px);
@@ -2029,10 +2066,8 @@ dialog::backdrop {
     display: flex;
   }
 
-  .brand__name,
-  .brand__divider,
-  .brand__home svg {
-    display: none;
+  .brand {
+    font-size: var(--fs-md);
   }
 
   .page {
@@ -2124,24 +2159,12 @@ dialog::backdrop {
     scroll-behavior: auto !important;
   }
 
-  /* 티커는 흐르지 않고 가로로 밀어 보게 둔다. */
-  .ticker {
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-
-  .ticker::-webkit-scrollbar {
-    display: none;
-  }
-
+  /* 티커는 움직이는 것 자체가 기능이라 멈추지 않는다.
+     대신 오른쪽 끝의 멈춤 버튼이 항상 자리를 지킨다.
+     (속도는 --ticker-duration 으로 들어오므로 위의 * 규칙에 지워지지 않는다.) */
   .ticker__track {
-    animation: none !important;
-  }
-
-  .ticker__row[aria-hidden="true"] {
-    display: none;
+    animation-duration: var(--ticker-duration, 40s) !important;
+    animation-iteration-count: infinite !important;
   }
 }
 
@@ -2266,4 +2289,10 @@ dialog::backdrop {
 dialog::backdrop {
   background: rgba(32, 33, 36, 0.6);
   backdrop-filter: none;         /* ← blur(3px) */
+}
+
+/* --- 11) 오늘은 선택돼 있지 않을 때도 눈에 띄어야 한다 ------------------ */
+/* 선택 링이 걸려 있으면 그쪽이 우선이라 흰 칸으로 둔다. */
+.calendar__day.is-today:not(.is-selected) {
+  background: var(--surface-2);
 }

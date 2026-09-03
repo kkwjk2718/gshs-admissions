@@ -1,6 +1,6 @@
 import { addMonths, format, subMonths } from "date-fns";
 import { ko } from "date-fns/locale";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, PanelRightClose, PanelRightOpen } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { CalendarGrid } from "../components/CalendarGrid";
@@ -11,6 +11,7 @@ import { SiteFooter } from "../components/SiteFooter";
 import { EmptySelection, ErrorState, LoadingState, OfflineBanner } from "../components/StateNotices";
 import { useAdmissions } from "../hooks/useAdmissions";
 import { usePreferences } from "../hooks/usePreferences";
+import { useSidePanel } from "../hooks/useSidePanel";
 import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { formatDayLabel, getCalendarWeeks, isDateInRange, toDateKey, todayKey } from "../lib/date";
 import type { AdmissionEvent } from "../types";
@@ -20,6 +21,7 @@ const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 export function CalendarPage() {
   const { status } = useAdmissions();
   const { universities, categories } = usePreferences();
+  const panel = useSidePanel();
   const visibleEvents = useVisibleEvents();
   const [params] = useSearchParams();
   const today = todayKey();
@@ -96,7 +98,7 @@ export function CalendarPage() {
       {universities.length === 0 || categories.length === 0 ? (
         <EmptySelection />
       ) : (
-        <div className="calendar-layout">
+        <div className={`calendar-layout ${panel.open ? "" : "is-collapsed"}`}>
           <section className="calendar-card">
             <header className="calendar-toolbar">
               <div className="month-control">
@@ -118,9 +120,21 @@ export function CalendarPage() {
                   <ChevronRight size={22} />
                 </button>
               </div>
-              <button type="button" className="button" onClick={goToday}>
-                오늘
-              </button>
+              <div className="calendar-toolbar__right">
+                <button type="button" className="button" onClick={goToday}>
+                  오늘
+                </button>
+                <button
+                  type="button"
+                  className="icon-button panel-toggle"
+                  onClick={panel.toggle}
+                  aria-expanded={panel.open}
+                  aria-label={panel.open ? "오른쪽 일정 목록 접기" : "오른쪽 일정 목록 펼치기"}
+                  title={panel.open ? "목록 접기" : "목록 펼치기"}
+                >
+                  {panel.open ? <PanelRightClose size={20} /> : <PanelRightOpen size={20} />}
+                </button>
+              </div>
             </header>
 
             <CalendarGrid
@@ -139,7 +153,7 @@ export function CalendarPage() {
             </p>
           </section>
 
-          <section className="day-panel" aria-label="선택한 날의 일정">
+          <section className="day-panel" aria-label="선택한 날의 일정" hidden={!panel.open}>
             <h2 className="day-panel__head">
               {formatDayLabel(selectedDate)}
               {selectedDate === today && <span className="tag tag--today">오늘</span>}

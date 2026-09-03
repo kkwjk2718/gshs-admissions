@@ -1,4 +1,4 @@
-import { CalendarPlus, ExternalLink, Moon, SlidersHorizontal, Sun } from "lucide-react";
+import { CalendarPlus, Moon, SlidersHorizontal, Sun } from "lucide-react";
 import { NavLink, Link } from "react-router-dom";
 import { useFilterDialog } from "../hooks/useFilterDialog";
 import { usePreferences } from "../hooks/usePreferences";
@@ -21,25 +21,9 @@ export function AppHeader() {
   return (
     <header className="app-header">
       <div className="app-header__inner">
-        <div className="brand">
-          <a
-            className="brand__home"
-            href="https://gshs.app"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GSHS.app 새 탭에서 열기"
-          >
-            <span className="brand__mark" aria-hidden="true">
-              G
-            </span>
-            <span className="brand__name">GSHS.app</span>
-            <ExternalLink size={13} aria-hidden="true" />
-          </a>
-          <span className="brand__divider" aria-hidden="true" />
-          <Link className="brand__title" to="/">
-            2027 수시 일정
-          </Link>
-        </div>
+        <Link className="brand" to="/">
+          2027 수시 일정<span className="brand__suffix">(GSHS)</span>
+        </Link>
 
         <nav className="app-nav" aria-label="화면 이동">
           {NAV_ITEMS.map((item) => (

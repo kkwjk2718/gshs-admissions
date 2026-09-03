@@ -70,7 +70,7 @@ export function EmptySelection() {
           </button>
         )}
         <button type="button" className="button" onClick={openDialog}>
-          {noUniversity ? "내 대학 고르기" : "일정 종류 고르기"}
+          {noUniversity ? "내 대학 선택" : "일정 종류 선택"}
         </button>
       </div>
     </div>

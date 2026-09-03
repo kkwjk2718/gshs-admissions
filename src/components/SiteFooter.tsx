@@ -1,14 +1,11 @@
-import { CalendarPlus, Download } from "lucide-react";
-import { useAdmissions } from "../hooks/useAdmissions";
+import { CalendarPlus, Download, TriangleAlert } from "lucide-react";
 import { usePreferences } from "../hooks/usePreferences";
 import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { downloadIcs, subscriptionUrl } from "../lib/ics";
 
 export function SiteFooter() {
-  const { dataset } = useAdmissions();
   const { universities } = usePreferences();
   const visibleEvents = useVisibleEvents();
-  const meta = dataset?.meta;
 
   return (
     <footer className="site-footer">
@@ -26,9 +23,10 @@ export function SiteFooter() {
           전체 일정 구독
         </a>
       </div>
-      <p>
+
+      <p className="site-footer__warning">
+        <TriangleAlert size={20} aria-hidden="true" />
         일정은 바뀔 수 있습니다. 지원 전 입학처 모집요강에서 다시 확인하세요.
-        {meta && ` · 대학 ${meta.universityCount}곳 · 일정 ${meta.eventCount}건`}
       </p>
     </footer>
   );

@@ -94,12 +94,12 @@ export function EventDetailDialog({ event, onClose }: EventDetailDialogProps) {
         <div className="detail-dialog__actions">
           {guide && (
             <a className="button button--primary" href={guide.url} target="_blank" rel="noreferrer">
-              {event.university} 모집요강 열기
+              {event.university} 모집요강 바로가기
               <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           )}
           <Link className="button" to={`/schedule?u=${encodeURIComponent(event.university)}`} onClick={onClose}>
-            {event.university} 전형일정 보기
+            {event.university} 전형일정표 보기
           </Link>
         </div>
 

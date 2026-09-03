@@ -83,6 +83,7 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
                   className={[
                     "calendar__day",
                     outside ? "is-outside" : "",
+                    key === today ? "is-today" : "",
                     key === selectedDate ? "is-selected" : "",
                     ongoing > 0 ? "has-ongoing" : "",
                   ]

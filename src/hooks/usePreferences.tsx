@@ -6,9 +6,6 @@ import type { CategoryId } from "../types";
 const STORAGE_KEY = "gshs-admissions:preferences:v3";
 const LEGACY_KEY = "gshs-admissions:preferences:v2";
 
-/** 과기원 6곳. 과학고 학생이 가장 많이 고르는 묶음이라 원탭 프리셋으로 둔다. */
-export const SCITECH_UNIVERSITIES = ["KAIST", "POSTECH", "GIST", "UNIST", "DGIST", "KENTECH"];
-
 interface StoredPreferences {
   version: 3;
   universities: string[];
