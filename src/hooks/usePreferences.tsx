@@ -22,6 +22,8 @@ interface PreferencesValue {
   categorySet: Set<CategoryId>;
   /** 대학이나 종류를 하나라도 빼놓은 상태인가 */
   isFiltered: boolean;
+  /** 대학을 직접 고른 적이 있는가. 없으면 전체가 켜져 있고, 골라 보라고 권할 자리다. */
+  hasChosen: boolean;
   toggleUniversity: (name: string) => void;
   setUniversities: (names: string[]) => void;
   toggleCategory: (id: CategoryId) => void;
@@ -157,13 +159,24 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
       isFiltered:
         (allUniversities.length > 0 && universities.length < allUniversities.length) ||
         categories.length < CATEGORY_ORDER.length,
+      hasChosen: hasChoice,
       toggleUniversity,
       setUniversities,
       toggleCategory,
       setCategories,
       resetAll,
     }),
-    [allUniversities.length, categories, resetAll, setCategories, setUniversities, toggleCategory, toggleUniversity, universities],
+    [
+      allUniversities.length,
+      categories,
+      hasChoice,
+      resetAll,
+      setCategories,
+      setUniversities,
+      toggleCategory,
+      toggleUniversity,
+      universities,
+    ],
   );
 
   return <PreferencesContext.Provider value={value}>{children}</PreferencesContext.Provider>;

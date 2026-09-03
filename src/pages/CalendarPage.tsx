@@ -6,10 +6,10 @@ import { useSearchParams } from "react-router-dom";
 import { CalendarGrid } from "../components/CalendarGrid";
 import { EventDetailDialog } from "../components/EventDetailDialog";
 import { EventRow } from "../components/EventRow";
+import { PickUniversities } from "../components/PickUniversities";
 import { SiteFooter } from "../components/SiteFooter";
 import { EmptySelection, ErrorState, LoadingState, OfflineBanner } from "../components/StateNotices";
 import { useAdmissions } from "../hooks/useAdmissions";
-import { useIsCompact } from "../hooks/useMediaQuery";
 import { usePreferences } from "../hooks/usePreferences";
 import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { formatDayLabel, getCalendarWeeks, isDateInRange, toDateKey, todayKey } from "../lib/date";
@@ -20,7 +20,6 @@ const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 export function CalendarPage() {
   const { status } = useAdmissions();
   const { universities, categories } = usePreferences();
-  const compact = useIsCompact();
   const visibleEvents = useVisibleEvents();
   const [params] = useSearchParams();
   const today = todayKey();
@@ -92,6 +91,7 @@ export function CalendarPage() {
     <main className="page page--calendar">
       <OfflineBanner />
       <h1 className="sr-only">2027 수시 일정 달력</h1>
+      <PickUniversities />
 
       {universities.length === 0 || categories.length === 0 ? (
         <EmptySelection />
@@ -132,9 +132,10 @@ export function CalendarPage() {
             />
 
             <p className="calendar-hint">
-              {compact
-                ? "속이 빈 점은 시작, 채운 점은 마감·발표·면접. 날짜를 누르면 아래에 그 날 일정이 나옵니다."
-                : "점선은 시작, 실선은 마감·발표·면접. 대학 이름을 누르면 자세히 볼 수 있습니다."}
+              <span className="calendar-hint__key" aria-hidden="true" />
+              마감·발표·면접
+              <span className="calendar-hint__key is-start" aria-hidden="true" />
+              시작
             </p>
           </section>
 

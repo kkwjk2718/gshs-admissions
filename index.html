@@ -18,6 +18,18 @@
     <meta property="og:locale" content="ko_KR" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>2027 수시 일정 | GSHS.app</title>
+    <script>
+      // 첫 페인트 전에 테마를 정한다. 이게 없으면 다크 사용자에게 흰 화면이 한 번 번쩍인다.
+      (function () {
+        try {
+          var stored = localStorage.getItem("gshs-admissions:theme");
+          var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

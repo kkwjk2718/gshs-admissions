@@ -1,7 +1,8 @@
-import { CalendarPlus, ExternalLink, SlidersHorizontal } from "lucide-react";
+import { CalendarPlus, ExternalLink, Moon, SlidersHorizontal, Sun } from "lucide-react";
 import { NavLink, Link } from "react-router-dom";
 import { useFilterDialog } from "../hooks/useFilterDialog";
 import { usePreferences } from "../hooks/usePreferences";
+import { useTheme } from "../hooks/useTheme";
 import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { downloadIcs } from "../lib/ics";
 
@@ -13,7 +14,8 @@ export const NAV_ITEMS = [
 
 export function AppHeader() {
   const { openDialog } = useFilterDialog();
-  const { universities, isFiltered } = usePreferences();
+  const { universities, hasChosen } = usePreferences();
+  const { theme, toggle } = useTheme();
   const visibleEvents = useVisibleEvents();
 
   return (
@@ -50,7 +52,7 @@ export function AppHeader() {
         <div className="app-header__actions">
           <button
             type="button"
-            className={`button button--filter ${isFiltered ? "is-active" : ""}`}
+            className={`button button--pick ${hasChosen ? "" : "is-nudge"}`}
             onClick={openDialog}
           >
             <SlidersHorizontal size={16} aria-hidden="true" />내 대학 {universities.length}곳
@@ -64,6 +66,15 @@ export function AppHeader() {
           >
             <CalendarPlus size={16} aria-hidden="true" />
             캘린더에 담기
+          </button>
+          <button
+            type="button"
+            className="icon-button"
+            onClick={toggle}
+            aria-label={theme === "dark" ? "밝은 화면으로" : "어두운 화면으로"}
+            title={theme === "dark" ? "밝은 화면으로" : "어두운 화면으로"}
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
         </div>
       </div>

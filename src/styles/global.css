@@ -5,7 +5,7 @@
    ========================================================================= */
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --font-sans: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic",
     system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -32,7 +32,10 @@
   --shadow-3: 0 24px 64px rgba(16, 32, 48, 0.24);
 
   --header-h: 56px;
+  --ticker-h: 38px;
   --tabbar-h: 60px;
+  /* 헤더 + 티커. sticky 로 붙는 것들이 이 아래에서 시작한다. */
+  --chrome-h: 94px;
   --page-max: 1180px;
 
   --canvas: #f4f6f9;
@@ -65,40 +68,41 @@
 .cat-final-result { --cat: #1f6b45; --cat-soft: #dcefe4; }
 .cat-additional-result { --cat: #9c3168; --cat-soft: #fae0ec; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --canvas: #101519;
-    --surface: #182027;
-    --surface-2: #1e272f;
-    --ink: #e9eef3;
-    --ink-2: #c3ccd5;
-    --muted: #9dabb7;
-    --line: #303b45;
-    --line-grid: #3d4954;
-    --line-strong: #73818f;
-    --accent: #8ec0f0;
-    --accent-ink: #0d1a26;
-    --accent-soft: #1b2c3d;
-    --danger: #f2938b;
-    --danger-soft: #3a1e1c;
-    --warn: #e5b567;
-    --warn-soft: #38290f;
-    --ok: #79cfa1;
-    --ok-soft: #113022;
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.45);
-    --shadow-3: 0 24px 64px rgba(0, 0, 0, 0.6);
-  }
-
-  .cat-application { --cat: #bfa9fb; --cat-soft: #302650; }
-  .cat-essay { --cat: #8fc0f5; --cat-soft: #1c3350; }
-  .cat-recommendation { --cat: #6fcbd9; --cat-soft: #153a42; }
-  .cat-documents { --cat: #e3b56b; --cat-soft: #3f3016; }
-  .cat-first-result { --cat: #b3c0cd; --cat-soft: #2d3740; }
-  .cat-interview { --cat: #f2988f; --cat-soft: #472725; }
-  .cat-final-result { --cat: #79cfa1; --cat-soft: #193f2f; }
-  .cat-additional-result { --cat: #f09ac6; --cat-soft: #442038; }
+/* index.html 의 인라인 스크립트가 첫 페인트 전에 data-theme 을 채우므로
+   기기 설정과 헤더의 전환 버튼이 같은 경로를 쓴다. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #101519;
+  --surface: #182027;
+  --surface-2: #1e272f;
+  --ink: #e9eef3;
+  --ink-2: #c3ccd5;
+  --muted: #9dabb7;
+  --line: #303b45;
+  --line-grid: #3d4954;
+  --line-strong: #73818f;
+  --accent: #8ec0f0;
+  --accent-ink: #0d1a26;
+  --accent-soft: #1b2c3d;
+  --danger: #f2938b;
+  --danger-soft: #3a1e1c;
+  --warn: #e5b567;
+  --warn-soft: #38290f;
+  --ok: #79cfa1;
+  --ok-soft: #113022;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-3: 0 24px 64px rgba(0, 0, 0, 0.6);
 }
+
+:root[data-theme="dark"] .cat-application { --cat: #bfa9fb; --cat-soft: #302650; }
+:root[data-theme="dark"] .cat-essay { --cat: #8fc0f5; --cat-soft: #1c3350; }
+:root[data-theme="dark"] .cat-recommendation { --cat: #6fcbd9; --cat-soft: #153a42; }
+:root[data-theme="dark"] .cat-documents { --cat: #e3b56b; --cat-soft: #3f3016; }
+:root[data-theme="dark"] .cat-first-result { --cat: #b3c0cd; --cat-soft: #2d3740; }
+:root[data-theme="dark"] .cat-interview { --cat: #f2988f; --cat-soft: #472725; }
+:root[data-theme="dark"] .cat-final-result { --cat: #79cfa1; --cat-soft: #193f2f; }
+:root[data-theme="dark"] .cat-additional-result { --cat: #f09ac6; --cat-soft: #442038; }
 
 /* ========================================================================= */
 
@@ -279,6 +283,111 @@ a {
   margin-left: 0;
 }
 
+/* ===== 마감 티커 ========================================================= */
+
+.ticker {
+  position: sticky;
+  z-index: 25;
+  top: var(--header-h);
+  display: block;
+  overflow: hidden;
+  height: var(--ticker-h);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+}
+
+.ticker__track {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  animation-name: ticker;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ticker:hover .ticker__track,
+.ticker:focus-visible .ticker__track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker__row {
+  display: flex;
+  align-items: center;
+}
+
+.ticker__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+}
+
+.ticker__dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--cat);
+}
+
+.ticker__item b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.ticker__what {
+  color: var(--muted);
+}
+
+.ticker__dday {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== 대학 고르기 권유 ================================================== */
+
+.pick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-md);
+  background: var(--accent-soft);
+}
+
+.pick__text h2 {
+  color: var(--ink);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+}
+
+.pick__text p {
+  margin-top: 3px;
+  color: var(--ink-2);
+  font-size: var(--fs-base);
+}
+
+.pick__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 /* ===== 버튼 ============================================================== */
 
 .button {
@@ -335,10 +444,27 @@ a {
   margin-top: 12px;
 }
 
-.button--filter.is-active {
+/* 내 대학 고르기는 이 앱에서 가장 먼저 하게 만들어야 할 조작이다. */
+.button--pick {
   border-color: var(--accent);
   background: var(--accent-soft);
   color: var(--accent);
+  font-weight: 700;
+}
+
+.button--pick:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  filter: brightness(0.97);
+}
+
+.button--pick.is-nudge {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.button--pick.is-nudge:hover {
+  filter: brightness(1.08);
 }
 
 .icon-button {
@@ -650,7 +776,7 @@ a {
 .deadline-group__head {
   position: sticky;
   z-index: 10;
-  top: var(--header-h);
+  top: var(--chrome-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1067,10 +1193,28 @@ a {
 }
 
 .calendar-hint {
-  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: var(--fs-sm);
+}
+
+.calendar-hint__key {
+  width: 3px;
+  height: 13px;
+  margin-left: 6px;
+  border-left: 3px solid var(--muted);
+}
+
+.calendar-hint__key:first-child {
+  margin-left: 0;
+}
+
+.calendar-hint__key.is-start {
+  border-left-style: dotted;
 }
 
 .day-panel {
@@ -1174,7 +1318,7 @@ a {
 }
 
 .schedule-table-wrap {
-  max-height: calc(100dvh - 260px);
+  max-height: calc(100dvh - 300px);
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
@@ -1755,9 +1899,9 @@ dialog::backdrop {
 
   .deadlines-side {
     position: sticky;
-    top: calc(var(--header-h) + 20px);
+    top: calc(var(--chrome-h) + 20px);
     /* 24곳을 다 켜면 목록이 1,200px 가까이 된다. 없으면 아래쪽이 영영 화면 밖에 고정된다. */
-    max-height: calc(100dvh - var(--header-h) - 40px);
+    max-height: calc(100dvh - var(--chrome-h) - 40px);
     overflow: auto;
   }
 
@@ -1776,8 +1920,8 @@ dialog::backdrop {
 
   .day-panel {
     position: sticky;
-    top: calc(var(--header-h) + 20px);
-    max-height: calc(100dvh - var(--header-h) - 40px);
+    top: calc(var(--chrome-h) + 20px);
+    max-height: calc(100dvh - var(--chrome-h) - 40px);
     overflow: auto;
   }
 }
@@ -1817,6 +1961,20 @@ dialog::backdrop {
 
   .calendar-card {
     border-radius: var(--r-md);
+  }
+
+  /* 폰 칸은 세로선이 아니라 점으로 그리므로 범례도 점으로 맞춘다. */
+  .calendar-hint__key {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+
+  .calendar-hint__key.is-start {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--muted);
   }
 
   .calendar__day {
@@ -1880,5 +2038,20 @@ dialog::backdrop {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* 티커는 흐르지 않고 가로로 밀어 보게 둔다. */
+  .ticker {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .ticker__track {
+    animation: none !important;
+  }
+
+  .ticker__row[aria-hidden="true"] {
+    display: none;
   }
 }

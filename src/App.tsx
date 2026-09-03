@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { AppHeader } from "./components/AppHeader";
+import { DeadlineTicker } from "./components/DeadlineTicker";
 import { FilterDialog } from "./components/FilterDialog";
 import { MobileTabBar } from "./components/MobileTabBar";
 import { AdmissionsProvider } from "./hooks/useAdmissions";
@@ -31,6 +32,7 @@ export default function App() {
           <div className="app-shell">
             <ScrollToTop />
             <AppHeader />
+            <DeadlineTicker />
             <Routes>
               <Route path="/" element={<CalendarPage />} />
               <Route path="/deadlines" element={<DeadlinesPage />} />
