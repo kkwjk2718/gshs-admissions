@@ -16,8 +16,10 @@ export interface DayEntry {
   id: string;
   categoryId: CategoryId;
   phase: Phase;
-  /** "원서 마감" · "1차 발표" · "면접" · "원서 시작" */
+  /** "원서 마감" · "1차 발표" · "면접" · "원서 접수 시작" */
   label: string;
+  /** 여러 종류를 "접수 시작" 한 줄로 묶었을 때 실제로 무엇이 열리는지 */
+  kinds: string[];
   lines: TimeLine[];
   count: number;
 }
@@ -93,6 +95,7 @@ export function buildDayEntries(events: AdmissionEvent[], dateKey: string): DayE
       categoryId: id,
       phase: "end",
       label: endLabel(id),
+      kinds: [CATEGORY_UI[id].label],
       lines: toLines(list, true),
       count: list.length,
     };
@@ -106,6 +109,7 @@ export function buildDayEntries(events: AdmissionEvent[], dateKey: string): DayE
       categoryId: ids[0],
       phase: "start",
       label: ids.length >= 2 ? "접수 시작" : START_LABEL[ids[0]],
+      kinds: ids.map((item) => CATEGORY_UI[item].label),
       lines: toLines(submissionStarts, false),
       count: submissionStarts.length,
     });
@@ -121,6 +125,7 @@ export function buildDayEntries(events: AdmissionEvent[], dateKey: string): DayE
       categoryId: id,
       phase: "start",
       label: START_LABEL[id],
+      kinds: [CATEGORY_UI[id].label],
       lines: toLines(list, false),
       count: list.length,
     });

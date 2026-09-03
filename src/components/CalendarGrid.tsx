@@ -67,7 +67,12 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
               const total = entries.reduce((sum, entry) => sum + entry.count, 0);
               const ongoing = ongoingCountOn(events, key);
               const outside = !isSameMonth(day, month);
-              const summary = entries.map((entry) => `${entry.label} ${entry.count}건`).join(", ");
+              const summary = entries
+                .map(
+                  (entry) =>
+                    `${entry.label}${entry.kinds.length > 1 ? `(${entry.kinds.join(", ")})` : ""} ${entry.count}건`,
+                )
+                .join(", ");
 
               return (
                 <div
@@ -125,7 +130,12 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
                           }`}
                           key={entry.id}
                         >
-                          <span className="day-entry__label">{entry.label}</span>
+                          <span
+                            className="day-entry__label"
+                            title={entry.kinds.length > 1 ? entry.kinds.join(" · ") : undefined}
+                          >
+                            {entry.label}
+                          </span>
                           {entry.lines.map((line) => (
                             <span className="day-entry__line" key={line.time || "none"}>
                               {line.time && <b>{line.time}</b>}
