@@ -1,0 +1,5630 @@
+{
+  "meta": {
+    "academicYear": 2027,
+    "calendarYear": 2026,
+    "calendarName": "입시_일정",
+    "timezone": "Asia/Seoul",
+    "eventCount": 176,
+    "universityCount": 24,
+    "tableRowCount": 37,
+    "dateRange": {
+      "start": "2026-09-01",
+      "end": "2027-01-15"
+    },
+    "notice": "일자 변경으로 차이가 있을 수 있으니 반드시 대학 홈페이지에서 확인하시기 바랍니다. 참고용으로만 활용해 주세요."
+  },
+  "categories": [
+    {
+      "id": "application",
+      "label": "원서 접수",
+      "sourceLabel": "지원서 접수",
+      "shortLabel": "원서",
+      "eventCount": 24
+    },
+    {
+      "id": "essay",
+      "label": "자소서 입력",
+      "sourceLabel": "자소서 입력",
+      "shortLabel": "자소서",
+      "eventCount": 4
+    },
+    {
+      "id": "recommendation",
+      "label": "추천서 입력",
+      "sourceLabel": "추천서 입력",
+      "shortLabel": "추천서",
+      "eventCount": 4
+    },
+    {
+      "id": "documents",
+      "label": "서류 제출",
+      "sourceLabel": "서류 제출",
+      "shortLabel": "서류",
+      "eventCount": 25
+    },
+    {
+      "id": "first-result",
+      "label": "1차 발표",
+      "sourceLabel": "1차 발표",
+      "shortLabel": "1차",
+      "eventCount": 25
+    },
+    {
+      "id": "interview",
+      "label": "면접",
+      "sourceLabel": "면접 및 구술",
+      "shortLabel": "면접",
+      "eventCount": 38
+    },
+    {
+      "id": "final-result",
+      "label": "합격자 발표",
+      "sourceLabel": "합격자 발표",
+      "shortLabel": "합격",
+      "eventCount": 26
+    },
+    {
+      "id": "additional-result",
+      "label": "충원 합격자 발표",
+      "sourceLabel": "충원 합격자 발표",
+      "shortLabel": "충원",
+      "eventCount": 30
+    }
+  ],
+  "universities": [
+    {
+      "id": "snu",
+      "name": "서울대",
+      "tag": "서울대",
+      "eventCount": 8
+    },
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "tag": "KAIST",
+      "eventCount": 9
+    },
+    {
+      "id": "postech",
+      "name": "POSTECH",
+      "tag": "POSTECH",
+      "eventCount": 7
+    },
+    {
+      "id": "gist",
+      "name": "GIST",
+      "tag": "GIST",
+      "eventCount": 8
+    },
+    {
+      "id": "unist",
+      "name": "UNIST",
+      "tag": "UNIST",
+      "eventCount": 9
+    },
+    {
+      "id": "dgist",
+      "name": "DGIST",
+      "tag": "DGIST",
+      "eventCount": 8
+    },
+    {
+      "id": "kentech",
+      "name": "KENTECH",
+      "tag": "KENTECH",
+      "eventCount": 7
+    },
+    {
+      "id": "yonsei",
+      "name": "연세대",
+      "tag": "연세대",
+      "eventCount": 9
+    },
+    {
+      "id": "korea",
+      "name": "고려대",
+      "tag": "고려대",
+      "eventCount": 11
+    },
+    {
+      "id": "sungkyunkwan",
+      "name": "성균관대",
+      "tag": "성균관대",
+      "eventCount": 6
+    },
+    {
+      "id": "hanyang",
+      "name": "한양대",
+      "tag": "한양대",
+      "eventCount": 9
+    },
+    {
+      "id": "sogang",
+      "name": "서강대",
+      "tag": "서강대",
+      "eventCount": 4
+    },
+    {
+      "id": "ewha",
+      "name": "이화여대",
+      "tag": "이화여대",
+      "eventCount": 7
+    },
+    {
+      "id": "chung-ang",
+      "name": "중앙대",
+      "tag": "중앙대",
+      "eventCount": 6
+    },
+    {
+      "id": "kyung-hee",
+      "name": "경희대",
+      "tag": "경희대",
+      "eventCount": 6
+    },
+    {
+      "id": "uos",
+      "name": "서울시립대",
+      "tag": "서울시립대",
+      "eventCount": 7
+    },
+    {
+      "id": "konkuk",
+      "name": "건국대",
+      "tag": "건국대",
+      "eventCount": 7
+    },
+    {
+      "id": "dongguk",
+      "name": "동국대",
+      "tag": "동국대",
+      "eventCount": 7
+    },
+    {
+      "id": "seoultech",
+      "name": "서울과기대",
+      "tag": "서울과기대",
+      "eventCount": 7
+    },
+    {
+      "id": "kookmin",
+      "name": "국민대",
+      "tag": "국민대",
+      "eventCount": 6
+    },
+    {
+      "id": "sejong",
+      "name": "세종대",
+      "tag": "세종대",
+      "eventCount": 6
+    },
+    {
+      "id": "ajou",
+      "name": "아주대",
+      "tag": "아주대",
+      "eventCount": 8
+    },
+    {
+      "id": "pusan",
+      "name": "부산대",
+      "tag": "부산대",
+      "eventCount": 8
+    },
+    {
+      "id": "kyungpook",
+      "name": "경북대",
+      "tag": "경북대",
+      "eventCount": 6
+    }
+  ],
+  "events": [
+    {
+      "id": "a92286bd41f01698dc2733cf",
+      "uid": "a92286bd41f01698dc2733cf@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "KAIST 원서 접수",
+      "taggedTitle": "[원서 접수] [KAIST]",
+      "admissionDetail": "창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.1(화)~9.9(수) 18:00",
+      "description": "대학: KAIST\n전형: 창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 원서 접수\n원문 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "3d1c3af3b4586af9bee025c2",
+      "uid": "3d1c3af3b4586af9bee025c2@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "KAIST 서류 제출",
+      "taggedTitle": "[서류 제출] [KAIST]",
+      "admissionDetail": "창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.1(화)~9.9(수) 18:00",
+      "description": "대학: KAIST\n전형: 창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 서류 제출\n원문 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "331f5082730b4a8456cc5ee6",
+      "uid": "331f5082730b4a8456cc5ee6@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "essay",
+      "category": "자소서 입력",
+      "sourceCategory": "자소서 입력",
+      "title": "KAIST 자소서 입력",
+      "taggedTitle": "[자소서 입력] [KAIST]",
+      "admissionDetail": "창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.1(화)~9.9(수) 18:00",
+      "description": "대학: KAIST\n전형: 창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 자소서 입력\n원문 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7a9f0ae094391748b5b04da7",
+      "uid": "7a9f0ae094391748b5b04da7@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "POSTECH 서류 제출",
+      "taggedTitle": "[서류 제출] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "9.1(화)~9.11(금) 우편 소인 유효",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 서류 제출\n원문 일정: 9.1(화)~9.11(금) 우편 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f950ae703c633f47fa4e8304",
+      "uid": "f950ae703c633f47fa4e8304@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "DGIST 원서 접수",
+      "taggedTitle": "[원서 접수] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.10(목) 18:00",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 원서 접수\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "ec5a40c27a1b5c6847cd72f2",
+      "uid": "ec5a40c27a1b5c6847cd72f2@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "essay",
+      "category": "자소서 입력",
+      "sourceCategory": "자소서 입력",
+      "title": "DGIST 자소서 입력",
+      "taggedTitle": "[자소서 입력] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.10(목) 18:00",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "dac91d1380bbbe80304ad390",
+      "uid": "dac91d1380bbbe80304ad390@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "UNIST 원서 접수",
+      "taggedTitle": "[원서 접수] [UNIST]",
+      "admissionDetail": "일반전형, 탐구우수전형, 그릿인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.10(목) 18:00",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "aa56c6593953f6128f0bf680",
+      "uid": "aa56c6593953f6128f0bf680@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "UNIST 서류 제출",
+      "taggedTitle": "[서류 제출] [UNIST]",
+      "admissionDetail": "일반전형, 탐구우수전형, 그릿인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.11(금) 18:00 온라인(PDF 스캔본)",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목)~9.11(금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "22b380a941ada966783dc916",
+      "uid": "22b380a941ada966783dc916@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "essay",
+      "category": "자소서 입력",
+      "sourceCategory": "자소서 입력",
+      "title": "UNIST 자소서 입력",
+      "taggedTitle": "[자소서 입력] [UNIST]",
+      "admissionDetail": "일반전형, 탐구우수전형, 그릿인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.11(금) 18:00",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "067d13b36c2238837f54cac4",
+      "uid": "067d13b36c2238837f54cac4@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "recommendation",
+      "category": "추천서 입력",
+      "sourceCategory": "추천서 입력",
+      "title": "UNIST 추천서 입력",
+      "taggedTitle": "[추천서 입력] [UNIST]",
+      "admissionDetail": "그릿인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.11(금) 18:00",
+      "description": "대학: UNIST\n전형: 그릿인재전형\n구분: 추천서 입력\n원문 일정: 9.3(목)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f2ab5251582dc018483769fc",
+      "uid": "f2ab5251582dc018483769fc@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "recommendation",
+      "category": "추천서 입력",
+      "sourceCategory": "추천서 입력",
+      "title": "DGIST 추천서 입력",
+      "taggedTitle": "[추천서 입력] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-16",
+      "deadlineDate": "2026-09-16",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.3(목)~9.16(수) 18:00 학교장추천",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 추천서 입력\n원문 일정: 9.3(목)~9.16(수) 18:00 학교장추천\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5cc035ef36f1787a02df9a08",
+      "uid": "5cc035ef36f1787a02df9a08@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "DGIST 서류 제출",
+      "taggedTitle": "[서류 제출] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.4(목)~9.10(목) 18:00 온라인(고른)",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 서류 제출\n원문 일정: 9.4(목)~9.10(목) 18:00 온라인(고른)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "e71bd9c9186bb0228f0da4f4",
+      "uid": "e71bd9c9186bb0228f0da4f4@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "POSTECH 원서 접수",
+      "taggedTitle": "[원서 접수] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 18:00",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cde173542bc9b429ebf609a4",
+      "uid": "cde173542bc9b429ebf609a4@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "고려대 원서 접수",
+      "taggedTitle": "[원서 접수] [고려대]",
+      "admissionDetail": "계열적합전형, 고른기회, 논술",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 17:00",
+      "description": "대학: 고려대\n전형: 계열적합전형, 고른기회, 논술\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1d5016237d21ee7a15cf4496",
+      "uid": "1d5016237d21ee7a15cf4496@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "고려대 서류 제출",
+      "taggedTitle": "[서류 제출] [고려대]",
+      "admissionDetail": "계열적합전형, 고른기회, 논술",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 18:00 9.10(목) 소인 유효",
+      "description": "대학: 고려대\n전형: 계열적합전형, 고른기회, 논술\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9(수) 18:00 9.10(목) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1e9be7397484c572890a8cf5",
+      "uid": "1e9be7397484c572890a8cf5@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "서울대 원서 접수",
+      "taggedTitle": "[원서 접수] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 18:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "c969a9154b0bc1d175911904",
+      "uid": "c969a9154b0bc1d175911904@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "연세대 원서 접수",
+      "taggedTitle": "[원서 접수] [연세대]",
+      "admissionDetail": "논술전형, 기회균형, 활동우수형(자연)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 17:00",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형, 활동우수형(자연)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1bca2feb1eb191bc6f1697bf",
+      "uid": "1bca2feb1eb191bc6f1697bf@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "연세대 서류 제출",
+      "taggedTitle": "[서류 제출] [연세대]",
+      "admissionDetail": "논술전형, 기회균형, 활동우수형(자연)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "deadlineDate": "2026-09-09",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 17:00",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형, 활동우수형(자연)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9(수) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a7475d04ea6518b30e24a1d3",
+      "uid": "a7475d04ea6518b30e24a1d3@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "서울대 서류 제출",
+      "taggedTitle": "[서류 제출] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.10(목) 18:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 서류 제출\n원문 일정: 9.7(월)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "12ce26b97dd6dd1c10cc6b82",
+      "uid": "12ce26b97dd6dd1c10cc6b82@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "서울시립대 원서 접수",
+      "taggedTitle": "[원서 접수] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.10(목) 18:00",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a8a0c794cfc29a413476ac27",
+      "uid": "a8a0c794cfc29a413476ac27@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "GIST 원서 접수",
+      "taggedTitle": "[원서 접수] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "9d45ed142cd24a6d28bae1e6",
+      "uid": "9d45ed142cd24a6d28bae1e6@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "GIST 서류 제출",
+      "taggedTitle": "[서류 제출] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00 소인 유효",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 서류 제출\n원문 일정: 9.7(월)~9.11(금) 18:00 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "72cd6c75cd10cf0e50453804",
+      "uid": "72cd6c75cd10cf0e50453804@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "essay",
+      "category": "자소서 입력",
+      "sourceCategory": "자소서 입력",
+      "title": "GIST 자소서 입력",
+      "taggedTitle": "[자소서 입력] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 자소서 입력\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5f376346964d375edda304d4",
+      "uid": "5f376346964d375edda304d4@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "recommendation",
+      "category": "추천서 입력",
+      "sourceCategory": "추천서 입력",
+      "title": "GIST 추천서 입력",
+      "taggedTitle": "[추천서 입력] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 추천서 입력\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cb21981137a902948f72322f",
+      "uid": "cb21981137a902948f72322f@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "KENTECH 원서 접수",
+      "taggedTitle": "[원서 접수] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1cc9e7f3ee67ec7de01540da",
+      "uid": "1cc9e7f3ee67ec7de01540da@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "경북대 원서 접수",
+      "taggedTitle": "[원서 접수] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "09b6a17ed9d62f51963118e5",
+      "uid": "09b6a17ed9d62f51963118e5@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "국민대 원서 접수",
+      "taggedTitle": "[원서 접수] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "2b00ff51f912f7f48b8e6755",
+      "uid": "2b00ff51f912f7f48b8e6755@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "서울과기대 원서 접수",
+      "taggedTitle": "[원서 접수] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8ee1c08fd9660561cc5cfecf",
+      "uid": "8ee1c08fd9660561cc5cfecf@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "서울시립대 서류 제출",
+      "taggedTitle": "[서류 제출] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 소인 유효",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.11(금) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "ce0d081a89afc858d08eb27b",
+      "uid": "ce0d081a89afc858d08eb27b@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "아주대 원서 접수",
+      "taggedTitle": "[원서 접수] [아주대]",
+      "admissionDetail": "ACE전형, 첨단융합인재전형",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.11(금) 18:00",
+      "description": "대학: 아주대\n전형: ACE전형, 첨단융합인재전형\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "efdb9e9aa0719c322853dfa4",
+      "uid": "efdb9e9aa0719c322853dfa4@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "KENTECH 서류 제출",
+      "taggedTitle": "[서류 제출] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-14",
+      "deadlineDate": "2026-09-14",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.14(월) 18:00 소인 유효",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 서류 제출\n원문 일정: 9.7(월)~9.14(월) 18:00 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "21a674f49093f1ebec922c69",
+      "uid": "21a674f49093f1ebec922c69@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "경북대 서류 제출",
+      "taggedTitle": "[서류 제출] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-16",
+      "deadlineDate": "2026-09-16",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.16(수) 18:00",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.16(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "085d9cd559d3e277fd2d1982",
+      "uid": "085d9cd559d3e277fd2d1982@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "서울과기대 서류 제출",
+      "taggedTitle": "[서류 제출] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-17",
+      "deadlineDate": "2026-09-17",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.17(목) 17:00",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.17(목) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "89fc7b8fa12781b66f72590d",
+      "uid": "89fc7b8fa12781b66f72590d@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "이화여대 원서 접수",
+      "taggedTitle": "[원서 접수] [이화여대]",
+      "admissionDetail": "미래인재전형(서류형), 미래인재전형(면접형)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.10(목) 17:00",
+      "description": "대학: 이화여대\n전형: 미래인재전형(서류형), 미래인재전형(면접형)\n구분: 원서 접수\n원문 일정: 9.8(화)~9.10(목) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6155d424aa51bc22cc06fe75",
+      "uid": "6155d424aa51bc22cc06fe75@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "건국대 원서 접수",
+      "taggedTitle": "[원서 접수] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "4f6ce87eee20e665f95497b2",
+      "uid": "4f6ce87eee20e665f95497b2@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "경희대 원서 접수",
+      "taggedTitle": "[원서 접수] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "25ae2a47696ff1e855880e95",
+      "uid": "25ae2a47696ff1e855880e95@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "부산대 원서 접수",
+      "taggedTitle": "[원서 접수] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 17:00",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1a5dcdc7d86cfae875940793",
+      "uid": "1a5dcdc7d86cfae875940793@codex.local",
+      "universityId": "sogang",
+      "university": "서강대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "서강대 원서 접수",
+      "taggedTitle": "[원서 접수] [서강대]",
+      "admissionDetail": "학생부종합전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 서강대\n전형: 학생부종합전형\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "09c3a0f8eca765bf181b7abd",
+      "uid": "09c3a0f8eca765bf181b7abd@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "성균관대 원서 접수",
+      "taggedTitle": "[원서 접수] [성균관대]",
+      "admissionDetail": "학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 성균관대\n전형: 학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "2d02593ecea9def585a43dba",
+      "uid": "2d02593ecea9def585a43dba@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "세종대 원서 접수",
+      "taggedTitle": "[원서 접수] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "9ee2e9bd3252040721eec6c5",
+      "uid": "9ee2e9bd3252040721eec6c5@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "이화여대 서류 제출",
+      "taggedTitle": "[서류 제출] [이화여대]",
+      "admissionDetail": "미래인재전형(서류형), 미래인재전형(면접형)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(목) 17:00",
+      "description": "대학: 이화여대\n전형: 미래인재전형(서류형), 미래인재전형(면접형)\n구분: 서류 제출\n원문 일정: 9.8(화)~9.11(목) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cf4c4453c9f3f69247ac2825",
+      "uid": "cf4c4453c9f3f69247ac2825@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "중앙대 원서 접수",
+      "taggedTitle": "[원서 접수] [중앙대]",
+      "admissionDetail": "학생부종합(융합형), 학생부종합(탐구형)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 중앙대\n전형: 학생부종합(융합형), 학생부종합(탐구형)\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "2df1422f28bb522adf5deb0e",
+      "uid": "2df1422f28bb522adf5deb0e@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "한양대 원서 접수",
+      "taggedTitle": "[원서 접수] [한양대]",
+      "admissionDetail": "학생부종합 (면접형), 논술전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.11(금) 18:00",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형), 논술전형\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "bb70c2707f19b1c3eb09cd29",
+      "uid": "bb70c2707f19b1c3eb09cd29@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "성균관대 서류 제출",
+      "taggedTitle": "[서류 제출] [성균관대]",
+      "admissionDetail": "학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-12",
+      "deadlineDate": "2026-09-12",
+      "isDateRange": true,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.12(토) 14:00",
+      "description": "대학: 성균관대\n전형: 학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)\n구분: 서류 제출\n원문 일정: 9.8(화)~9.12(토) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d335d31602a90f4508f7d124",
+      "uid": "d335d31602a90f4508f7d124@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "부산대 서류 제출",
+      "taggedTitle": "[서류 제출] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-14",
+      "deadlineDate": "2026-09-14",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.14(월)",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 서류 제출\n원문 일정: 9.8(화)~9.14(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8f1339214984b7d32276c24d",
+      "uid": "8f1339214984b7d32276c24d@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "세종대 서류 제출",
+      "taggedTitle": "[서류 제출] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-14",
+      "deadlineDate": "2026-09-14",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.14(월) 18:00",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 서류 제출\n원문 일정: 9.8(화)~9.14(월) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8247c06b8e7e4773417344bf",
+      "uid": "8247c06b8e7e4773417344bf@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "한양대 서류 제출",
+      "taggedTitle": "[서류 제출] [한양대]",
+      "admissionDetail": "학생부종합 (면접형), 논술전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-14",
+      "deadlineDate": "2026-09-14",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.14(토) 온라인 pdf",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형), 논술전형\n구분: 서류 제출\n원문 일정: 9.8(화)~9.14(토) 온라인 pdf\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "aa5e797d28309de7479f1882",
+      "uid": "aa5e797d28309de7479f1882@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "건국대 서류 제출",
+      "taggedTitle": "[서류 제출] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.15(화) 17:00",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "71dc19bbb27900ba4720786d",
+      "uid": "71dc19bbb27900ba4720786d@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "경희대 서류 제출",
+      "taggedTitle": "[서류 제출] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.15(화) 17:00",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "92a2038e14fb1a429ab09450",
+      "uid": "92a2038e14fb1a429ab09450@codex.local",
+      "universityId": "sogang",
+      "university": "서강대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "서강대 서류 제출",
+      "taggedTitle": "[서류 제출] [서강대]",
+      "admissionDetail": "학생부종합전형",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.15(화) 18:00 온라인 pdf",
+      "description": "대학: 서강대\n전형: 학생부종합전형\n구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 18:00 온라인 pdf\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "892ba18bd191efd9bc0cc092",
+      "uid": "892ba18bd191efd9bc0cc092@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "중앙대 서류 제출",
+      "taggedTitle": "[서류 제출] [중앙대]",
+      "admissionDetail": "학생부종합(융합형), 학생부종합(탐구형)",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": true,
+      "timeLabels": [
+        "16:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.8(화)~9.15(화) 16:00",
+      "description": "대학: 중앙대\n전형: 학생부종합(융합형), 학생부종합(탐구형)\n구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 16:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6d224e72852f64ab9c8673b7",
+      "uid": "6d224e72852f64ab9c8673b7@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "application",
+      "category": "원서 접수",
+      "sourceCategory": "지원서 접수",
+      "title": "동국대 원서 접수",
+      "taggedTitle": "[원서 접수] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-09-09",
+      "endDate": "2026-09-11",
+      "deadlineDate": "2026-09-11",
+      "isDateRange": true,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.9(수)~9.11(금) 17:00",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 원서 접수\n원문 일정: 9.9(수)~9.11(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7d7101f244cfffe1a40fed1b",
+      "uid": "7d7101f244cfffe1a40fed1b@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "동국대 서류 제출",
+      "taggedTitle": "[서류 제출] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-09-09",
+      "endDate": "2026-09-14",
+      "deadlineDate": "2026-09-14",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "9.9(수)~9.14(월) 소인 유효",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 서류 제출\n원문 일정: 9.9(수)~9.14(월) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "eb3a9a0e14c15f4c97821f0f",
+      "uid": "eb3a9a0e14c15f4c97821f0f@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "고려대 서류 제출",
+      "taggedTitle": "[서류 제출] [고려대]",
+      "admissionDetail": "계열적합전형, 고른기회, 논술",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-10",
+      "deadlineDate": "2026-09-10",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.7(월)~9.9(수) 18:00 9.10(목) 소인 유효",
+      "description": "대학: 고려대\n전형: 계열적합전형, 고른기회, 논술\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9(수) 18:00 9.10(목) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "06abe16601fa990a3c01410d",
+      "uid": "06abe16601fa990a3c01410d@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "recommendation",
+      "category": "추천서 입력",
+      "sourceCategory": "추천서 입력",
+      "title": "KAIST 추천서 입력",
+      "taggedTitle": "[추천서 입력] [KAIST]",
+      "admissionDetail": "창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-18",
+      "deadlineDate": "2026-09-18",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "9.10(목)~9.18(금) 18:00",
+      "description": "대학: KAIST\n전형: 창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 추천서 입력\n원문 일정: 9.10(목)~9.18(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "56b09322bee5aa4f4c08c2c6",
+      "uid": "56b09322bee5aa4f4c08c2c6@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "국민대 서류 제출",
+      "taggedTitle": "[서류 제출] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "~9.15(화) 18:00",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 서류 제출\n원문 일정: ~9.15(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "66fd5ce2be1dfe387b9616b7",
+      "uid": "66fd5ce2be1dfe387b9616b7@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "documents",
+      "category": "서류 제출",
+      "sourceCategory": "서류 제출",
+      "title": "아주대 서류 제출",
+      "taggedTitle": "[서류 제출] [아주대]",
+      "admissionDetail": "ACE전형, 첨단융합인재전형",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15",
+      "deadlineDate": "2026-09-15",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "~9.15(화) 소인 유효",
+      "description": "대학: 아주대\n전형: ACE전형, 첨단융합인재전형\n구분: 서류 제출\n원문 일정: ~9.15(화) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "63647a6517715a6240f5105f",
+      "uid": "63647a6517715a6240f5105f@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울시립대 면접",
+      "taggedTitle": "[면접] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "deadlineDate": "2026-10-03",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.29(일) 논술 10.3(토)",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 면접\n원문 일정: 11.29(일) 논술 10.3(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "798af3471c1e1f7580fd2c57",
+      "uid": "798af3471c1e1f7580fd2c57@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "연세대 면접",
+      "taggedTitle": "[면접] [연세대]",
+      "admissionDetail": "논술전형, 기회균형",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "deadlineDate": "2026-10-10",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "논술:10.10(토) 기균:10.31(토)",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형\n구분: 면접\n원문 일정: 논술:10.10(토) 기균:10.31(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "85dc703d7b994ff6346409b2",
+      "uid": "85dc703d7b994ff6346409b2@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "KAIST 합격자 발표",
+      "taggedTitle": "[합격자 발표] [KAIST]",
+      "admissionDetail": "창의도전전형",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "deadlineDate": "2026-10-12",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "10.12(월) 10:00",
+      "description": "대학: KAIST\n전형: 창의도전전형\n구분: 합격자 발표\n원문 일정: 10.12(월) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "dc18dd0ecb31bf5a3fb7abcc",
+      "uid": "dc18dd0ecb31bf5a3fb7abcc@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "GIST 1차 발표",
+      "taggedTitle": "[1차 발표] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "deadlineDate": "2026-10-15",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "10.15(목) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 1차 발표\n원문 일정: 10.15(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d22bf6589b689a0fe978c778",
+      "uid": "d22bf6589b689a0fe978c778@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "GIST 면접",
+      "taggedTitle": "[면접] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-23",
+      "deadlineDate": "2026-10-23",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "10.22(목)~ 10.23(금)",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 면접\n원문 일정: 10.22(목)~ 10.23(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "50a875b361cf05d5f0708bda",
+      "uid": "50a875b361cf05d5f0708bda@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "고려대 1차 발표",
+      "taggedTitle": "[1차 발표] [고려대]",
+      "admissionDetail": "고른기회",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "deadlineDate": "2026-10-23",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "10.23 (금) 17:00",
+      "description": "대학: 고려대\n전형: 고른기회\n구분: 1차 발표\n원문 일정: 10.23 (금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7881e0da3906f66b617d8c6b",
+      "uid": "7881e0da3906f66b617d8c6b@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "연세대 1차 발표",
+      "taggedTitle": "[1차 발표] [연세대]",
+      "admissionDetail": "논술전형, 기회균형",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "deadlineDate": "2026-10-26",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "기:10.26.(월)",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형\n구분: 1차 발표\n원문 일정: 기:10.26.(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "91fd46f821edfc30723c5bce",
+      "uid": "91fd46f821edfc30723c5bce@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "성균관대 1차 발표",
+      "taggedTitle": "[1차 발표] [성균관대]",
+      "admissionDetail": "학생부종합 (과학인재)",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "deadlineDate": "2026-10-27",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "10.27(화)",
+      "description": "대학: 성균관대\n전형: 학생부종합 (과학인재)\n구분: 1차 발표\n원문 일정: 10.27(화)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "17ec02eb67e293a3c1ae8348",
+      "uid": "17ec02eb67e293a3c1ae8348@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "고려대 1차 발표",
+      "taggedTitle": "[1차 발표] [고려대]",
+      "admissionDetail": "계열적합전형",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "deadlineDate": "2026-10-30",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "10.30(금) 17:00",
+      "description": "대학: 고려대\n전형: 계열적합전형\n구분: 1차 발표\n원문 일정: 10.30(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "e9fa936bf7be0afe3809ae7b",
+      "uid": "e9fa936bf7be0afe3809ae7b@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "고려대 면접",
+      "taggedTitle": "[면접] [고려대]",
+      "admissionDetail": "고른기회",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "deadlineDate": "2026-10-31",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "10.31(토)",
+      "description": "대학: 고려대\n전형: 고른기회\n구분: 면접\n원문 일정: 10.31(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7a7852a0c4b7c0e4d0701286",
+      "uid": "7a7852a0c4b7c0e4d0701286@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "연세대 면접",
+      "taggedTitle": "[면접] [연세대]",
+      "admissionDetail": "논술전형, 기회균형",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "deadlineDate": "2026-10-31",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "논술:10.10(토) 기균:10.31(토)",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형\n구분: 면접\n원문 일정: 논술:10.10(토) 기균:10.31(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5daa2110d01af66b8b5fa63d",
+      "uid": "5daa2110d01af66b8b5fa63d@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "성균관대 면접",
+      "taggedTitle": "[면접] [성균관대]",
+      "admissionDetail": "학생부종합 (과학인재)",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "deadlineDate": "2026-11-01",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.1(일)",
+      "description": "대학: 성균관대\n전형: 학생부종합 (과학인재)\n구분: 면접\n원문 일정: 11.1(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "948f25d88f27773950585a32",
+      "uid": "948f25d88f27773950585a32@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "UNIST 1차 발표",
+      "taggedTitle": "[1차 발표] [UNIST]",
+      "admissionDetail": "탐구우수전형, 그릿인재전형",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "deadlineDate": "2026-11-04",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.4(수)",
+      "description": "대학: UNIST\n전형: 탐구우수전형, 그릿인재전형\n구분: 1차 발표\n원문 일정: 11.4(수)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "485c53e470216a79e60a53bd",
+      "uid": "485c53e470216a79e60a53bd@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "UNIST 면접",
+      "taggedTitle": "[면접] [UNIST]",
+      "admissionDetail": "탐구우수전형",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "deadlineDate": "2026-11-07",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.7(토)",
+      "description": "대학: UNIST\n전형: 탐구우수전형\n구분: 면접\n원문 일정: 11.7(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "2427ff9637f26be6e395f3fa",
+      "uid": "2427ff9637f26be6e395f3fa@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "UNIST 면접",
+      "taggedTitle": "[면접] [UNIST]",
+      "admissionDetail": "그릿인재전형",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "deadlineDate": "2026-11-08",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.8(일)",
+      "description": "대학: UNIST\n전형: 그릿인재전형\n구분: 면접\n원문 일정: 11.8(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6e866c921509b934d2d1b25a",
+      "uid": "6e866c921509b934d2d1b25a@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "고려대 면접",
+      "taggedTitle": "[면접] [고려대]",
+      "admissionDetail": "계열적합전형",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "deadlineDate": "2026-11-08",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.8(일)",
+      "description": "대학: 고려대\n전형: 계열적합전형\n구분: 면접\n원문 일정: 11.8(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "dd01881fb5806d236674bb88",
+      "uid": "dd01881fb5806d236674bb88@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "DGIST 1차 발표",
+      "taggedTitle": "[1차 발표] [DGIST]",
+      "admissionDetail": "과학인재전형",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "deadlineDate": "2026-11-10",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.10(월) 14:00",
+      "description": "대학: DGIST\n전형: 과학인재전형\n구분: 1차 발표\n원문 일정: 11.10(월) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cc11e20cdf735aba754a8268",
+      "uid": "cc11e20cdf735aba754a8268@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "KAIST 1차 발표",
+      "taggedTitle": "[1차 발표] [KAIST]",
+      "admissionDetail": "일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "deadlineDate": "2026-11-11",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.11(수) 10:00",
+      "description": "대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 1차 발표\n원문 일정: 11.11(수) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1a3ac73e931d17bda76e004b",
+      "uid": "1a3ac73e931d17bda76e004b@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "이화여대 1차 발표",
+      "taggedTitle": "[1차 발표] [이화여대]",
+      "admissionDetail": "미래인재전형(면접형)",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "deadlineDate": "2026-11-12",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.12(목)",
+      "description": "대학: 이화여대\n전형: 미래인재전형(면접형)\n구분: 1차 발표\n원문 일정: 11.12(목)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "77d31288feba1a8c0c380924",
+      "uid": "77d31288feba1a8c0c380924@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "동국대 1차 발표",
+      "taggedTitle": "[1차 발표] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "deadlineDate": "2026-11-13",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.13.(금)",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 1차 발표\n원문 일정: 11.13.(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "002881e8668d6ef2efbe3fae",
+      "uid": "002881e8668d6ef2efbe3fae@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "세종대 1차 발표",
+      "taggedTitle": "[1차 발표] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "deadlineDate": "2026-11-13",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.13(금)",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 1차 발표\n원문 일정: 11.13(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1aaf6ea63a7d6baca41ab862",
+      "uid": "1aaf6ea63a7d6baca41ab862@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "한양대 1차 발표",
+      "taggedTitle": "[1차 발표] [한양대]",
+      "admissionDetail": "학생부종합 (면접형)",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "deadlineDate": "2026-11-13",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.13.(금)",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형)\n구분: 1차 발표\n원문 일정: 11.13.(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f97b34dda035712c5d1665f2",
+      "uid": "f97b34dda035712c5d1665f2@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "연세대 1차 발표",
+      "taggedTitle": "[1차 발표] [연세대]",
+      "admissionDetail": "활동우수형(자연)",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "deadlineDate": "2026-11-16",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.16(월)",
+      "description": "대학: 연세대\n전형: 활동우수형(자연)\n구분: 1차 발표\n원문 일정: 11.16(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "18cd9d3e6a6f9efef52cc237",
+      "uid": "18cd9d3e6a6f9efef52cc237@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "고려대 1차 발표",
+      "taggedTitle": "[1차 발표] [고려대]",
+      "admissionDetail": "논술",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "deadlineDate": "2026-11-17",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.17(화) 17:00",
+      "description": "대학: 고려대\n전형: 논술\n구분: 1차 발표\n원문 일정: 11.17(화) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d1227a1042c63a0fd81a6fe0",
+      "uid": "d1227a1042c63a0fd81a6fe0@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "국민대 1차 발표",
+      "taggedTitle": "[1차 발표] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "deadlineDate": "2026-11-17",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.17.(화) 14:00",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 1차 발표\n원문 일정: 11.17.(화) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "bda35dcb7bd996716a5608df",
+      "uid": "bda35dcb7bd996716a5608df@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "아주대 1차 발표",
+      "taggedTitle": "[1차 발표] [아주대]",
+      "admissionDetail": "ACE전형, 첨단융합인재전형",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "deadlineDate": "2026-11-17",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.17(화)",
+      "description": "대학: 아주대\n전형: ACE전형, 첨단융합인재전형\n구분: 1차 발표\n원문 일정: 11.17(화)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "25363f268890ab5732607df8",
+      "uid": "25363f268890ab5732607df8@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "KENTECH 1차 발표",
+      "taggedTitle": "[1차 발표] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금) 18:00",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 1차 발표\n원문 일정: 11.20(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "35a2c71e92e342a5bd4dc99d",
+      "uid": "35a2c71e92e342a5bd4dc99d@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "POSTECH 1차 발표",
+      "taggedTitle": "[1차 발표] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금) 10:00",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 1차 발표\n원문 일정: 11.20(금) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "265dfb735c3f35b64bbce5d5",
+      "uid": "265dfb735c3f35b64bbce5d5@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "건국대 1차 발표",
+      "taggedTitle": "[1차 발표] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금)",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 1차 발표\n원문 일정: 11.20(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8f19d81f933f4447d8335674",
+      "uid": "8f19d81f933f4447d8335674@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "서울과기대 1차 발표",
+      "taggedTitle": "[1차 발표] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금) 14:00",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 1차 발표\n원문 일정: 11.20(금) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6f7bd10a70a5930ba4ec96a0",
+      "uid": "6f7bd10a70a5930ba4ec96a0@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "서울대 1차 발표",
+      "taggedTitle": "[1차 발표] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금) 18:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 1차 발표\n원문 일정: 11.20(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5ce207eaa47e9ab5a6ffa3ae",
+      "uid": "5ce207eaa47e9ab5a6ffa3ae@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "서울시립대 1차 발표",
+      "taggedTitle": "[1차 발표] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "deadlineDate": "2026-11-20",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.20(금)",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 1차 발표\n원문 일정: 11.20(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "bbed90028617f0e5876b46c5",
+      "uid": "bbed90028617f0e5876b46c5@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "건국대 면접",
+      "taggedTitle": "[면접] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "deadlineDate": "2026-11-21",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.5(토)~6(일) 논술 11.21(토)",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 면접\n원문 일정: 12.5(토)~6(일) 논술 11.21(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1e2599389275425d62dbd652",
+      "uid": "1e2599389275425d62dbd652@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "고려대 면접",
+      "taggedTitle": "[면접] [고려대]",
+      "admissionDetail": "논술",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "deadlineDate": "2026-11-21",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "자연 11.21(토)",
+      "description": "대학: 고려대\n전형: 논술\n구분: 면접\n원문 일정: 자연 11.21(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a2bd15091aff34ff5e0f8f5e",
+      "uid": "a2bd15091aff34ff5e0f8f5e@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "국민대 면접",
+      "taggedTitle": "[면접] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "deadlineDate": "2026-11-21",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.21.(토)",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 면접\n원문 일정: 11.21.(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "974f3dd7d248ba19cbc7a70a",
+      "uid": "974f3dd7d248ba19cbc7a70a@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "세종대 면접",
+      "taggedTitle": "[면접] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "deadlineDate": "2026-11-21",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.21.(토)",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 면접\n원문 일정: 11.21.(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "58a771b2f7d88a935a185fa1",
+      "uid": "58a771b2f7d88a935a185fa1@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "아주대 면접",
+      "taggedTitle": "[면접] [아주대]",
+      "admissionDetail": "첨단융합인재전형",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "deadlineDate": "2026-11-21",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.21(토)",
+      "description": "대학: 아주대\n전형: 첨단융합인재전형\n구분: 면접\n원문 일정: 11.21(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "46966c336f3a6d3deb0f7bcc",
+      "uid": "46966c336f3a6d3deb0f7bcc@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "동국대 면접",
+      "taggedTitle": "[면접] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "deadlineDate": "2026-11-22",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.11(금)~12.13(일) 논술 11.22(일)",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 면접\n원문 일정: 12.11(금)~12.13(일) 논술 11.22(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "0dd2814a2f5b2b5d03e57b62",
+      "uid": "0dd2814a2f5b2b5d03e57b62@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "아주대 면접",
+      "taggedTitle": "[면접] [아주대]",
+      "admissionDetail": "ACE전형",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "deadlineDate": "2026-11-22",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22(일) 공대, 첨단ICT 11.28(토) 소프트웨어, 자연대",
+      "description": "대학: 아주대\n전형: ACE전형\n구분: 면접\n원문 일정: 11.22(일) 공대, 첨단ICT 11.28(토) 소프트웨어, 자연대\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f0119e882109601cfdeeb5b3",
+      "uid": "f0119e882109601cfdeeb5b3@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "연세대 면접",
+      "taggedTitle": "[면접] [연세대]",
+      "admissionDetail": "활동우수형(자연)",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "deadlineDate": "2026-11-22",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22(일)",
+      "description": "대학: 연세대\n전형: 활동우수형(자연)\n구분: 면접\n원문 일정: 11.22(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "b54583e2a302eb0a7ffec804",
+      "uid": "b54583e2a302eb0a7ffec804@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "이화여대 면접",
+      "taggedTitle": "[면접] [이화여대]",
+      "admissionDetail": "미래인재전형(면접형)",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "deadlineDate": "2026-11-22",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22(일)",
+      "description": "대학: 이화여대\n전형: 미래인재전형(면접형)\n구분: 면접\n원문 일정: 11.22(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "2db091e3f12513156b2c25de",
+      "uid": "2db091e3f12513156b2c25de@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "한양대 면접",
+      "taggedTitle": "[면접] [한양대]",
+      "admissionDetail": "학생부종합 (면접형)",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "deadlineDate": "2026-11-22",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22.(일) 의대 12.5(토) 사범 12.6(일)",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형)\n구분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "3442879b970ad7e2a8343e36",
+      "uid": "3442879b970ad7e2a8343e36@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "경희대 1차 발표",
+      "taggedTitle": "[1차 발표] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-25",
+      "deadlineDate": "2026-11-25",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.25.(수) 18:00",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 1차 발표\n원문 일정: 11.25.(수) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "b5451c83a60949778e35b7ee",
+      "uid": "b5451c83a60949778e35b7ee@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "DGIST 면접",
+      "taggedTitle": "[면접] [DGIST]",
+      "admissionDetail": "과학인재전형",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-27",
+      "deadlineDate": "2026-11-27",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.25(수)~ 11.27(금)",
+      "description": "대학: DGIST\n전형: 과학인재전형\n구분: 면접\n원문 일정: 11.25(수)~ 11.27(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "68c2100014c1c55cb500e8a9",
+      "uid": "68c2100014c1c55cb500e8a9@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "KAIST 면접",
+      "taggedTitle": "[면접] [KAIST]",
+      "admissionDetail": "일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-26",
+      "deadlineDate": "2026-11-26",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.26(목)",
+      "description": "대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 면접\n원문 일정: 11.26(목)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "670acee67c69f123f66d67b3",
+      "uid": "670acee67c69f123f66d67b3@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "중앙대 1차 발표",
+      "taggedTitle": "[1차 발표] [중앙대]",
+      "admissionDetail": "학생부종합(탐구형)",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-26",
+      "deadlineDate": "2026-11-26",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "11.26(목) 14:00",
+      "description": "대학: 중앙대\n전형: 학생부종합(탐구형)\n구분: 1차 발표\n원문 일정: 11.26(목) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "b366ac51e4c0a16d1a54d8c0",
+      "uid": "b366ac51e4c0a16d1a54d8c0@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울대 면접",
+      "taggedTitle": "[면접] [서울대]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "deadlineDate": "2026-11-27",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.27(금)",
+      "description": "대학: 서울대\n전형: 일반전형\n구분: 면접\n원문 일정: 11.27(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7f9cf2bc081c2856449e527c",
+      "uid": "7f9cf2bc081c2856449e527c@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "POSTECH 면접",
+      "taggedTitle": "[면접] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "deadlineDate": "2026-11-28",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.28(토) 11.29(일) 반도체",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 면접\n원문 일정: 11.28(토) 11.29(일) 반도체\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6fd6eb503dd6436a4f26a723",
+      "uid": "6fd6eb503dd6436a4f26a723@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울과기대 면접",
+      "taggedTitle": "[면접] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "deadlineDate": "2026-11-28",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "학우, 창융 11.28.(토) 기균 11.29(일)",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 면접\n원문 일정: 학우, 창융 11.28.(토) 기균 11.29(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "787ac6dd9a4311131d15aa05",
+      "uid": "787ac6dd9a4311131d15aa05@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "아주대 면접",
+      "taggedTitle": "[면접] [아주대]",
+      "admissionDetail": "ACE전형",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "deadlineDate": "2026-11-28",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22(일) 공대, 첨단ICT 11.28(토) 소프트웨어, 자연대",
+      "description": "대학: 아주대\n전형: ACE전형\n구분: 면접\n원문 일정: 11.22(일) 공대, 첨단ICT 11.28(토) 소프트웨어, 자연대\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "4a63f1d16f8eba7b48d4570d",
+      "uid": "4a63f1d16f8eba7b48d4570d@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "POSTECH 면접",
+      "taggedTitle": "[면접] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "deadlineDate": "2026-11-29",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.28(토) 11.29(일) 반도체",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 면접\n원문 일정: 11.28(토) 11.29(일) 반도체\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "51bf5abcfd237b6828fc6d2d",
+      "uid": "51bf5abcfd237b6828fc6d2d@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울과기대 면접",
+      "taggedTitle": "[면접] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "deadlineDate": "2026-11-29",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "학우, 창융 11.28.(토) 기균 11.29(일)",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 면접\n원문 일정: 학우, 창융 11.28.(토) 기균 11.29(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "904e06e84757669e094fe0cb",
+      "uid": "904e06e84757669e094fe0cb@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울시립대 면접",
+      "taggedTitle": "[면접] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "deadlineDate": "2026-11-29",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.29(일) 논술 10.3(토)",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 면접\n원문 일정: 11.29(일) 논술 10.3(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "ba118d3b1bdb768fdec87101",
+      "uid": "ba118d3b1bdb768fdec87101@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "한양대 면접",
+      "taggedTitle": "[면접] [한양대]",
+      "admissionDetail": "논술전형",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "deadlineDate": "2026-11-29",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.29(일)",
+      "description": "대학: 한양대\n전형: 논술전형\n구분: 면접\n원문 일정: 11.29(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "60b1dd6d22549f2caa4a5c53",
+      "uid": "60b1dd6d22549f2caa4a5c53@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "KENTECH 면접",
+      "taggedTitle": "[면접] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-11-30",
+      "endDate": "2026-11-30",
+      "deadlineDate": "2026-11-30",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.30.(월)",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 면접\n원문 일정: 11.30.(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "afbc2b8e0bbb51e90ef3b493",
+      "uid": "afbc2b8e0bbb51e90ef3b493@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "first-result",
+      "category": "1차 발표",
+      "sourceCategory": "1차 발표",
+      "title": "부산대 1차 발표",
+      "taggedTitle": "[1차 발표] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-01",
+      "deadlineDate": "2026-12-01",
+      "isDateRange": false,
+      "timeLabels": [
+        "16:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.1(화) 16:00",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 1차 발표\n원문 일정: 12.1(화) 16:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "02ead09950fe7c69d7f971a9",
+      "uid": "02ead09950fe7c69d7f971a9@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "이화여대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [이화여대]",
+      "admissionDetail": "미래인재전형(면접형)",
+      "startDate": "2026-12-03",
+      "endDate": "2026-12-03",
+      "deadlineDate": "2026-12-03",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.3(목)",
+      "description": "대학: 이화여대\n전형: 미래인재전형(면접형)\n구분: 합격자 발표\n원문 일정: 12.3(목)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d87d3a3d8a6b136ed85384d1",
+      "uid": "d87d3a3d8a6b136ed85384d1@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "서울대 면접",
+      "taggedTitle": "[면접] [서울대]",
+      "admissionDetail": "기회균형",
+      "startDate": "2026-12-04",
+      "endDate": "2026-12-04",
+      "deadlineDate": "2026-12-04",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.4(금)",
+      "description": "대학: 서울대\n전형: 기회균형\n구분: 면접\n원문 일정: 12.4(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "07fcf7d99af8a803e8bfea91",
+      "uid": "07fcf7d99af8a803e8bfea91@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "부산대 면접",
+      "taggedTitle": "[면접] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "deadlineDate": "2026-12-05",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.5(토)",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 면접\n원문 일정: 12.5(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "1e8ccc43ef97660a9bc14ff2",
+      "uid": "1e8ccc43ef97660a9bc14ff2@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "한양대 면접",
+      "taggedTitle": "[면접] [한양대]",
+      "admissionDetail": "학생부종합 (면접형)",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "deadlineDate": "2026-12-05",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22.(일) 의대 12.5(토) 사범 12.6(일)",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형)\n구분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5ba85c338c49a454bc8f538c",
+      "uid": "5ba85c338c49a454bc8f538c@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "건국대 면접",
+      "taggedTitle": "[면접] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-06",
+      "deadlineDate": "2026-12-06",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.5(토)~6(일) 논술 11.21(토)",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 면접\n원문 일정: 12.5(토)~6(일) 논술 11.21(토)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "506cbf4c39d45b1954d02444",
+      "uid": "506cbf4c39d45b1954d02444@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "경희대 면접",
+      "taggedTitle": "[면접] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-06",
+      "deadlineDate": "2026-12-06",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.5(토)~6(일)",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 면접\n원문 일정: 12.5(토)~6(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "e39927f677a2ca76d1565a31",
+      "uid": "e39927f677a2ca76d1565a31@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "중앙대 면접",
+      "taggedTitle": "[면접] [중앙대]",
+      "admissionDetail": "학생부종합(탐구형)",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-06",
+      "deadlineDate": "2026-12-06",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.5(토)~6(일)",
+      "description": "대학: 중앙대\n전형: 학생부종합(탐구형)\n구분: 면접\n원문 일정: 12.5(토)~6(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "68fad7f3f7f8b3555c40dffa",
+      "uid": "68fad7f3f7f8b3555c40dffa@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "한양대 면접",
+      "taggedTitle": "[면접] [한양대]",
+      "admissionDetail": "학생부종합 (면접형)",
+      "startDate": "2026-12-06",
+      "endDate": "2026-12-06",
+      "deadlineDate": "2026-12-06",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "11.22.(일) 의대 12.5(토) 사범 12.6(일)",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형)\n구분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "078d1c48db89a66250b32957",
+      "uid": "078d1c48db89a66250b32957@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "KENTECH 합격자 발표",
+      "taggedTitle": "[합격자 발표] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-11",
+      "deadlineDate": "2026-12-11",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.11(금) 18:00",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 합격자 발표\n원문 일정: 12.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "b13f6693aa8a658583672421",
+      "uid": "b13f6693aa8a658583672421@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "interview",
+      "category": "면접",
+      "sourceCategory": "면접 및 구술",
+      "title": "동국대 면접",
+      "taggedTitle": "[면접] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-13",
+      "deadlineDate": "2026-12-13",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.11(금)~12.13(일) 논술 11.22(일)",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 면접\n원문 일정: 12.11(금)~12.13(일) 논술 11.22(일)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6ccbd8e742da214e55f869d5",
+      "uid": "6ccbd8e742da214e55f869d5@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "이화여대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [이화여대]",
+      "admissionDetail": "미래인재전형(서류형)",
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "deadlineDate": "2026-12-17",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.17(목)",
+      "description": "대학: 이화여대\n전형: 미래인재전형(서류형)\n구분: 합격자 발표\n원문 일정: 12.17(목)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a135ba6ccc2b16b9b2e8c5b6",
+      "uid": "a135ba6ccc2b16b9b2e8c5b6@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "DGIST 합격자 발표",
+      "taggedTitle": "[합격자 발표] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "9a1204d28b4faecc1a1b8626",
+      "uid": "9a1204d28b4faecc1a1b8626@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "GIST 합격자 발표",
+      "taggedTitle": "[합격자 발표] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5a63c42d43fb724be83c214e",
+      "uid": "5a63c42d43fb724be83c214e@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "KAIST 합격자 발표",
+      "taggedTitle": "[합격자 발표] [KAIST]",
+      "admissionDetail": "일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 10:00",
+      "description": "대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 합격자 발표\n원문 일정: 12.18(금) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "281591d729b002f3994b56fb",
+      "uid": "281591d729b002f3994b56fb@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "POSTECH 합격자 발표",
+      "taggedTitle": "[합격자 발표] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 10:00",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "478193f50258d43d4c02ce64",
+      "uid": "478193f50258d43d4c02ce64@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "UNIST 합격자 발표",
+      "taggedTitle": "[합격자 발표] [UNIST]",
+      "admissionDetail": "일반전형, 탐구우수전형, 그릿인재전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 이전",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 이전\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "c2ab079e13dd1bce4ff7af93",
+      "uid": "c2ab079e13dd1bce4ff7af93@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "건국대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "94ac4c21413237401143fb81",
+      "uid": "94ac4c21413237401143fb81@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "경북대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "16:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 16:00",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 합격자 발표\n원문 일정: 12.18(금) 16:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "ee57173a1503a524918872bd",
+      "uid": "ee57173a1503a524918872bd@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "경희대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a52d295ecb998ca01522353d",
+      "uid": "a52d295ecb998ca01522353d@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "고려대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [고려대]",
+      "admissionDetail": "계열적합전형, 고른기회, 논술",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 17:00",
+      "description": "대학: 고려대\n전형: 계열적합전형, 고른기회, 논술\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7f01691ba6210132deb791f8",
+      "uid": "7f01691ba6210132deb791f8@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "국민대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 17:00",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "48c02bd4b8e8e72acf8fd961",
+      "uid": "48c02bd4b8e8e72acf8fd961@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "동국대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "c349ba23f4d2fc81355b88ea",
+      "uid": "c349ba23f4d2fc81355b88ea@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "부산대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "16:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 16:00",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 16:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "89cae8c0e0c5b065c8d8cb8b",
+      "uid": "89cae8c0e0c5b065c8d8cb8b@codex.local",
+      "universityId": "sogang",
+      "university": "서강대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "서강대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [서강대]",
+      "admissionDetail": "학생부종합전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 17:00",
+      "description": "대학: 서강대\n전형: 학생부종합전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d2287aecc51ed8543d4b6aaf",
+      "uid": "d2287aecc51ed8543d4b6aaf@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "서울과기대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 14:00",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 합격자 발표\n원문 일정: 12.18(금) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "aa0073305164d32bc9317faa",
+      "uid": "aa0073305164d32bc9317faa@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "서울대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 18:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 합격자 발표\n원문 일정: 12.18(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "24e3b4e56025a8f333c48403",
+      "uid": "24e3b4e56025a8f333c48403@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "서울시립대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "a18223b059655596c6d796fc",
+      "uid": "a18223b059655596c6d796fc@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "성균관대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [성균관대]",
+      "admissionDetail": "학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 이전",
+      "description": "대학: 성균관대\n전형: 학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)\n구분: 합격자 발표\n원문 일정: 12.18(금) 이전\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "0ef8572e4bb24825ca5511a5",
+      "uid": "0ef8572e4bb24825ca5511a5@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "세종대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "17:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 17:00",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f1f96e3817fdeba35369e161",
+      "uid": "f1f96e3817fdeba35369e161@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "아주대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [아주대]",
+      "admissionDetail": "ACE전형, 첨단융합인재전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 아주대\n전형: ACE전형, 첨단융합인재전형\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "45acdb6bca62809a8a843d0f",
+      "uid": "45acdb6bca62809a8a843d0f@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "연세대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [연세대]",
+      "admissionDetail": "논술전형, 기회균형, 활동우수형(자연)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형, 활동우수형(자연)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "d629ffff7911acde362f307f",
+      "uid": "d629ffff7911acde362f307f@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "중앙대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [중앙대]",
+      "admissionDetail": "학생부종합(융합형), 학생부종합(탐구형)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금) 14:00",
+      "description": "대학: 중앙대\n전형: 학생부종합(융합형), 학생부종합(탐구형)\n구분: 합격자 발표\n원문 일정: 12.18(금) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "5e8c7660bc9478331dc4d247",
+      "uid": "5e8c7660bc9478331dc4d247@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "final-result",
+      "category": "합격자 발표",
+      "sourceCategory": "합격자 발표",
+      "title": "한양대 합격자 발표",
+      "taggedTitle": "[합격자 발표] [한양대]",
+      "admissionDetail": "학생부종합 (면접형), 논술전형",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "deadlineDate": "2026-12-18",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.18(금)",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형), 논술전형\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "7ac6bdb61e13792041469be0",
+      "uid": "7ac6bdb61e13792041469be0@codex.local",
+      "universityId": "korea",
+      "university": "고려대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "고려대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [고려대]",
+      "admissionDetail": "계열적합전형, 고른기회, 논술",
+      "startDate": "2026-12-23",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [
+        "2026-12-24",
+        "2026-12-25"
+      ],
+      "rawSchedule": "12.23(수)~12.29(화) ~14:00 12.24~25 제외",
+      "description": "대학: 고려대\n전형: 계열적합전형, 고른기회, 논술\n구분: 충원 합격자 발표\n원문 일정: 12.23(수)~12.29(화) ~14:00 12.24~25 제외\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "02775be3be18cb64c9c38edc",
+      "uid": "02775be3be18cb64c9c38edc@codex.local",
+      "universityId": "yonsei",
+      "university": "연세대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "연세대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [연세대]",
+      "admissionDetail": "논술전형, 기회균형, 활동우수형(자연)",
+      "startDate": "2026-12-23",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [
+        "2026-12-25"
+      ],
+      "rawSchedule": "12.23(수)~12.29(화) ~14:00 12.25(금) 제외",
+      "description": "대학: 연세대\n전형: 논술전형, 기회균형, 활동우수형(자연)\n구분: 충원 합격자 발표\n원문 일정: 12.23(수)~12.29(화) ~14:00 12.25(금) 제외\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "3de919c783606a1a79341781",
+      "uid": "3de919c783606a1a79341781@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "KENTECH 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-24",
+      "deadlineDate": "2026-12-24",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.26(토) 10:00",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.26(토) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cbc19e27f23705a7ab76ca08",
+      "uid": "cbc19e27f23705a7ab76ca08@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "경북대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-24",
+      "deadlineDate": "2026-12-24",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "133702b779d46dc509a33f3c",
+      "uid": "133702b779d46dc509a33f3c@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "부산대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-24",
+      "deadlineDate": "2026-12-24",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "3ca795271f74f9aab7af701d",
+      "uid": "3ca795271f74f9aab7af701d@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "서울대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-24",
+      "deadlineDate": "2026-12-24",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목),12.28(월) 14:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목),12.28(월) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "4e3dfc0e6198331cbebdcef0",
+      "uid": "4e3dfc0e6198331cbebdcef0@codex.local",
+      "universityId": "uos",
+      "university": "서울시립대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "서울시립대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [서울시립대]",
+      "admissionDetail": "학생부종합전형Ⅰ(면접형)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-28",
+      "deadlineDate": "2026-12-28",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.28(월)",
+      "description": "대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면접형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.28(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f2daa478d2c16738ff4b7ef3",
+      "uid": "f2daa478d2c16738ff4b7ef3@codex.local",
+      "universityId": "dgist",
+      "university": "DGIST",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "DGIST 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [DGIST]",
+      "admissionDetail": "일반전형, 과학인재전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: DGIST\n전형: 일반전형, 과학인재전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "010cfcb5a084474851f6857c",
+      "uid": "010cfcb5a084474851f6857c@codex.local",
+      "universityId": "gist",
+      "university": "GIST",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "GIST 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [GIST]",
+      "admissionDetail": "일반전형/ 고른/특기자전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: GIST\n전형: 일반전형/ 고른/특기자전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "94850d872a7dfa219e4afdb0",
+      "uid": "94850d872a7dfa219e4afdb0@codex.local",
+      "universityId": "postech",
+      "university": "POSTECH",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "POSTECH 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [POSTECH]",
+      "admissionDetail": "일반전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: POSTECH\n전형: 일반전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "59e700bb85fb423dcf22b80f",
+      "uid": "59e700bb85fb423dcf22b80f@codex.local",
+      "universityId": "konkuk",
+      "university": "건국대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "건국대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [건국대]",
+      "admissionDetail": "학생부종합(KU자기추천)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 건국대\n전형: 학생부종합(KU자기추천)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "9b6c351e81d19afd86de1b00",
+      "uid": "9b6c351e81d19afd86de1b00@codex.local",
+      "universityId": "kookmin",
+      "university": "국민대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "국민대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [국민대]",
+      "admissionDetail": "학생부 종합(국민프런티어)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 국민대\n전형: 학생부 종합(국민프런티어)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f59d553b0e47d9100811e3f9",
+      "uid": "f59d553b0e47d9100811e3f9@codex.local",
+      "universityId": "sogang",
+      "university": "서강대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "서강대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [서강대]",
+      "admissionDetail": "학생부종합전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 서강대\n전형: 학생부종합전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "bcedb466bbbf3169ef41a80f",
+      "uid": "bcedb466bbbf3169ef41a80f@codex.local",
+      "universityId": "seoultech",
+      "university": "서울과기대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "서울과기대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [서울과기대]",
+      "admissionDetail": "학생부종합(학교생활우수자) 학생부종합(창의융합인재)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 서울과기대\n전형: 학생부종합(학교생활우수자) 학생부종합(창의융합인재)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "779b048d61be44e4f391d9ec",
+      "uid": "779b048d61be44e4f391d9ec@codex.local",
+      "universityId": "sungkyunkwan",
+      "university": "성균관대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "성균관대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [성균관대]",
+      "admissionDetail": "학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 성균관대\n전형: 학생부종합(융합 인재, 탐구인재), 학생부종합 (과학인재)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8b2fb590331a7df321549a7b",
+      "uid": "8b2fb590331a7df321549a7b@codex.local",
+      "universityId": "sejong",
+      "university": "세종대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "세종대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [세종대]",
+      "admissionDetail": "학생부종합(세종인재 전형(면접형))",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 세종대\n전형: 학생부종합(세종인재 전형(면접형))\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "f513a47fd24d43c357fa3293",
+      "uid": "f513a47fd24d43c357fa3293@codex.local",
+      "universityId": "ajou",
+      "university": "아주대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "아주대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [아주대]",
+      "admissionDetail": "ACE전형, 첨단융합인재전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화)",
+      "description": "대학: 아주대\n전형: ACE전형, 첨단융합인재전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "b51cb881b646b8a2889462fe",
+      "uid": "b51cb881b646b8a2889462fe@codex.local",
+      "universityId": "chung-ang",
+      "university": "중앙대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "중앙대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [중앙대]",
+      "admissionDetail": "학생부종합(융합형), 학생부종합(탐구형)",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 중앙대\n전형: 학생부종합(융합형), 학생부종합(탐구형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "8bb9f2924481f93e89eedb24",
+      "uid": "8bb9f2924481f93e89eedb24@codex.local",
+      "universityId": "hanyang",
+      "university": "한양대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "한양대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [한양대]",
+      "admissionDetail": "학생부종합 (면접형), 논술전형",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": true,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목)~ 12.29(화) 18:00",
+      "description": "대학: 한양대\n전형: 학생부종합 (면접형), 논술전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "e2dafaa31fb7d31726b753c0",
+      "uid": "e2dafaa31fb7d31726b753c0@codex.local",
+      "universityId": "kentech",
+      "university": "KENTECH",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "KENTECH 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [KENTECH]",
+      "admissionDetail": "학생부종합",
+      "startDate": "2026-12-26",
+      "endDate": "2026-12-26",
+      "deadlineDate": "2026-12-26",
+      "isDateRange": false,
+      "timeLabels": [
+        "10:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.26(토) 10:00",
+      "description": "대학: KENTECH\n전형: 학생부종합\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.26(토) 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "507b65fe244b388d0cc54163",
+      "uid": "507b65fe244b388d0cc54163@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "경북대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-27",
+      "deadlineDate": "2026-12-27",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "0e9d79e967089f84489ce68f",
+      "uid": "0e9d79e967089f84489ce68f@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "부산대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-27",
+      "deadlineDate": "2026-12-27",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "496baffa48c7d046c163eaec",
+      "uid": "496baffa48c7d046c163eaec@codex.local",
+      "universityId": "snu",
+      "university": "서울대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "서울대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [서울대]",
+      "admissionDetail": "일반전형, 기회균형",
+      "startDate": "2026-12-28",
+      "endDate": "2026-12-28",
+      "deadlineDate": "2026-12-28",
+      "isDateRange": false,
+      "timeLabels": [
+        "14:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목),12.28(월) 14:00",
+      "description": "대학: 서울대\n전형: 일반전형, 기회균형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목),12.28(월) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "c8042838973df93fb4c792b5",
+      "uid": "c8042838973df93fb4c792b5@codex.local",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "UNIST 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [UNIST]",
+      "admissionDetail": "일반전형, 탐구우수전형, 그릿인재전형",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "~12.29(화) 18:00",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 충원 합격자 발표\n원문 일정: ~12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "794796f4a6829eeccc573ba0",
+      "uid": "794796f4a6829eeccc573ba0@codex.local",
+      "universityId": "kyungpook",
+      "university": "경북대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "경북대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [경북대]",
+      "admissionDetail": "학생부종합(일반학생전형)",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 경북대\n전형: 학생부종합(일반학생전형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6db18375df3bc903c87d04de",
+      "uid": "6db18375df3bc903c87d04de@codex.local",
+      "universityId": "kyung-hee",
+      "university": "경희대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "경희대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [경희대]",
+      "admissionDetail": "학생부종합(네오르네상스)",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "~12.29(화) 18:00",
+      "description": "대학: 경희대\n전형: 학생부종합(네오르네상스)\n구분: 충원 합격자 발표\n원문 일정: ~12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "4fca1987eee3eb87b1c5bcc8",
+      "uid": "4fca1987eee3eb87b1c5bcc8@codex.local",
+      "universityId": "dongguk",
+      "university": "동국대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "동국대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [동국대]",
+      "admissionDetail": "학생부종합(Do Dream)",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "~12.29(화)",
+      "description": "대학: 동국대\n전형: 학생부종합(Do Dream)\n구분: 충원 합격자 발표\n원문 일정: ~12.29(화)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "6bf59f079f8e7f4894dfc332",
+      "uid": "6bf59f079f8e7f4894dfc332@codex.local",
+      "universityId": "pusan",
+      "university": "부산대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "부산대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [부산대]",
+      "admissionDetail": "지역인재전형",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.24(목), 12.27(일), 12.29(화) 18:00까지",
+      "description": "대학: 부산대\n전형: 지역인재전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목), 12.27(일), 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "ffdd66af318eda72e557d646",
+      "uid": "ffdd66af318eda72e557d646@codex.local",
+      "universityId": "ewha",
+      "university": "이화여대",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "이화여대 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [이화여대]",
+      "admissionDetail": "미래인재전형(서류형), 미래인재전형(면접형)",
+      "startDate": "2026-12-29",
+      "endDate": "2026-12-29",
+      "deadlineDate": "2026-12-29",
+      "isDateRange": false,
+      "timeLabels": [
+        "18:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "~12.29(화)18:00",
+      "description": "대학: 이화여대\n전형: 미래인재전형(서류형), 미래인재전형(면접형)\n구분: 충원 합격자 발표\n원문 일정: ~12.29(화)18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
+      "id": "cdabfb4fa174f2d36e07636b",
+      "uid": "cdabfb4fa174f2d36e07636b@codex.local",
+      "universityId": "kaist",
+      "university": "KAIST",
+      "categoryId": "additional-result",
+      "category": "충원 합격자 발표",
+      "sourceCategory": "충원 합격자 발표",
+      "title": "KAIST 충원 합격자 발표",
+      "taggedTitle": "[충원 합격자 발표] [KAIST]",
+      "admissionDetail": "창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템",
+      "startDate": "2027-01-12",
+      "endDate": "2027-01-15",
+      "deadlineDate": "2027-01-15",
+      "isDateRange": true,
+      "timeLabels": [],
+      "excludedDates": [],
+      "rawSchedule": "최종합격자 추가서류 제출 2027.1.12.(화)~1.15(금)",
+      "description": "대학: KAIST\n전형: 창의도전전형, 일반전형/ 고른기회/특기자/ 반도체시스템\n구분: 충원 합격자 발표\n원문 일정: 최종합격자 추가서류 제출 2027.1.12.(화)~1.15(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
+    }
+  ],
+  "admissionsTable": {
+    "title": "2027년 대입수시모집 전형일정",
+    "notice": "일자 변경으로 차이가 있을 수 있으니 반드시 대학 홈페이지에서 확인하시기 바랍니다. 참고용으로만 활용해 주세요.",
+    "rowCount": 37,
+    "universityOrder": [
+      "서울대",
+      "KAIST",
+      "POSTECH",
+      "GIST",
+      "UNIST",
+      "DGIST",
+      "KENTECH",
+      "연세대",
+      "고려대",
+      "성균관대",
+      "한양대",
+      "서강대",
+      "이화여대",
+      "중앙대",
+      "경희대",
+      "서울시립대",
+      "건국대",
+      "동국대",
+      "서울과기대",
+      "국민대",
+      "세종대",
+      "아주대",
+      "부산대",
+      "경북대"
+    ],
+    "pages": [
+      {
+        "page": 1,
+        "columnKeys": [
+          "university",
+          "admissionType",
+          "application",
+          "essay",
+          "recommendation",
+          "documents",
+          "firstResult",
+          "interview",
+          "finalResult",
+          "additionalResult"
+        ],
+        "columns": [
+          {
+            "key": "university",
+            "label": "대학"
+          },
+          {
+            "key": "admissionType",
+            "label": "입학전형"
+          },
+          {
+            "key": "application",
+            "label": "지원서 접수"
+          },
+          {
+            "key": "essay",
+            "label": "자소서 입력"
+          },
+          {
+            "key": "recommendation",
+            "label": "추천서 입력"
+          },
+          {
+            "key": "documents",
+            "label": "서류 제출"
+          },
+          {
+            "key": "firstResult",
+            "label": "1차 발표"
+          },
+          {
+            "key": "interview",
+            "label": "면접 및 구술"
+          },
+          {
+            "key": "finalResult",
+            "label": "합격자 발표"
+          },
+          {
+            "key": "additionalResult",
+            "label": "충원 합격자 발표"
+          }
+        ],
+        "rows": [
+          {
+            "id": "page-1-row-1",
+            "universityId": "snu",
+            "university": "서울대",
+            "cells": {
+              "university": {
+                "text": "서울대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "일반전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.9(수)\n18:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.7(월)~9.10(목)\n18:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "11.20(금)\n18:00",
+                "rowSpan": 2
+              },
+              "interview": {
+                "text": "11.27(금)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 18:00",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목),12.28(월)\n14:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-2",
+            "universityId": "snu",
+            "university": "서울대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "기회균형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": null,
+              "interview": {
+                "text": "12.4(금)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-3",
+            "universityId": "kaist",
+            "university": "KAIST",
+            "cells": {
+              "university": {
+                "text": "KAIST",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "창의도전전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.1(화)~9.9(수)\n18:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "9.1(화)~9.9(수)\n18:00",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "9.10(목)~9.18(금)\n18:00",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.1(화)~9.9(수)\n18:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "10.12(월) 10:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "최종합격자 추가서류\n제출\n2027.1.12.(화)~1.15(금)",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-4",
+            "universityId": "kaist",
+            "university": "KAIST",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "일반전형/\n고른기회/특기자/\n반도체시스템",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.11(수)\n10:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.26(목)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 10:00",
+                "rowSpan": 1
+              },
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-5",
+            "universityId": "postech",
+            "university": "POSTECH",
+            "cells": {
+              "university": {
+                "text": "POSTECH",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "일반전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.9(수)\n18:00",
+                "rowSpan": 1
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 1
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.1(화)~9.11(금)\n우편 소인 유효",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.20(금)\n10:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.28(토)\n11.29(일)\n반도체",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 10:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-1-row-6",
+            "universityId": "gist",
+            "university": "GIST",
+            "cells": {
+              "university": {
+                "text": "GIST",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "일반전형/\n고른/특기자전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금)\n18:00",
+                "rowSpan": 1
+              },
+              "essay": {
+                "text": "9.7(월)~9.11(금)\n18:00",
+                "rowSpan": 1
+              },
+              "recommendation": {
+                "text": "9.7(월)~9.11(금)\n18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.7(월)~9.11(금)\n18:00 소인 유효",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "10.15(목)\n18:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "10.22(목)~\n10.23(금)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 18:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-1-row-7",
+            "universityId": "unist",
+            "university": "UNIST",
+            "cells": {
+              "university": {
+                "text": "UNIST",
+                "rowSpan": 3
+              },
+              "admissionType": {
+                "text": "일반전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.3(목)~9.10(목)\n18:00",
+                "rowSpan": 3
+              },
+              "essay": {
+                "text": "9.3(목)~9.11(금)\n18:00",
+                "rowSpan": 3
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.3(목)~9.11(금)\n18:00 온라인(PDF\n스캔본)",
+                "rowSpan": 3
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 이전",
+                "rowSpan": 3
+              },
+              "additionalResult": {
+                "text": "~12.29(화) 18:00",
+                "rowSpan": 3
+              }
+            }
+          },
+          {
+            "id": "page-1-row-8",
+            "universityId": "unist",
+            "university": "UNIST",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "탐구우수전형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.4(수)",
+                "rowSpan": 2
+              },
+              "interview": {
+                "text": "11.7(토)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-9",
+            "universityId": "unist",
+            "university": "UNIST",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "그릿인재전형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": {
+                "text": "9.3(목)~9.11(금)\n18:00",
+                "rowSpan": 1
+              },
+              "documents": null,
+              "firstResult": null,
+              "interview": {
+                "text": "11.8(일)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-10",
+            "universityId": "dgist",
+            "university": "DGIST",
+            "cells": {
+              "university": {
+                "text": "DGIST",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "일반전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.3(목)~9.10(목)\n18:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "9.3(목)~9.10(목)\n18:00",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "9.3(목)~9.16(수)\n18:00 학교장추천",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.4(목)~9.10(목)\n18:00\n온라인(고른)",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-11",
+            "universityId": "dgist",
+            "university": "DGIST",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "과학인재전형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.10(월)\n14:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.25(수)~\n11.27(금)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-12",
+            "universityId": "kentech",
+            "university": "KENTECH",
+            "cells": {
+              "university": {
+                "text": "KENTECH",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금)\n18:00",
+                "rowSpan": 1
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 1
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.7(월)~9.14(월)\n18:00 소인 유효",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.20(금)\n18:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.30.(월)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목), 12.26(토)\n10:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-1-row-13",
+            "universityId": "yonsei",
+            "university": "연세대",
+            "cells": {
+              "university": {
+                "text": "연세대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "논술전형,\n기회균형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.9(수)\n17:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.7(월)~9.9(수)\n17:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "기:10.26.(월)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "논술:10.10(토)\n기균:10.31(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.23(수)~12.29(화)\n~14:00\n12.25(금) 제외",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-14",
+            "universityId": "yonsei",
+            "university": "연세대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "활동우수형(자연)",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.16(월)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.22(일)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-15",
+            "universityId": "korea",
+            "university": "고려대",
+            "cells": {
+              "university": {
+                "text": "고려대",
+                "rowSpan": 3
+              },
+              "admissionType": {
+                "text": "계열적합전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.9(수)\n17:00",
+                "rowSpan": 3
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 3
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 3
+              },
+              "documents": {
+                "text": "9.7(월)~9.9(수)\n18:00\n9.10(목) 소인\n유효",
+                "rowSpan": 3
+              },
+              "firstResult": {
+                "text": "10.30(금)\n17:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.8(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 17:00",
+                "rowSpan": 3
+              },
+              "additionalResult": {
+                "text": "12.23(수)~12.29(화)\n~14:00\n12.24~25 제외",
+                "rowSpan": 3
+              }
+            }
+          },
+          {
+            "id": "page-1-row-16",
+            "universityId": "korea",
+            "university": "고려대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "고른기회",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "10.23 (금)\n17:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "10.31(토)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-17",
+            "universityId": "korea",
+            "university": "고려대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "논술",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.17(화)\n17:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "자연 11.21(토)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-18",
+            "universityId": "sungkyunkwan",
+            "university": "성균관대",
+            "cells": {
+              "university": {
+                "text": "성균관대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "학생부종합(융합\n인재, 탐구인재)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금)\n18:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.8(화)~9.12(토)\n14:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 이전",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-19",
+            "universityId": "sungkyunkwan",
+            "university": "성균관대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "학생부종합\n(과학인재)",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "10.27(화)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.1(일)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-1-row-20",
+            "universityId": "hanyang",
+            "university": "한양대",
+            "cells": {
+              "university": {
+                "text": "한양대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "학생부종합\n(면접형)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금)\n18:00",
+                "rowSpan": 2
+              },
+              "essay": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "recommendation": {
+                "text": "",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.8(화)~9.14(토)\n온라인 pdf",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "11.13.(금)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.22.(일)\n의대 12.5(토)\n사범 12.6(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-1-row-21",
+            "universityId": "hanyang",
+            "university": "한양대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "논술전형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "essay": null,
+              "recommendation": null,
+              "documents": null,
+              "firstResult": {
+                "text": "",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.29(일)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "columnKeys": [
+          "university",
+          "admissionType",
+          "application",
+          "documents",
+          "firstResult",
+          "interview",
+          "finalResult",
+          "additionalResult"
+        ],
+        "columns": [
+          {
+            "key": "university",
+            "label": "대학"
+          },
+          {
+            "key": "admissionType",
+            "label": "입학전형"
+          },
+          {
+            "key": "application",
+            "label": "지원서 접수"
+          },
+          {
+            "key": "documents",
+            "label": "서류 제출"
+          },
+          {
+            "key": "firstResult",
+            "label": "1차 발표"
+          },
+          {
+            "key": "interview",
+            "label": "면접 및 구술"
+          },
+          {
+            "key": "finalResult",
+            "label": "합격자 발표"
+          },
+          {
+            "key": "additionalResult",
+            "label": "충원 합격자 발표"
+          }
+        ],
+        "rows": [
+          {
+            "id": "page-2-row-1",
+            "universityId": "sogang",
+            "university": "서강대",
+            "cells": {
+              "university": {
+                "text": "서강대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.8(화)~9.15(화) 18:00\n온라인 pdf",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 17:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-2",
+            "universityId": "ewha",
+            "university": "이화여대",
+            "cells": {
+              "university": {
+                "text": "이화여대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "미래인재전형(서류형)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.10(목) 17:00",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.8(화)~9.11(목) 17:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.17(목)",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "~12.29(화)18:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-2-row-3",
+            "universityId": "ewha",
+            "university": "이화여대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "미래인재전형(면접형)",
+                "rowSpan": 1
+              },
+              "application": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.12(목)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.22(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.3(목)",
+                "rowSpan": 1
+              },
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-2-row-4",
+            "universityId": "chung-ang",
+            "university": "중앙대",
+            "cells": {
+              "university": {
+                "text": "중앙대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "학생부종합(융합형)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 18:00",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "9.8(화)~9.15(화) 16:00",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 14:00",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-2-row-5",
+            "universityId": "chung-ang",
+            "university": "중앙대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "학생부종합(탐구형)",
+                "rowSpan": 1
+              },
+              "application": null,
+              "documents": null,
+              "firstResult": {
+                "text": "11.26(목) 14:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "12.5(토)~6(일)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-2-row-6",
+            "universityId": "kyung-hee",
+            "university": "경희대",
+            "cells": {
+              "university": {
+                "text": "경희대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(네오르네상스)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.8(화)~9.15(화) 17:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.25.(수) 18:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "12.5(토)~6(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "~12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-7",
+            "universityId": "uos",
+            "university": "서울시립대",
+            "cells": {
+              "university": {
+                "text": "서울시립대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합전형Ⅰ(면접형)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.10(목) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.7(월)~9.11(금) 소인\n유효",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.20(금)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.29(일)\n논술 10.3(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.28(월)",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-8",
+            "universityId": "konkuk",
+            "university": "건국대",
+            "cells": {
+              "university": {
+                "text": "건국대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(KU자기추천)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.8(화)~9.15(화) 17:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.20(금)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "12.5(토)~6(일)\n논술 11.21(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-9",
+            "universityId": "dongguk",
+            "university": "동국대",
+            "cells": {
+              "university": {
+                "text": "동국대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(Do Dream)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.9(수)~9.11(금) 17:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.9(수)~9.14(월) 소인\n유효",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.13.(금)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "12.11(금)~12.13(일)\n논술 11.22(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "~12.29(화)",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-10",
+            "universityId": "seoultech",
+            "university": "서울과기대",
+            "cells": {
+              "university": {
+                "text": "서울과기대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(학교생활우수자)\n학생부종합(창의융합인재)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.7(월)~9.17(목) 17:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.20(금) 14:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "학우, 창융\n11.28.(토)\n기균 11.29(일)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 14:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-11",
+            "universityId": "kookmin",
+            "university": "국민대",
+            "cells": {
+              "university": {
+                "text": "국민대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부 종합(국민프런티어)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "~9.15(화) 18:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.17.(화) 14:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.21.(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 17:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-12",
+            "universityId": "sejong",
+            "university": "세종대",
+            "cells": {
+              "university": {
+                "text": "세종대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(세종인재\n전형(면접형))",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.8(화)~9.14(월) 18:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "11.13(금)",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "11.21.(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 17:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화) 18:00",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-13",
+            "universityId": "ajou",
+            "university": "아주대",
+            "cells": {
+              "university": {
+                "text": "아주대",
+                "rowSpan": 2
+              },
+              "admissionType": {
+                "text": "ACE전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금) 18:00",
+                "rowSpan": 2
+              },
+              "documents": {
+                "text": "~9.15(화) 소인 유효",
+                "rowSpan": 2
+              },
+              "firstResult": {
+                "text": "11.17(화)",
+                "rowSpan": 2
+              },
+              "interview": {
+                "text": "11.22(일)\n공대, 첨단ICT\n11.28(토)\n소프트웨어, 자연대",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금)",
+                "rowSpan": 2
+              },
+              "additionalResult": {
+                "text": "12.24(목)~\n12.29(화)",
+                "rowSpan": 2
+              }
+            }
+          },
+          {
+            "id": "page-2-row-14",
+            "universityId": "ajou",
+            "university": "아주대",
+            "cells": {
+              "university": null,
+              "admissionType": {
+                "text": "첨단융합인재전형",
+                "rowSpan": 1
+              },
+              "application": null,
+              "documents": null,
+              "firstResult": null,
+              "interview": {
+                "text": "11.21(토)",
+                "rowSpan": 1
+              },
+              "finalResult": null,
+              "additionalResult": null
+            }
+          },
+          {
+            "id": "page-2-row-15",
+            "universityId": "pusan",
+            "university": "부산대",
+            "cells": {
+              "university": {
+                "text": "부산대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "지역인재전형",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.8(화)~9.11(금) 17:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.8(화)~9.14(월)",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "12.1(화) 16:00",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "12.5(토)",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 16:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목),\n12.27(일),\n12.29(화)\n18:00까지",
+                "rowSpan": 1
+              }
+            }
+          },
+          {
+            "id": "page-2-row-16",
+            "universityId": "kyungpook",
+            "university": "경북대",
+            "cells": {
+              "university": {
+                "text": "경북대",
+                "rowSpan": 1
+              },
+              "admissionType": {
+                "text": "학생부종합(일반학생전형)",
+                "rowSpan": 1
+              },
+              "application": {
+                "text": "9.7(월)~9.11(금) 18:00",
+                "rowSpan": 1
+              },
+              "documents": {
+                "text": "9.7(월)~9.16(수) 18:00",
+                "rowSpan": 1
+              },
+              "firstResult": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "interview": {
+                "text": "X",
+                "rowSpan": 1
+              },
+              "finalResult": {
+                "text": "12.18(금) 16:00",
+                "rowSpan": 1
+              },
+              "additionalResult": {
+                "text": "12.24(목),\n12.27(일),\n12.29(화)\n18:00까지",
+                "rowSpan": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

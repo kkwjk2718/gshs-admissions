@@ -1,0 +1,3029 @@
+BEGIN:VCALENDAR
+PRODID:-//GSHS//Admissions Schedule 2027//KO
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:입시_일정
+X-WR-TIMEZONE:Asia/Seoul
+BEGIN:VEVENT
+UID:a92286bd41f01698dc2733cf@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260910
+SUMMARY:[원서 접수] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\, 일반전형/ 고
+ 른기회/특기자/ 반도체시스템\n구분: 원서 접수\n원문 
+ 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:원서 접수,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3d1c3af3b4586af9bee025c2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260910
+SUMMARY:[서류 제출] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\, 일반전형/ 고
+ 른기회/특기자/ 반도체시스템\n구분: 서류 제출\n원문 
+ 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:서류 제출,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:331f5082730b4a8456cc5ee6@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260910
+SUMMARY:[자소서 입력] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\, 일반전형/ 고
+ 른기회/특기자/ 반도체시스템\n구분: 자소서 입력\n원
+ 문 일정: 9.1(화)~9.9(수) 18:00\n안내: 참고용 자료이며 일
+ 정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 
+ 확인하세요.
+CATEGORIES:자소서 입력,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:자소서 입력
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:essay
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7a9f0ae094391748b5b04da7@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260912
+SUMMARY:[서류 제출] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 서류 제출\
+ n원문 일정: 9.1(화)~9.11(금) 우편 소인 유효\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f950ae703c633f47fa4e8304@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260911
+SUMMARY:[원서 접수] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 원서 접수\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ec5a40c27a1b5c6847cd72f2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260911
+SUMMARY:[자소서 입력] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 자소서 입력\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:자소서 입력,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:자소서 입력
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:essay
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dac91d1380bbbe80304ad390@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260911
+SUMMARY:[원서 접수] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
+ 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목)~9.10(
+ 목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aa56c6593953f6128f0bf680@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260912
+SUMMARY:[서류 제출] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
+ 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목)~9.11(
+ 금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이며 일
+ 정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 
+ 확인하세요.
+CATEGORIES:서류 제출,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:22b380a941ada966783dc916@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260912
+SUMMARY:[자소서 입력] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
+ 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목)~9.
+ 11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
+ 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:자소서 입력,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:자소서 입력
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:essay
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:067d13b36c2238837f54cac4@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260912
+SUMMARY:[추천서 입력] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 그릿인재전형\n구분: 추천서 
+ 입력\n원문 일정: 9.3(목)~9.11(금) 18:00\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:추천서 입력,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:추천서 입력
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:recommendation
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f2ab5251582dc018483769fc@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260917
+SUMMARY:[추천서 입력] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 추천서 입력\n원문 일정: 9.3(목)~9.16(수) 18:00 학교장
+ 추천\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:추천서 입력,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:추천서 입력
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:recommendation
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5cc035ef36f1787a02df9a08@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260911
+SUMMARY:[서류 제출] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 서류 제출\n원문 일정: 9.4(목)~9.10(목) 18:00 온라인(
+ 고른)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므
+ 로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e71bd9c9186bb0228f0da4f4@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[원서 접수] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 원서 접수\
+ n원문 일정: 9.7(월)~9.9(수) 18:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:원서 접수,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cde173542bc9b429ebf609a4@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[원서 접수] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\, 고른기회\
+ , 논술\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 17:00\
+ n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당
+  대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1d5016237d21ee7a15cf4496@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[서류 제출] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\, 고른기회\
+ , 논술\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9(수) 18:00 
+ 9.10(목) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔
+  수 있으므로 해당 대학 홈페이지에서 최종 확인하세
+ 요.
+CATEGORIES:서류 제출,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1e9be7397484c572890a8cf5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[원서 접수] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 원서 접수\n원문 일정: 9.7(월)~9.9(수) 18:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c969a9154b0bc1d175911904@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[원서 접수] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\, 활
+ 동우수형(자연)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.9
+ (수) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1bca2feb1eb191bc6f1697bf@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260910
+SUMMARY:[서류 제출] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\, 활
+ 동우수형(자연)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9
+ (수) 17:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a7475d04ea6518b30e24a1d3@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260911
+SUMMARY:[서류 제출] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 서류 제출\n원문 일정: 9.7(월)~9.10(목) 18:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:12ce26b97dd6dd1c10cc6b82@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260911
+SUMMARY:[원서 접수] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.10(목) 18:00\
+ n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당
+  대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a8a0c794cfc29a413476ac27@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9d45ed142cd24a6d28bae1e6@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[서류 제출] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 서류 제출\n원문 일정: 9.7(월)~9.11(금) 18:00 소인 
+ 유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:72cd6c75cd10cf0e50453804@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[자소서 입력] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 자소서 입력\n원문 일정: 9.7(월)~9.11(금) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:자소서 입력,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:자소서 입력
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:essay
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5f376346964d375edda304d4@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[추천서 입력] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 추천서 입력\n원문 일정: 9.7(월)~9.11(금) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:추천서 입력,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:추천서 입력
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:recommendation
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb21981137a902948f72322f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 원서 접
+ 수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:원서 접수,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1cc9e7f3ee67ec7de01540da@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:09b6a17ed9d62f51963118e5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n
+ 안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 
+ 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2b00ff51f912f7f48b8e6755@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 원서 접수\n
+ 원문 일정: 9.7(월)~9.11(금) 18:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:원서 접수,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8ee1c08fd9660561cc5cfecf@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[서류 제출] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 서류 제출\n원문 일정: 9.7(월)~9.11(금) 소인
+  유효\n안내: 참고용 자료이며 일정이 바뀔 수 있으므
+ 로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ce0d081a89afc858d08eb27b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\, 첨단융합인재전
+ 형\n구분: 원서 접수\n원문 일정: 9.7(월)~9.11(금) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:efdb9e9aa0719c322853dfa4@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260915
+SUMMARY:[서류 제출] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 서류 제
+ 출\n원문 일정: 9.7(월)~9.14(월) 18:00 소인 유효\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:21a674f49093f1ebec922c69@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260917
+SUMMARY:[서류 제출] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 서류 제출\n원문 일정: 9.7(월)~9.16(수) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:085d9cd559d3e277fd2d1982@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260918
+SUMMARY:[서류 제출] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 서류 제출\n
+ 원문 일정: 9.7(월)~9.17(목) 17:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:서류 제출,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:89fc7b8fa12781b66f72590d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260911
+SUMMARY:[원서 접수] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(서류형)\,
+  미래인재전형(면접형)\n구분: 원서 접수\n원문 일정: 9.
+ 8(화)~9.10(목) 17:00\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:원서 접수,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6155d424aa51bc22cc06fe75@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4f6ce87eee20e665f95497b2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:25ae2a47696ff1e855880e95@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 원서
+  접수\n원문 일정: 9.8(화)~9.11(금) 17:00\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:원서 접수,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a5dcdc7d86cfae875940793@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [서강대]
+DESCRIPTION:대학: 서강대\n전형: 학생부종합전형\n구분: 원
+ 서 접수\n원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:원서 접수,서강대
+X-GSHS-UNIVERSITY:서강대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:sogang
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:09c3a0f8eca765bf181b7abd@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합(융합 인재\,
+  탐구인재)\, 학생부종합 (과학인재)\n구분: 원서 접수\n
+ 원문 일정: 9.8(화)~9.11(금) 18:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:원서 접수,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2d02593ecea9def585a43dba@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금
+ ) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므
+ 로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9ee2e9bd3252040721eec6c5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[서류 제출] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(서류형)\,
+  미래인재전형(면접형)\n구분: 서류 제출\n원문 일정: 9.
+ 8(화)~9.11(목) 17:00\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:서류 제출,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cf4c4453c9f3f69247ac2825@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(융합형)\, 학
+ 생부종합(탐구형)\n구분: 원서 접수\n원문 일정: 9.8(화)~
+ 9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
+ 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2df1422f28bb522adf5deb0e@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\, 논
+ 술전형\n구분: 원서 접수\n원문 일정: 9.8(화)~9.11(금) 18:0
+ 0\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bb70c2707f19b1c3eb09cd29@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260913
+SUMMARY:[서류 제출] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합(융합 인재\,
+  탐구인재)\, 학생부종합 (과학인재)\n구분: 서류 제출\n
+ 원문 일정: 9.8(화)~9.12(토) 14:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:서류 제출,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d335d31602a90f4508f7d124@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260915
+SUMMARY:[서류 제출] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 서류
+  제출\n원문 일정: 9.8(화)~9.14(월)\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
+CATEGORIES:서류 제출,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8f1339214984b7d32276c24d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260915
+SUMMARY:[서류 제출] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 서류 제출\n원문 일정: 9.8(화)~9.14(월
+ ) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므
+ 로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8247c06b8e7e4773417344bf@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260915
+SUMMARY:[서류 제출] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\, 논
+ 술전형\n구분: 서류 제출\n원문 일정: 9.8(화)~9.14(토) 온
+ 라인 pdf\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aa5e797d28309de7479f1882@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 17:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:71dc19bbb27900ba4720786d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 서류 제출\n원문 일정: 9.8(화)~9.15(화) 17:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:92a2038e14fb1a429ab09450@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [서강대]
+DESCRIPTION:대학: 서강대\n전형: 학생부종합전형\n구분: 서
+ 류 제출\n원문 일정: 9.8(화)~9.15(화) 18:00 온라인 pdf\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,서강대
+X-GSHS-UNIVERSITY:서강대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:sogang
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:892ba18bd191efd9bc0cc092@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(융합형)\, 학
+ 생부종합(탐구형)\n구분: 서류 제출\n원문 일정: 9.8(화)~
+ 9.15(화) 16:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
+ 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6d224e72852f64ab9c8673b7@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260912
+SUMMARY:[원서 접수] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  원서 접수\n원문 일정: 9.9(수)~9.11(금) 17:00\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:원서 접수,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:원서 접수
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7d7101f244cfffe1a40fed1b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260915
+SUMMARY:[서류 제출] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  서류 제출\n원문 일정: 9.9(수)~9.14(월) 소인 유효\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eb3a9a0e14c15f4c97821f0f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[서류 제출] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\, 고른기회\
+ , 논술\n구분: 서류 제출\n원문 일정: 9.7(월)~9.9(수) 18:00 
+ 9.10(목) 소인 유효\n안내: 참고용 자료이며 일정이 바뀔
+  수 있으므로 해당 대학 홈페이지에서 최종 확인하세
+ 요.
+CATEGORIES:서류 제출,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:06abe16601fa990a3c01410d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260919
+SUMMARY:[추천서 입력] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\, 일반전형/ 고
+ 른기회/특기자/ 반도체시스템\n구분: 추천서 입력\n원
+ 문 일정: 9.10(목)~9.18(금) 18:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:추천서 입력,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:추천서 입력
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:recommendation
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:56b09322bee5aa4f4c08c2c6@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 서류 제출\n원문 일정: ~9.15(화) 18:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:66fd5ce2be1dfe387b9616b7@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[서류 제출] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\, 첨단융합인재전
+ 형\n구분: 서류 제출\n원문 일정: ~9.15(화) 소인 유효\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:서류 제출,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:서류 제출
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:documents
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:63647a6517715a6240f5105f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:[면접] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 면접\n원문 일정: 11.29(일) 논술 10.3(토)\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:798af3471c1e1f7580fd2c57@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:[면접] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\n구
+ 분: 면접\n원문 일정: 논술:10.10(토) 기균:10.31(토)\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:85dc703d7b994ff6346409b2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[합격자 발표] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\n구분: 합격자 
+ 발표\n원문 일정: 10.12(월) 10:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:합격자 발표,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dc18dd0ecb31bf5a3fb7abcc@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:[1차 발표] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 1차 발표\n원문 일정: 10.15(목) 18:00\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:1차 발표,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d22bf6589b689a0fe978c778@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+SUMMARY:[면접] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 면접\n원문 일정: 10.22(목)~ 10.23(금)\n안내: 참고용
+  자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:면접,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:50a875b361cf05d5f0708bda@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[1차 발표] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 고른기회\n구분: 1차 발표\
+ n원문 일정: 10.23 (금) 17:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:1차 발표,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7881e0da3906f66b617d8c6b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[1차 발표] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\n구
+ 분: 1차 발표\n원문 일정: 기:10.26.(월)\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:1차 발표,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:91fd46f821edfc30723c5bce@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[1차 발표] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합 (과학인재)\
+ n구분: 1차 발표\n원문 일정: 10.27(화)\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:1차 발표,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:17ec02eb67e293a3c1ae8348@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[1차 발표] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\n구분: 1차 
+ 발표\n원문 일정: 10.30(금) 17:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:1차 발표,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e9fa936bf7be0afe3809ae7b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:[면접] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 고른기회\n구분: 면접\n원
+ 문 일정: 10.31(토)\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:면접,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7a7852a0c4b7c0e4d0701286@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:[면접] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\n구
+ 분: 면접\n원문 일정: 논술:10.10(토) 기균:10.31(토)\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5daa2110d01af66b8b5fa63d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[면접] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합 (과학인재)\
+ n구분: 면접\n원문 일정: 11.1(일)\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
+CATEGORIES:면접,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:948f25d88f27773950585a32@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[1차 발표] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 탐구우수전형\, 그릿인재전
+ 형\n구분: 1차 발표\n원문 일정: 11.4(수)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:1차 발표,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:485c53e470216a79e60a53bd@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:[면접] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 탐구우수전형\n구분: 면접\n
+ 원문 일정: 11.7(토)\n안내: 참고용 자료이며 일정이 바
+ 뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하
+ 세요.
+CATEGORIES:면접,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2427ff9637f26be6e395f3fa@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[면접] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 그릿인재전형\n구분: 면접\n
+ 원문 일정: 11.8(일)\n안내: 참고용 자료이며 일정이 바
+ 뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하
+ 세요.
+CATEGORIES:면접,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6e866c921509b934d2d1b25a@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[면접] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\n구분: 면접
+ \n원문 일정: 11.8(일)\n안내: 참고용 자료이며 일정이 바
+ 뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하
+ 세요.
+CATEGORIES:면접,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dd01881fb5806d236674bb88@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1차 발표] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 과학인재전형\n구분: 1차 발
+ 표\n원문 일정: 11.10(월) 14:00\n안내: 참고용 자료이며 일
+ 정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 
+ 확인하세요.
+CATEGORIES:1차 발표,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cc11e20cdf735aba754a8268@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[1차 발표] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 
+ 반도체시스템\n구분: 1차 발표\n원문 일정: 11.11(수) 10:00
+ \n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:1차 발표,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a3ac73e931d17bda76e004b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[1차 발표] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(면접형)\n
+ 구분: 1차 발표\n원문 일정: 11.12(목)\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:1차 발표,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:77d31288feba1a8c0c380924@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[1차 발표] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  1차 발표\n원문 일정: 11.13.(금)\n안내: 참고용 자료이며
+  일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:1차 발표,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:002881e8668d6ef2efbe3fae@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[1차 발표] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 1차 발표\n원문 일정: 11.13(금)\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:1차 발표,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1aaf6ea63a7d6baca41ab862@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[1차 발표] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\n구
+ 분: 1차 발표\n원문 일정: 11.13.(금)\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:1차 발표,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f97b34dda035712c5d1665f2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[1차 발표] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 활동우수형(자연)\n구분: 1
+ 차 발표\n원문 일정: 11.16(월)\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:1차 발표,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:18cd9d3e6a6f9efef52cc237@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1차 발표] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 논술\n구분: 1차 발표\n원
+ 문 일정: 11.17(화) 17:00\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:1차 발표,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d1227a1042c63a0fd81a6fe0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1차 발표] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 1차 발표\n원문 일정: 11.17.(화) 14:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:1차 발표,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bda35dcb7bd996716a5608df@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1차 발표] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\, 첨단융합인재전
+ 형\n구분: 1차 발표\n원문 일정: 11.17(화)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:1차 발표,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:25363f268890ab5732607df8@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 1차 발표
+ \n원문 일정: 11.20(금) 18:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:1차 발표,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35a2c71e92e342a5bd4dc99d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 1차 발표\n
+ 원문 일정: 11.20(금) 10:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:1차 발표,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:265dfb735c3f35b64bbce5d5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 1차 발표\n원문 일정: 11.20(금)\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:1차 발표,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8f19d81f933f4447d8335674@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 1차 발표\n원
+ 문 일정: 11.20(금) 14:00\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:1차 발표,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6f7bd10a70a5930ba4ec96a0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 1차 발표\n원문 일정: 11.20(금) 18:00\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:1차 발표,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5ce207eaa47e9ab5a6ffa3ae@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[1차 발표] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 1차 발표\n원문 일정: 11.20(금)\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:1차 발표,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bbed90028617f0e5876b46c5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:[면접] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 면접\n원문 일정: 12.5(토)~6(일) 논술 11.21(토)\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1e2599389275425d62dbd652@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:[면접] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 논술\n구분: 면접\n원문 일
+ 정: 자연 11.21(토)\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:면접,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a2bd15091aff34ff5e0f8f5e@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:[면접] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 면접\n원문 일정: 11.21.(토)\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:면접,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:974f3dd7d248ba19cbc7a70a@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:[면접] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 면접\n원문 일정: 11.21.(토)\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:면접,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:58a771b2f7d88a935a185fa1@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:[면접] [아주대]
+DESCRIPTION:대학: 아주대\n전형: 첨단융합인재전형\n구분: 
+ 면접\n원문 일정: 11.21(토)\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:면접,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:46966c336f3a6d3deb0f7bcc@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[면접] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  면접\n원문 일정: 12.11(금)~12.13(일) 논술 11.22(일)\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0dd2814a2f5b2b5d03e57b62@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[면접] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\n구분: 면접\n원문 
+ 일정: 11.22(일) 공대\, 첨단ICT 11.28(토) 소프트웨어\, 자
+ 연대\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f0119e882109601cfdeeb5b3@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[면접] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 활동우수형(자연)\n구분: 
+ 면접\n원문 일정: 11.22(일)\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:면접,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b54583e2a302eb0a7ffec804@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[면접] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(면접형)\n
+ 구분: 면접\n원문 일정: 11.22(일)\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
+CATEGORIES:면접,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2db091e3f12513156b2c25de@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[면접] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\n구
+ 분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일
+ )\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3442879b970ad7e2a8343e36@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[1차 발표] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 1차 발표\n원문 일정: 11.25.(수) 18:00\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:1차 발표,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b5451c83a60949778e35b7ee@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:[면접] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 과학인재전형\n구분: 면접\n
+ 원문 일정: 11.25(수)~ 11.27(금)\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:면접,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:68c2100014c1c55cb500e8a9@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[면접] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 
+ 반도체시스템\n구분: 면접\n원문 일정: 11.26(목)\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:670acee67c69f123f66d67b3@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[1차 발표] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(탐구형)\n구분
+ : 1차 발표\n원문 일정: 11.26(목) 14:00\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:1차 발표,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b366ac51e4c0a16d1a54d8c0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[면접] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\n구분: 면접\n원
+ 문 일정: 11.27(금)\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:면접,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f9cf2bc081c2856449e527c@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:[면접] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 면접\n원문
+  일정: 11.28(토) 11.29(일) 반도체\n안내: 참고용 자료이며
+  일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:면접,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6fd6eb503dd6436a4f26a723@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:[면접] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 면접\n원문 
+ 일정: 학우\, 창융 11.28.(토) 기균 11.29(일)\n안내: 참고용
+  자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:면접,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:787ac6dd9a4311131d15aa05@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:[면접] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\n구분: 면접\n원문 
+ 일정: 11.22(일) 공대\, 첨단ICT 11.28(토) 소프트웨어\, 자
+ 연대\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4a63f1d16f8eba7b48d4570d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:[면접] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 면접\n원문
+  일정: 11.28(토) 11.29(일) 반도체\n안내: 참고용 자료이며
+  일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:면접,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:51bf5abcfd237b6828fc6d2d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:[면접] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 면접\n원문 
+ 일정: 학우\, 창융 11.28.(토) 기균 11.29(일)\n안내: 참고용
+  자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:면접,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:904e06e84757669e094fe0cb@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:[면접] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 면접\n원문 일정: 11.29(일) 논술 10.3(토)\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ba118d3b1bdb768fdec87101@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:[면접] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 논술전형\n구분: 면접\n원
+ 문 일정: 11.29(일)\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:면접,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:60b1dd6d22549f2caa4a5c53@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[면접] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 면접\n원
+ 문 일정: 11.30.(월)\n안내: 참고용 자료이며 일정이 바뀔
+  수 있으므로 해당 대학 홈페이지에서 최종 확인하세
+ 요.
+CATEGORIES:면접,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:afbc2b8e0bbb51e90ef3b493@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[1차 발표] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 1차 
+ 발표\n원문 일정: 12.1(화) 16:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:1차 발표,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:1차 발표
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:first-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:02ead09950fe7c69d7f971a9@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:[합격자 발표] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(면접형)\n
+ 구분: 합격자 발표\n원문 일정: 12.3(목)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d87d3a3d8a6b136ed85384d1@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[면접] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 기회균형\n구분: 면접\n원
+ 문 일정: 12.4(금)\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:면접,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:07fcf7d99af8a803e8bfea91@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:[면접] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 면접
+ \n원문 일정: 12.5(토)\n안내: 참고용 자료이며 일정이 바
+ 뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하
+ 세요.
+CATEGORIES:면접,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1e8ccc43ef97660a9bc14ff2@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:[면접] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\n구
+ 분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일
+ )\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5ba85c338c49a454bc8f538c@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:[면접] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 면접\n원문 일정: 12.5(토)~6(일) 논술 11.21(토)\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:506cbf4c39d45b1954d02444@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:[면접] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 면접\n원문 일정: 12.5(토)~6(일)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:면접,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e39927f677a2ca76d1565a31@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:[면접] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(탐구형)\n구분
+ : 면접\n원문 일정: 12.5(토)~6(일)\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
+CATEGORIES:면접,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:68fad7f3f7f8b3555c40dffa@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[면접] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\n구
+ 분: 면접\n원문 일정: 11.22.(일) 의대 12.5(토) 사범 12.6(일
+ )\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:078d1c48db89a66250b32957@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[합격자 발표] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 합격자 
+ 발표\n원문 일정: 12.11(금) 18:00\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:합격자 발표,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b13f6693aa8a658583672421@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261214
+SUMMARY:[면접] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  면접\n원문 일정: 12.11(금)~12.13(일) 논술 11.22(일)\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:면접,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:면접
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:interview
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6ccbd8e742da214e55f869d5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:[합격자 발표] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(서류형)\n
+ 구분: 합격자 발표\n원문 일정: 12.17(목)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a135ba6ccc2b16b9b2e8c5b6@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자
+ 료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지
+ 에서 최종 확인하세요.
+CATEGORIES:합격자 발표,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9a1204d28b4faecc1a1b8626@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 합격자 발표\n원문 일정: 12.18(금) 18:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5a63c42d43fb724be83c214e@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 일반전형/ 고른기회/특기자/ 
+ 반도체시스템\n구분: 합격자 발표\n원문 일정: 12.18(금) 
+ 10:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 
+ 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:281591d729b002f3994b56fb@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 합격자 발
+ 표\n원문 일정: 12.18(금) 10:00\n안내: 참고용 자료이며 일
+ 정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 
+ 확인하세요.
+CATEGORIES:합격자 발표,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:478193f50258d43d4c02ce64@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
+ 그릿인재전형\n구분: 합격자 발표\n원문 일정: 12.18(금) 
+ 이전\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c2ab079e13dd1bce4ff7af93@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:94ac4c21413237401143fb81@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 합격자 발표\n원문 일정: 12.18(금) 16:00\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ee57173a1503a524918872bd@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a52d295ecb998ca01522353d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\, 고른기회\
+ , 논술\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f01691ba6210132deb791f8@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:00\n안내:
+  참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:48c02bd4b8e8e72acf8fd961@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  합격자 발표\n원문 일정: 12.18(금)\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:합격자 발표,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c349ba23f4d2fc81355b88ea@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 합격
+ 자 발표\n원문 일정: 12.18(금) 16:00\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
+CATEGORIES:합격자 발표,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:89cae8c0e0c5b065c8d8cb8b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [서강대]
+DESCRIPTION:대학: 서강대\n전형: 학생부종합전형\n구분: 합
+ 격자 발표\n원문 일정: 12.18(금) 17:00\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:합격자 발표,서강대
+X-GSHS-UNIVERSITY:서강대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:sogang
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d2287aecc51ed8543d4b6aaf@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 합격자 발표
+ \n원문 일정: 12.18(금) 14:00\n안내: 참고용 자료이며 일정
+ 이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확
+ 인하세요.
+CATEGORIES:합격자 발표,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aa0073305164d32bc9317faa@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 합격자 발표\n원문 일정: 12.18(금) 18:00\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:24e3b4e56025a8f333c48403@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a18223b059655596c6d796fc@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합(융합 인재\,
+  탐구인재)\, 학생부종합 (과학인재)\n구분: 합격자 발
+ 표\n원문 일정: 12.18(금) 이전\n안내: 참고용 자료이며 
+ 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최
+ 종 확인하세요.
+CATEGORIES:합격자 발표,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0ef8572e4bb24825ca5511a5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 합격자 발표\n원문 일정: 12.18(금) 17:
+ 00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f1f96e3817fdeba35369e161@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\, 첨단융합인재전
+ 형\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:45acdb6bca62809a8a843d0f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\, 활
+ 동우수형(자연)\n구분: 합격자 발표\n원문 일정: 12.18(금
+ )\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d629ffff7911acde362f307f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(융합형)\, 학
+ 생부종합(탐구형)\n구분: 합격자 발표\n원문 일정: 12.18(
+ 금) 14:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5e8c7660bc9478331dc4d247@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[합격자 발표] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\, 논
+ 술전형\n구분: 합격자 발표\n원문 일정: 12.18(금)\n안내: 
+ 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 
+ 홈페이지에서 최종 확인하세요.
+CATEGORIES:합격자 발표,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:합격자 발표
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7ac6bdb61e13792041469be0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [고려대]
+DESCRIPTION:대학: 고려대\n전형: 계열적합전형\, 고른기회\
+ , 논술\n구분: 충원 합격자 발표\n원문 일정: 12.23(수)~12.
+ 29(화) ~14:00 12.24~25 제외\n안내: 참고용 자료이며 일정이
+  바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:충원 합격자 발표,고려대
+X-GSHS-UNIVERSITY:고려대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:korea
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:02775be3be18cb64c9c38edc@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [연세대]
+DESCRIPTION:대학: 연세대\n전형: 논술전형\, 기회균형\, 활
+ 동우수형(자연)\n구분: 충원 합격자 발표\n원문 일정: 12
+ .23(수)~12.29(화) ~14:00 12.25(금) 제외\n안내: 참고용 자료
+ 이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에
+ 서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,연세대
+X-GSHS-UNIVERSITY:연세대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:yonsei
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3de919c783606a1a79341781@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:[충원 합격자 발표] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 충원 합
+ 격자 발표\n원문 일정: 12.24(목)\, 12.26(토) 10:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cbc19e27f23705a7ab76ca08@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:[충원 합격자 발표] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)\, 12.27(
+ 일)\, 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:충원 합격자 발표,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:133702b779d46dc509a33f3c@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:[충원 합격자 발표] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 충원
+  합격자 발표\n원문 일정: 12.24(목)\, 12.27(일)\, 12.29(화) 1
+ 8:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3ca795271f74f9aab7af701d@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:[충원 합격자 발표] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 충원 합격자 발표\n원문 일정: 12.24(목)\,12.28(월) 14:0
+ 0\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4e3dfc0e6198331cbebdcef0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261229
+SUMMARY:[충원 합격자 발표] [서울시립대]
+DESCRIPTION:대학: 서울시립대\n전형: 학생부종합전형Ⅰ(면
+ 접형)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.
+ 28(월)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므
+ 로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,서울시립대
+X-GSHS-UNIVERSITY:서울시립대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:uos
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f2daa478d2c16738ff4b7ef3@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [DGIST]
+DESCRIPTION:대학: DGIST\n전형: 일반전형\, 과학인재전형\n구
+ 분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:0
+ 0\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,DGIST
+X-GSHS-UNIVERSITY:DGIST
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:dgist
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:010cfcb5a084474851f6857c@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [GIST]
+DESCRIPTION:대학: GIST\n전형: 일반전형/ 고른/특기자전형\n
+ 구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 1
+ 8:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 
+ 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,GIST
+X-GSHS-UNIVERSITY:GIST
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:gist
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:94850d872a7dfa219e4afdb0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [POSTECH]
+DESCRIPTION:대학: POSTECH\n전형: 일반전형\n구분: 충원 합격
+ 자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,POSTECH
+X-GSHS-UNIVERSITY:POSTECH
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:postech
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:59e700bb85fb423dcf22b80f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [건국대]
+DESCRIPTION:대학: 건국대\n전형: 학생부종합(KU자기추천)\n
+ 구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 1
+ 8:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 
+ 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,건국대
+X-GSHS-UNIVERSITY:건국대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:konkuk
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9b6c351e81d19afd86de1b00@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [국민대]
+DESCRIPTION:대학: 국민대\n전형: 학생부 종합(국민프런티
+ 어)\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(
+ 화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,국민대
+X-GSHS-UNIVERSITY:국민대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kookmin
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f59d553b0e47d9100811e3f9@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [서강대]
+DESCRIPTION:대학: 서강대\n전형: 학생부종합전형\n구분: 충
+ 원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안
+ 내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대
+ 학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,서강대
+X-GSHS-UNIVERSITY:서강대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:sogang
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bcedb466bbbf3169ef41a80f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [서울과기대]
+DESCRIPTION:대학: 서울과기대\n전형: 학생부종합(학교생활
+ 우수자) 학생부종합(창의융합인재)\n구분: 충원 합격자
+  발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,서울과기대
+X-GSHS-UNIVERSITY:서울과기대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:seoultech
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:779b048d61be44e4f391d9ec@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [성균관대]
+DESCRIPTION:대학: 성균관대\n전형: 학생부종합(융합 인재\,
+  탐구인재)\, 학생부종합 (과학인재)\n구분: 충원 합격
+ 자 발표\n원문 일정: 12.24(목)~ 12.29(화) 18:00\n안내: 참고
+ 용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,성균관대
+X-GSHS-UNIVERSITY:성균관대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:sungkyunkwan
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8b2fb590331a7df321549a7b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [세종대]
+DESCRIPTION:대학: 세종대\n전형: 학생부종합(세종인재 전
+ 형(면접형))\n구분: 충원 합격자 발표\n원문 일정: 12.24(
+ 목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 
+ 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요
+ .
+CATEGORIES:충원 합격자 발표,세종대
+X-GSHS-UNIVERSITY:세종대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:sejong
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f513a47fd24d43c357fa3293@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [아주대]
+DESCRIPTION:대학: 아주대\n전형: ACE전형\, 첨단융합인재전
+ 형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 12.29(
+ 화)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 
+ 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,아주대
+X-GSHS-UNIVERSITY:아주대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:ajou
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b51cb881b646b8a2889462fe@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [중앙대]
+DESCRIPTION:대학: 중앙대\n전형: 학생부종합(융합형)\, 학
+ 생부종합(탐구형)\n구분: 충원 합격자 발표\n원문 일정:
+  12.24(목)~ 12.29(화) 18:00\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:충원 합격자 발표,중앙대
+X-GSHS-UNIVERSITY:중앙대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:chung-ang
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8bb9f2924481f93e89eedb24@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [한양대]
+DESCRIPTION:대학: 한양대\n전형: 학생부종합 (면접형)\, 논
+ 술전형\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)~ 1
+ 2.29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
+ 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,한양대
+X-GSHS-UNIVERSITY:한양대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:hanyang
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e2dafaa31fb7d31726b753c0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:[충원 합격자 발표] [KENTECH]
+DESCRIPTION:대학: KENTECH\n전형: 학생부종합\n구분: 충원 합
+ 격자 발표\n원문 일정: 12.24(목)\, 12.26(토) 10:00\n안내: 참
+ 고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈
+ 페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,KENTECH
+X-GSHS-UNIVERSITY:KENTECH
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kentech
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:507b65fe244b388d0cc54163@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:[충원 합격자 발표] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)\, 12.27(
+ 일)\, 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:충원 합격자 발표,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0e9d79e967089f84489ce68f@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:[충원 합격자 발표] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 충원
+  합격자 발표\n원문 일정: 12.24(목)\, 12.27(일)\, 12.29(화) 1
+ 8:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:496baffa48c7d046c163eaec@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:[충원 합격자 발표] [서울대]
+DESCRIPTION:대학: 서울대\n전형: 일반전형\, 기회균형\n구
+ 분: 충원 합격자 발표\n원문 일정: 12.24(목)\,12.28(월) 14:0
+ 0\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해
+ 당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,서울대
+X-GSHS-UNIVERSITY:서울대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:snu
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c8042838973df93fb4c792b5@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
+ 그릿인재전형\n구분: 충원 합격자 발표\n원문 일정: ~12.
+ 29(화) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
+ 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:794796f4a6829eeccc573ba0@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [경북대]
+DESCRIPTION:대학: 경북대\n전형: 학생부종합(일반학생전형
+ )\n구분: 충원 합격자 발표\n원문 일정: 12.24(목)\, 12.27(
+ 일)\, 12.29(화) 18:00까지\n안내: 참고용 자료이며 일정이 
+ 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인
+ 하세요.
+CATEGORIES:충원 합격자 발표,경북대
+X-GSHS-UNIVERSITY:경북대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kyungpook
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6db18375df3bc903c87d04de@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [경희대]
+DESCRIPTION:대학: 경희대\n전형: 학생부종합(네오르네상스
+ )\n구분: 충원 합격자 발표\n원문 일정: ~12.29(화) 18:00\n
+ 안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 
+ 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,경희대
+X-GSHS-UNIVERSITY:경희대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kyung-hee
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4fca1987eee3eb87b1c5bcc8@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [동국대]
+DESCRIPTION:대학: 동국대\n전형: 학생부종합(Do Dream)\n구분:
+  충원 합격자 발표\n원문 일정: ~12.29(화)\n안내: 참고용 
+ 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이
+ 지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,동국대
+X-GSHS-UNIVERSITY:동국대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:dongguk
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6bf59f079f8e7f4894dfc332@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [부산대]
+DESCRIPTION:대학: 부산대\n전형: 지역인재전형\n구분: 충원
+  합격자 발표\n원문 일정: 12.24(목)\, 12.27(일)\, 12.29(화) 1
+ 8:00까지\n안내: 참고용 자료이며 일정이 바뀔 수 있으
+ 므로 해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,부산대
+X-GSHS-UNIVERSITY:부산대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:pusan
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ffdd66af318eda72e557d646@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[충원 합격자 발표] [이화여대]
+DESCRIPTION:대학: 이화여대\n전형: 미래인재전형(서류형)\,
+  미래인재전형(면접형)\n구분: 충원 합격자 발표\n원문 
+ 일정: ~12.29(화)18:00\n안내: 참고용 자료이며 일정이 바
+ 뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하
+ 세요.
+CATEGORIES:충원 합격자 발표,이화여대
+X-GSHS-UNIVERSITY:이화여대
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:ewha
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cdabfb4fa174f2d36e07636b@codex.local
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270116
+SUMMARY:[충원 합격자 발표] [KAIST]
+DESCRIPTION:대학: KAIST\n전형: 창의도전전형\, 일반전형/ 고
+ 른기회/특기자/ 반도체시스템\n구분: 충원 합격자 발표
+ \n원문 일정: 최종합격자 추가서류 제출 2027.1.12.(화)~1.1
+ 5(금)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로
+  해당 대학 홈페이지에서 최종 확인하세요.
+CATEGORIES:충원 합격자 발표,KAIST
+X-GSHS-UNIVERSITY:KAIST
+X-GSHS-CATEGORY:충원 합격자 발표
+X-GSHS-UNIVERSITY-ID:kaist
+X-GSHS-CATEGORY-ID:additional-result
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
