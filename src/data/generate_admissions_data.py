@@ -69,17 +69,6 @@ CATEGORY_BY_SOURCE = {
     item["sourceLabel"]: item for item in CATEGORY_DEFINITIONS
 }
 
-APP_CATEGORY_BY_ID = {
-    "application": "원서 접수",
-    "essay": "자소서 입력",
-    "recommendation": "추천서 입력",
-    "documents": "서류 제출",
-    "first-result": "기타",
-    "interview": "면접",
-    "final-result": "합격 발표",
-    "additional-result": "합격 발표",
-}
-
 UNIVERSITY_IDS = {
     "서울대": "snu",
     "KAIST": "kaist",
@@ -420,107 +409,6 @@ def build_ics(events: list[dict[str, Any]]) -> bytes:
     return ("\r\n".join(physical_lines) + "\r\n").encode("utf-8")
 
 
-def build_schedule_groups(table: dict[str, Any]) -> list[dict[str, Any]]:
-    groups: list[dict[str, Any]] = []
-    for page in table["pages"]:
-        active_values: dict[str, str] = {}
-        for row in page["rows"]:
-            for key in page["columnKeys"]:
-                cell = row["cells"][key]
-                if cell is not None:
-                    active_values[key] = cell["text"]
-            schedule_rows = []
-            for key in page["columnKeys"]:
-                if key in ("university", "admissionType"):
-                    continue
-                value = active_values.get(key, "")
-                if value == "":
-                    continue
-                schedule_rows.append(
-                    {"label": TABLE_COLUMN_LABELS[key], "value": value}
-                )
-            groups.append(
-                {
-                    "university": row["university"],
-                    "period": active_values["admissionType"],
-                    "rows": schedule_rows,
-                }
-            )
-    return groups
-
-
-def write_typescript_data(
-    events: list[dict[str, Any]],
-    universities: list[dict[str, Any]],
-    table: dict[str, Any],
-) -> None:
-    app_events = [
-        {
-            "id": event["id"],
-            "title": event["taggedTitle"],
-            "university": event["university"],
-            "category": APP_CATEGORY_BY_ID[event["categoryId"]],
-            "startDate": event["startDate"],
-            "endDate": event["endDate"],
-            "description": event["description"],
-        }
-        for event in events
-    ]
-    university_names = [university["name"] for university in universities]
-    app_categories = list(dict.fromkeys(APP_CATEGORY_BY_ID.values()))
-
-    events_source = "\n".join(
-        [
-            'import type { AdmissionCategory, AdmissionEvent } from "../types";',
-            "",
-            "export const admissionEvents: AdmissionEvent[] = "
-            + json.dumps(app_events, ensure_ascii=False, indent=2)
-            + ";",
-            "",
-            "export const admissionUniversities = "
-            + json.dumps(university_names, ensure_ascii=False, indent=2)
-            + " as const;",
-            "",
-            "export const admissionCategories: AdmissionCategory[] = "
-            + json.dumps(app_categories, ensure_ascii=False, indent=2)
-            + ";",
-            "",
-        ]
-    )
-    (Path(__file__).parent / "events.ts").write_text(
-        events_source, encoding="utf-8", newline="\n"
-    )
-
-    schedule_groups = build_schedule_groups(table)
-    table_meta = {
-        "title": table["title"],
-        "notice": table["notice"],
-        "rowCount": table["rowCount"],
-        "universityOrder": table["universityOrder"],
-    }
-    schedule_source = "\n".join(
-        [
-            'import type { ScheduleGroup } from "../types";',
-            "",
-            "export const scheduleTableMeta = "
-            + json.dumps(table_meta, ensure_ascii=False, indent=2)
-            + " as const;",
-            "",
-            "export const scheduleGroups: ScheduleGroup[] = "
-            + json.dumps(schedule_groups, ensure_ascii=False, indent=2)
-            + ";",
-            "",
-            "export const scheduleTablePages = "
-            + json.dumps(table["pages"], ensure_ascii=False, indent=2)
-            + " as const;",
-            "",
-        ]
-    )
-    (Path(__file__).parent / "scheduleTable.ts").write_text(
-        schedule_source, encoding="utf-8", newline="\n"
-    )
-
-
 def main() -> None:
     calendar_path, detailed_pdf = find_source_files()
     events = parse_ics_events(calendar_path)
@@ -570,7 +458,6 @@ def main() -> None:
         newline="\n",
     )
     (PUBLIC_DATA_DIR / "admissions.ics").write_bytes(build_ics(events))
-    write_typescript_data(events, universities, table)
 
     print(
         json.dumps(

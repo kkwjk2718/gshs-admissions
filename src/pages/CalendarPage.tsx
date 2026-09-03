@@ -1,108 +1,117 @@
-import { addMonths, format, isSameDay, subMonths } from "date-fns";
+import { addMonths, format, subMonths } from "date-fns";
 import { ko } from "date-fns/locale";
-import { ChevronLeft, ChevronRight, SlidersHorizontal } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
-import { admissionGuides } from "../data/admissionGuides";
-import { AgendaPanel } from "../components/AgendaPanel";
+import { useSearchParams } from "react-router-dom";
 import { CalendarGrid } from "../components/CalendarGrid";
-import { EventDialog } from "../components/EventDialog";
-import { FilterPanel } from "../components/FilterPanel";
-import { ALL_CATEGORIES, usePreferences } from "../hooks/usePreferences";
+import { EventDetailDialog } from "../components/EventDetailDialog";
+import { EventRow } from "../components/EventRow";
+import { SiteFooter } from "../components/SiteFooter";
+import { EmptySelection, ErrorState, LoadingState, OfflineBanner } from "../components/StateNotices";
 import { useAdmissions } from "../hooks/useAdmissions";
-import { isDateInRange, toDateKey } from "../lib/date";
-import type { AdmissionEvent, AdmissionGuide } from "../types";
+import { usePreferences } from "../hooks/usePreferences";
+import { useVisibleEvents } from "../hooks/useVisibleEvents";
+import { formatDayLabel, getCalendarWeeks, isDateInRange, toDateKey, todayKey } from "../lib/date";
+import type { AdmissionEvent } from "../types";
 
-const guides = admissionGuides as Record<string, AdmissionGuide>;
+const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 
 export function CalendarPage() {
-  const { events, loading, error } = useAdmissions();
-  const today = new Date();
-  const todayKey = toDateKey(today);
-  const [month, setMonth] = useState(() => new Date(today.getFullYear(), today.getMonth(), 1));
-  const [selectedDate, setSelectedDate] = useState(todayKey);
+  const { status } = useAdmissions();
+  const { universities } = usePreferences();
+  const visibleEvents = useVisibleEvents();
+  const [params] = useSearchParams();
+  const today = todayKey();
+
+  const initialDate = DATE_PARAM.test(params.get("d") ?? "") ? (params.get("d") as string) : today;
+  const [selectedDate, setSelectedDate] = useState(initialDate);
+  const [month, setMonth] = useState(() => new Date(`${initialDate}T12:00:00`));
   const [selectedEvent, setSelectedEvent] = useState<AdmissionEvent | null>(null);
-  const [filterOpen, setFilterOpen] = useState(false);
 
-  const universities = useMemo(
-    () => [...new Set(events.map((event) => event.university))].sort((a, b) => a.localeCompare(b, "ko")),
-    [events],
+  const dueToday = useMemo(
+    () => visibleEvents.filter((event) => event.deadlineDate === selectedDate),
+    [selectedDate, visibleEvents],
   );
-  const preferences = usePreferences(universities);
-
-  const visibleEvents = useMemo(
+  const ongoing = useMemo(
     () =>
-      events.filter(
+      visibleEvents.filter(
         (event) =>
-          preferences.selectedUniversitySet.has(event.university) &&
-          preferences.selectedCategorySet.has(event.category),
+          event.deadlineDate !== selectedDate &&
+          isDateInRange(selectedDate, event.startDate, event.deadlineDate),
       ),
-    [events, preferences.selectedCategorySet, preferences.selectedUniversitySet],
-  );
-
-  const selectedEvents = useMemo(
-    () => visibleEvents.filter((event) => isDateInRange(selectedDate, event.startDate, event.endDate)),
     [selectedDate, visibleEvents],
   );
 
-  const upcomingEvents = useMemo(
-    () =>
-      visibleEvents
-        .filter((event) => event.startDate > todayKey)
-        .sort((a, b) => a.endDate.localeCompare(b.endDate) || a.startDate.localeCompare(b.startDate)),
-    [todayKey, visibleEvents],
-  );
-
+  /** 방향키로 격자 밖까지 이동하면 달도 함께 넘긴다. 안 그러면 포커스가 사라진다. */
   const selectDate = useCallback((date: string) => {
     setSelectedDate(date);
+    setMonth((current) => {
+      const weeks = getCalendarWeeks(current);
+      const firstDay = toDateKey(weeks[0][0]);
+      const lastDay = toDateKey(weeks[weeks.length - 1][6]);
+      return date >= firstDay && date <= lastDay ? current : new Date(`${date}T12:00:00`);
+    });
   }, []);
 
   const goToday = () => {
-    setMonth(new Date(today.getFullYear(), today.getMonth(), 1));
-    setSelectedDate(todayKey);
+    setSelectedDate(today);
+    setMonth(new Date(`${today}T12:00:00`));
   };
 
-  const selectedDateObject = new Date(`${selectedDate}T12:00:00`);
-  const selectedLabel = isSameDay(selectedDateObject, today)
-    ? "TODAY"
-    : format(selectedDateObject, "M월 d일 EEE", { locale: ko });
+  const shiftMonth = (delta: number) => {
+    setMonth((current) => (delta > 0 ? addMonths(current, 1) : subMonths(current, 1)));
+  };
+
+  if (status === "loading") {
+    return (
+      <main className="page page--calendar">
+        <LoadingState />
+      </main>
+    );
+  }
+  if (status === "error") {
+    return (
+      <main className="page page--calendar">
+        <ErrorState />
+      </main>
+    );
+  }
 
   return (
-    <main className="calendar-page">
-      <div className="calendar-layout">
-        <FilterPanel
-          universities={universities}
-          selectedUniversities={preferences.selectedUniversities}
-          selectedCategories={preferences.selectedCategories}
-          guides={guides}
-          onToggleUniversity={preferences.toggleUniversity}
-          onSetUniversities={preferences.setSelectedUniversities}
-          onToggleCategory={preferences.toggleCategory}
-          mobileOpen={filterOpen}
-          onCloseMobile={() => setFilterOpen(false)}
-        />
+    <main className="page page--calendar">
+      <OfflineBanner />
+      <h1 className="sr-only">2027학년도 수시모집 일정 달력</h1>
 
-        <section className="calendar-card" aria-label="월간 입시 일정">
-          <header className="calendar-toolbar">
-            <button className="filter-trigger" onClick={() => setFilterOpen(true)}>
-              <SlidersHorizontal size={17} /> 필터
-            </button>
-            <div className="month-control">
-              <button className="icon-button" onClick={() => setMonth((current) => subMonths(current, 1))} aria-label="이전 달">
-                <ChevronLeft size={20} />
+      {universities.length === 0 ? (
+        <EmptySelection />
+      ) : (
+        <div className="calendar-layout">
+          <section className="calendar-card">
+            <header className="calendar-toolbar">
+              <div className="month-control">
+                <button
+                  type="button"
+                  className="icon-button"
+                  onClick={() => shiftMonth(-1)}
+                  aria-label={`${format(subMonths(month, 1), "yyyy년 M월", { locale: ko })} 보기`}
+                >
+                  <ChevronLeft size={22} />
+                </button>
+                <h2>{format(month, "yyyy년 M월", { locale: ko })}</h2>
+                <button
+                  type="button"
+                  className="icon-button"
+                  onClick={() => shiftMonth(1)}
+                  aria-label={`${format(addMonths(month, 1), "yyyy년 M월", { locale: ko })} 보기`}
+                >
+                  <ChevronRight size={22} />
+                </button>
+              </div>
+              <button type="button" className="button" onClick={goToday}>
+                오늘
               </button>
-              <h1>{format(month, "yyyy년 M월", { locale: ko })}</h1>
-              <button className="icon-button" onClick={() => setMonth((current) => addMonths(current, 1))} aria-label="다음 달">
-                <ChevronRight size={20} />
-              </button>
-            </div>
-            <button className="today-button" onClick={goToday}>오늘</button>
-          </header>
+            </header>
 
-          {loading ? (
-            <div className="calendar-state"><span className="loading-spinner" /> 일정 불러오는 중</div>
-          ) : error ? (
-            <div className="calendar-state calendar-state--error">일정을 불러오지 못했습니다.</div>
-          ) : (
             <CalendarGrid
               month={month}
               events={visibleEvents}
@@ -110,32 +119,43 @@ export function CalendarPage() {
               onSelectDate={selectDate}
               onSelectEvent={setSelectedEvent}
             />
-          )}
 
-          <div className="calendar-legend" aria-label="일정 종류">
-            {ALL_CATEGORIES.filter((category) => category !== "기타").map((category) => (
-              <span key={category} className={`category-${category.replace(/\s/g, "-")}`}>
-                <i /> {category}
-              </span>
-            ))}
-          </div>
-        </section>
+            <p className="calendar-hint">칸에는 그날 마감·발표만 표시해요. 진행 중인 일정은 아래 목록에서 볼 수 있어요.</p>
+          </section>
 
-        <AgendaPanel
-          selectedEvents={selectedEvents}
-          selectedLabel={selectedLabel}
-          upcomingEvents={upcomingEvents}
-          guides={guides}
-          onSelectEvent={setSelectedEvent}
-        />
-      </div>
+          <section className="day-panel" aria-label="선택한 날의 일정">
+            <h2 className="day-panel__head">
+              {formatDayLabel(selectedDate)}
+              {selectedDate === today && <span className="tag tag--today">오늘</span>}
+            </h2>
 
-      <EventDialog
-        event={selectedEvent}
-        guide={selectedEvent ? guides[selectedEvent.university] : undefined}
-        onClose={() => setSelectedEvent(null)}
-      />
+            <h3 className="day-panel__section">이 날 마감·발표 {dueToday.length}건</h3>
+            {dueToday.length ? (
+              <div className="day-panel__list">
+                {dueToday.map((event) => (
+                  <EventRow key={event.id} event={event} onSelect={setSelectedEvent} showDday today={today} />
+                ))}
+              </div>
+            ) : (
+              <p className="day-panel__empty">이 날 마감되는 일정은 없어요.</p>
+            )}
+
+            {ongoing.length > 0 && (
+              <>
+                <h3 className="day-panel__section">진행 중 {ongoing.length}건</h3>
+                <div className="day-panel__list">
+                  {ongoing.map((event) => (
+                    <EventRow key={event.id} event={event} onSelect={setSelectedEvent} showDday today={today} />
+                  ))}
+                </div>
+              </>
+            )}
+          </section>
+        </div>
+      )}
+
+      <SiteFooter />
+      <EventDetailDialog event={selectedEvent} onClose={() => setSelectedEvent(null)} />
     </main>
   );
 }
-

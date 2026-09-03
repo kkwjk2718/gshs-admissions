@@ -1,10 +1,25 @@
-import type { AdmissionCategory } from "../types";
+import { CATEGORY_UI, categoryClass } from "../lib/categories";
+import type { CategoryId } from "../types";
 
-export function categoryClassName(category: AdmissionCategory) {
-  return `category-${category.replace(/\s/g, "-")}`;
+interface CategoryTagProps {
+  id: CategoryId;
+  /** 폭이 좁은 자리에서는 "충원"처럼 줄인 이름을 쓴다 */
+  short?: boolean;
+  size?: "sm" | "md";
 }
 
-export function CategoryTag({ category }: { category: AdmissionCategory }) {
-  return <span className={`category-tag ${categoryClassName(category)}`}>{category}</span>;
+export function CategoryTag({ id, short = false, size = "md" }: CategoryTagProps) {
+  const meta = CATEGORY_UI[id];
+  const Icon = meta.icon;
+
+  return (
+    <span className={`tag tag--category tag--${size} ${categoryClass(id)}`}>
+      <Icon size={size === "sm" ? 13 : 15} aria-hidden="true" />
+      {short ? meta.short : meta.label}
+    </span>
+  );
 }
 
+export function UniversityTag({ name }: { name: string }) {
+  return <span className="tag tag--university">{name}</span>;
+}

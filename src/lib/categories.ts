@@ -1,0 +1,76 @@
+import {
+  FileText,
+  FolderUp,
+  ListChecks,
+  MessageSquare,
+  PenLine,
+  Trophy,
+  UserCheck,
+  UserPlus,
+  type LucideIcon,
+} from "lucide-react";
+import type { CategoryId } from "../types";
+
+export type CategoryGroup = "제출" | "평가" | "발표";
+
+interface CategoryUi {
+  /** 필터·상세용 정식 라벨 */
+  label: string;
+  /** 달력 칩처럼 좁은 자리용 */
+  short: string;
+  /** 필터에서 헷갈리기 쉬운 이름에만 붙이는 보조 설명 */
+  hint?: string;
+  group: CategoryGroup;
+  icon: LucideIcon;
+  /** D-day에 붙는 명사. "마감 D-6" / "발표 D-12" / "면접 D-3" */
+  noun: "마감" | "발표" | "면접";
+}
+
+/** 일정 종류 8가지. 원본 PDF의 컬럼 순서를 그대로 따른다. */
+export const CATEGORY_ORDER: CategoryId[] = [
+  "application",
+  "essay",
+  "recommendation",
+  "documents",
+  "first-result",
+  "interview",
+  "final-result",
+  "additional-result",
+];
+
+export const CATEGORY_UI: Record<CategoryId, CategoryUi> = {
+  application: { label: "원서 접수", short: "원서", group: "제출", icon: FileText, noun: "마감" },
+  essay: { label: "자소서 입력", short: "자소서", group: "제출", icon: PenLine, noun: "마감" },
+  recommendation: { label: "추천서 입력", short: "추천서", group: "제출", icon: UserCheck, noun: "마감" },
+  documents: { label: "서류 제출", short: "서류", group: "제출", icon: FolderUp, noun: "마감" },
+  "first-result": { label: "1차 합격 발표", short: "1차", group: "발표", icon: ListChecks, noun: "발표" },
+  interview: { label: "면접", short: "면접", group: "평가", icon: MessageSquare, noun: "면접" },
+  "final-result": { label: "최종 합격 발표", short: "최종", group: "발표", icon: Trophy, noun: "발표" },
+  "additional-result": {
+    label: "충원 합격 발표",
+    short: "충원",
+    hint: "추가합격",
+    group: "발표",
+    icon: UserPlus,
+    noun: "발표",
+  },
+};
+
+export const CATEGORY_GROUPS: { name: CategoryGroup; ids: CategoryId[] }[] = [
+  { name: "제출", ids: ["application", "essay", "recommendation", "documents"] },
+  { name: "평가", ids: ["interview"] },
+  { name: "발표", ids: ["first-result", "final-result", "additional-result"] },
+];
+
+/** CSS 변수(--cat, --cat-soft)를 실어 나르는 클래스 이름 */
+export function categoryClass(id: CategoryId) {
+  return `cat-${id}`;
+}
+
+export function categoryLabel(id: CategoryId) {
+  return CATEGORY_UI[id].label;
+}
+
+export function isResult(id: CategoryId) {
+  return CATEGORY_UI[id].group === "발표";
+}
