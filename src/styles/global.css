@@ -27,10 +27,6 @@
   --r-lg: 16px;
   --r-pill: 999px;
 
-  --shadow-1: 0 1px 2px rgba(16, 32, 48, 0.06), 0 1px 3px rgba(16, 32, 48, 0.05);
-  --shadow-2: 0 8px 24px rgba(16, 32, 48, 0.1);
-  --shadow-3: 0 24px 64px rgba(16, 32, 48, 0.24);
-
   --header-h: 56px;
   --ticker-h: 38px;
   --tabbar-h: 60px;
@@ -38,71 +34,158 @@
   --chrome-h: 94px;
   --page-max: 1180px;
 
-  --canvas: #f4f6f9;
-  --surface: #ffffff;
-  --surface-2: #f7f9fb;
-  --ink: #16202b;
-  --ink-2: #3a4956;
-  --muted: #57646f;
-  --line: #dde4ea;      /* 면을 나누는 장식선 */
-  --line-grid: #ccd5dd; /* 달력 격자·표 칸 경계 */
-  --line-strong: #85909b; /* 버튼·입력·체크박스 경계. 흰 배경 3.25:1 (WCAG 1.4.11) */
-  --accent: #12467a;
-  --accent-ink: #ffffff;
-  --accent-soft: #e7f0f9;
-  --danger: #b3261e;
-  --danger-soft: #fdeceb;
-  --warn: #8a5709;
-  --warn-soft: #fdf2de;
-  --ok: #1f6b45;
-  --ok-soft: #e4f3ea;
+
+  /* --- 면 ---------------------------------------------------------- */
+  --canvas: #f0f4f9;      /* GM3 surface-container — 흰 격자 카드가 뜨는 바닥 */
+  --surface: #ffffff;     /* GM3 surface — 달력 격자·카드·목록 행 */
+  --surface-2: #f8f9fa;   /* GM2 grey-50 — 호버, 표 머리, 얕은 면 */
+
+  /* --- 글자: Google GM2 그레이 램프 --------------------------------- */
+  --ink: #202124;         /* grey-900 · 흰 배경 16.10:1 */
+  --ink-2: #3c4043;       /* grey-800 · 10.47:1 */
+  --muted: #5f6368;       /* grey-700 · 6.05:1 */
+
+  /* --- 선: 격자가 가장 옅고, 컨트롤 경계가 가장 진하다 --------------- */
+  --line-grid: #e8eaed;   /* grey-200 — 달력 격자·표 칸 (가장 옅게) */
+  --line: #dadce0;        /* grey-300 — 카드·구획 */
+  --line-strong: #80868b; /* grey-600 — 버튼·입력·체크박스 경계 · 흰 배경 3.68:1 */
+
+  /* --- 액센트: 파랑이 칠해지는 곳은 오늘·선택·기본 버튼·링크뿐 ------- */
+  --accent: #0b57d0;      /* GM3 primary (라이브 실측) · 흰 글자 6.39:1 */
+  --accent-ink: #ffffff;  /* GM3 on-primary */
+  --accent-soft: #d3e3fd; /* GM3 primary-container (라이브 실측) */
+
+  /* --- 상태: 일정 8색에서 빌려 쓴다. 새 색을 만들지 않는다 ---------- */
+  --danger: #d50000;      /* = 면접 (Google Calendar Tomato) · 5.48:1 · 일요일 겸용 */
+  --danger-soft: #fce8e6; /* Google Red 50 */
+  --warn: #945c1f;        /* = 추천서 입력 (카카오 톡캘린더 BROWN) · 5.51:1 */
+  --warn-soft: #fef7e0;   /* Google Yellow 50 */
+  --ok: #0b8043;          /* = 최종 합격 발표 (Google Calendar Basil) · 5.02:1 */
+  --ok-soft: #e6f4ea;     /* Google Green 50 */
+
+  /* --- 그림자: 면을 나누는 것은 그림자가 아니라 1px --line 이다.
+         남는 자리는 다이얼로그(--shadow-3) 하나뿐. ------------------ */
+  --shadow-1: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --shadow-2: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  --shadow-3: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
 }
 
-/* 일정 종류 8가지. 색은 보조 채널이고, 아이콘과 라벨이 1차 채널이다. */
-.cat-application { --cat: #5b34c4; --cat-soft: #ece5ff; }
-.cat-essay { --cat: #1f5aa8; --cat-soft: #e2edfc; }
-.cat-recommendation { --cat: #0f6675; --cat-soft: #d8eff2; }
-.cat-documents { --cat: #8a5709; --cat-soft: #fbecd0; }
-.cat-first-result { --cat: #4c5a6b; --cat-soft: #e7ebf0; }
-.cat-interview { --cat: #b03b36; --cat-soft: #fce2df; }
-.cat-final-result { --cat: #1f6b45; --cat-soft: #dcefe4; }
-.cat-additional-result { --cat: #9c3168; --cat-soft: #fae0ec; }
+/* 일정 종류 8가지. 7개는 Google Calendar 이벤트 색 원값,
+   추천서 하나만 카카오 톡캘린더 공개값이다.
+   Google 의 노랑(Banana #f6bf26)은 흰 배경 1.69:1 이라 3px 막대에서
+   보이지 않아 뺐고, 그 자리를 카카오 BROWN(5.51:1)이 대신한다. */
+.cat-application       { --cat: #3f51b5; } /* Blueberry  — 흰 배경 6.87:1 */
+.cat-essay             { --cat: #0288d1; } /* Light Blue 700 (Peacock 한 단계 아래) 3.86:1 */
+.cat-recommendation    { --cat: #945c1f; } /* 카카오 BROWN — 5.51:1 */
+.cat-documents         { --cat: #f4511e; } /* Tangerine  — 3.48:1 */
+.cat-first-result      { --cat: #616161; } /* Graphite   — 6.19:1 */
+.cat-interview         { --cat: #d50000; } /* Tomato     — 5.48:1 */
+.cat-final-result      { --cat: #0b8043; } /* Basil      — 5.02:1 */
+.cat-additional-result { --cat: #8e24aa; } /* Grape      — 7.04:1 */
 
-/* index.html 의 인라인 스크립트가 첫 페인트 전에 data-theme 을 채우므로
-   기기 설정과 헤더의 전환 버튼이 같은 경로를 쓴다. */
+/* --cat-soft 가 살아남는 자리는 필터 다이얼로그의 선택 배경 하나뿐이다.
+   hex 를 8개 더 손으로 정하지 않고 --cat 에서 파생시킨다. --surface 가
+   다크에서 바뀌므로 다크 값도 저절로 따라온다.
+   (color-mix 를 모르는 브라우저는 앞줄 --surface-2 로 떨어진다.) */
+.cat-application,
+.cat-essay,
+.cat-recommendation,
+.cat-documents,
+.cat-first-result,
+.cat-interview,
+.cat-final-result,
+.cat-additional-result {
+  --cat-soft: var(--surface-2);
+  --cat-soft: color-mix(in srgb, var(--cat) 12%, var(--surface));
+}
+
+/* ===== 다크 — 기기 설정을 따르는 경우 ====================================
+   index.html 의 인라인 스크립트가 첫 페인트 전에 data-theme 을 채우므로
+   평소에는 아래 [data-theme="dark"] 블록이 동작한다. 이 미디어 블록은
+   그 스크립트가 죽었을 때 기기 설정이라도 먹게 하는 안전망이다. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --canvas: #202124;
+    --surface: #303134;
+    --surface-2: #3c4043;
+
+    --ink: #e8eaed;       /* grey-200 · surface 위 10.79:1 */
+    --ink-2: #dadce0;     /* grey-300 · 9.47:1 */
+    --muted: #bdc1c6;     /* grey-400 · 7.19:1 */
+
+    --line-grid: #444746; /* GM3 outline-variant (dark) */
+    --line: #5f6368;      /* grey-700 */
+    --line-strong: #8e918f; /* GM3 outline (dark) · surface 위 4.09:1 */
+
+    --accent: #a8c7fa;      /* GM3 primary (dark, 라이브 실측) */
+    --accent-ink: #062e6f;  /* GM3 on-primary (dark) · 7.50:1 */
+    --accent-soft: #233246;
+
+    --danger: #f28b82;      /* = 면접 (Google Red 300) · 5.44:1 */
+    --danger-soft: #3f2724;
+    --warn: #fdd663;        /* = 추천서 (Google Yellow 300) · 9.28:1 */
+    --warn-soft: #3d3018;
+    --ok: #81c995;          /* = 최종 발표 (Google Green 300) · 6.64:1 */
+    --ok-soft: #1e3a28;
+
+    --shadow-1: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --shadow-2: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --shadow-3: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  /* 다크 8색 = Google 다크 테마 300 램프. 색상은 유지하고 명도만 올렸다. */
+  :root:not([data-theme="light"]) .cat-application       { --cat: #7986cb; } /* Lavender  3.77:1 */
+  :root:not([data-theme="light"]) .cat-essay             { --cat: #78d9ec; } /* Cyan 300  8.01:1 */
+  :root:not([data-theme="light"]) .cat-recommendation    { --cat: #fdd663; } /* Yellow 300 9.28:1 */
+  :root:not([data-theme="light"]) .cat-documents         { --cat: #fcad70; } /* Orange 300 7.03:1 */
+  :root:not([data-theme="light"]) .cat-first-result      { --cat: #9aa0a6; } /* Grey 500  4.93:1 */
+  :root:not([data-theme="light"]) .cat-interview         { --cat: #f28b82; } /* Red 300   5.44:1 */
+  :root:not([data-theme="light"]) .cat-final-result      { --cat: #81c995; } /* Green 300 6.64:1 */
+  :root:not([data-theme="light"]) .cat-additional-result { --cat: #d7aefb; } /* Purple 300 7.02:1 */
+}
+
+/* ===== 다크 — 헤더의 전환 버튼으로 직접 고른 경우 ======================== */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --canvas: #101519;
-  --surface: #182027;
-  --surface-2: #1e272f;
-  --ink: #e9eef3;
-  --ink-2: #c3ccd5;
-  --muted: #9dabb7;
-  --line: #303b45;
-  --line-grid: #3d4954;
-  --line-strong: #73818f;
-  --accent: #8ec0f0;
-  --accent-ink: #0d1a26;
-  --accent-soft: #1b2c3d;
-  --danger: #f2938b;
-  --danger-soft: #3a1e1c;
-  --warn: #e5b567;
-  --warn-soft: #38290f;
-  --ok: #79cfa1;
-  --ok-soft: #113022;
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.45);
-  --shadow-3: 0 24px 64px rgba(0, 0, 0, 0.6);
+
+  --canvas: #202124;
+  --surface: #303134;
+  --surface-2: #3c4043;
+
+  --ink: #e8eaed;
+  --ink-2: #dadce0;
+  --muted: #bdc1c6;
+
+  --line-grid: #444746;
+  --line: #5f6368;
+  --line-strong: #8e918f;
+
+  --accent: #a8c7fa;
+  --accent-ink: #062e6f;
+  --accent-soft: #233246;
+
+  --danger: #f28b82;
+  --danger-soft: #3f2724;
+  --warn: #fdd663;
+  --warn-soft: #3d3018;
+  --ok: #81c995;
+  --ok-soft: #1e3a28;
+
+  --shadow-1: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --shadow-2: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --shadow-3: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 6px rgba(0, 0, 0, 0.15);
 }
 
-:root[data-theme="dark"] .cat-application { --cat: #bfa9fb; --cat-soft: #302650; }
-:root[data-theme="dark"] .cat-essay { --cat: #8fc0f5; --cat-soft: #1c3350; }
-:root[data-theme="dark"] .cat-recommendation { --cat: #6fcbd9; --cat-soft: #153a42; }
-:root[data-theme="dark"] .cat-documents { --cat: #e3b56b; --cat-soft: #3f3016; }
-:root[data-theme="dark"] .cat-first-result { --cat: #b3c0cd; --cat-soft: #2d3740; }
-:root[data-theme="dark"] .cat-interview { --cat: #f2988f; --cat-soft: #472725; }
-:root[data-theme="dark"] .cat-final-result { --cat: #79cfa1; --cat-soft: #193f2f; }
-:root[data-theme="dark"] .cat-additional-result { --cat: #f09ac6; --cat-soft: #442038; }
+:root[data-theme="dark"] .cat-application       { --cat: #7986cb; }
+:root[data-theme="dark"] .cat-essay             { --cat: #78d9ec; }
+:root[data-theme="dark"] .cat-recommendation    { --cat: #fdd663; }
+:root[data-theme="dark"] .cat-documents         { --cat: #fcad70; }
+:root[data-theme="dark"] .cat-first-result      { --cat: #9aa0a6; }
+:root[data-theme="dark"] .cat-interview         { --cat: #f28b82; }
+:root[data-theme="dark"] .cat-final-result      { --cat: #81c995; }
+:root[data-theme="dark"] .cat-additional-result { --cat: #d7aefb; }
 
 /* ========================================================================= */
 
@@ -1354,7 +1437,7 @@ a {
 }
 
 .schedule-table td {
-  min-width: 110px;
+  min-width: 101px;
   padding: 12px 10px;
   border-right: 1px solid var(--line-grid);
   border-bottom: 1px solid var(--line-grid);
@@ -1400,6 +1483,7 @@ a {
 }
 
 .schedule-table td.is-guide a {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -2043,8 +2127,13 @@ dialog::backdrop {
   /* 티커는 흐르지 않고 가로로 밀어 보게 둔다. */
   .ticker {
     overflow-x: auto;
+    scrollbar-width: none;
     -webkit-mask-image: none;
     mask-image: none;
+  }
+
+  .ticker::-webkit-scrollbar {
+    display: none;
   }
 
   .ticker__track {
@@ -2054,4 +2143,127 @@ dialog::backdrop {
   .ticker__row[aria-hidden="true"] {
     display: none;
   }
+}
+
+/* =========================================================================
+   여기부터는 '색을 쓰는 방식'을 바꾸는 패치다.
+   각 셀렉터가 원래 있던 자리에서 해당 줄을 고쳐도 되고,
+   파일 맨 끝에 이 블록을 통째로 붙여도 같은 결과가 나온다.
+   마크업(.tsx) 변경은 한 곳도 없다.
+   ========================================================================= */
+
+/* --- 1) 달력 칸: 라벨에서 색을 뺀다 (이 개편의 전부) -------------------- */
+/* 3px 세로 막대는 그대로 둔다 — 색이 남는 유일한 자리다. */
+.day-entry__label {
+  color: var(--ink);      /* ← var(--cat). 화면의 색 면적을 가장 크게 줄이는 한 줄 */
+  font-weight: 600;       /* ← 700. 색이 빠진 만큼 무게도 한 단계 낮춘다 */
+}
+
+/* 색이 빠진 자리를 여백과 명도 위계가 대신한다 */
+.day-entries { gap: 7px; }              /* ← 5px */
+.day-entry__line { line-height: 1.5; }  /* ← 1.45. 한글은 촘촘해 보인다 */
+
+/* --- 2) 카테고리 태그: 8색 틴트 배경을 지우고 아이콘만 물들인다 --------- */
+/* CategoryTag.tsx 가 이미 lucide 아이콘을 렌더한다. 마크업 변경 없음. */
+.tag--category {
+  gap: 6px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);  /* ← var(--cat-soft) */
+  color: var(--ink);             /* ← var(--cat) */
+}
+
+.tag--category svg {
+  color: var(--cat);             /* stroke="currentColor" 라 이 한 줄로 색 마크가 된다 */
+}
+
+/* --- 3) 목록 행: 왼쪽 색 막대는 남기고, 그림자와 들썩임을 뺀다 --------- */
+.event-row {
+  box-shadow: none;              /* ← var(--shadow-1) */
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.event-row:hover {
+  background: var(--surface-2);
+  transform: none;               /* ← translateY(-1px) */
+}
+
+/* --- 4) 오늘 = 파란 원 / 선택한 날 = 링만 ------------------------------ */
+.day-number.is-today {
+  border-radius: 50%;            /* ← var(--r-sm). Google·Apple 공통 시그니처 */
+}
+
+/* 칸을 파랗게 칠하지 않는다. 흰 칸으로 남아야 그 안의 3px 막대가
+   흰 배경 기준 대비를 그대로 쓴다(틴트 위에서는 서류 2.68 로 무너진다). */
+.calendar__day.is-selected {
+  background: var(--surface);    /* ← var(--accent-soft) */
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+/* --- 5) 요일머리: 회색 띠를 걷어낸다 ----------------------------------- */
+.calendar__weekdays {
+  background: var(--surface);    /* ← var(--surface-2) */
+}
+
+.calendar__weekdays span {
+  font-weight: 600;              /* ← 700 */
+  letter-spacing: 0.02em;
+}
+/* .is-sunday / .is-saturday 색은 그대로 둔다 — 한국 달력 관례라
+   어기면 바로 어색해진다. 배경은 칠하지 않고 글자색만. */
+
+/* --- 6) 상태 배지: '오늘 마감'만 색 글자로 남긴다 ---------------------- */
+.status--ongoing {
+  color: var(--ink);             /* ← var(--ok). ok/ok-soft 는 4.42 로 4.5:1 미달 */
+}
+/* .status--due-today 는 4.65 로 통과하므로 색 글자를 유지한다.
+   그래서 목록에서 빨간 글자는 '오늘 마감' 하나뿐이 된다. */
+
+/* --- 7) 필터 다이얼로그: 색은 아이콘과 테두리에만 ---------------------- */
+.category-toggle svg {
+  color: var(--cat);             /* 선택 여부와 무관하게 색 마크 — 여기서 8색을 배운다 */
+}
+
+.category-toggle.is-selected {
+  border-color: var(--cat);
+  background: var(--cat-soft);   /* --cat-soft 가 남는 유일한 자리 */
+  color: var(--ink);             /* ← var(--cat) */
+  font-weight: 700;              /* 선택은 굵기로도 말한다 */
+}
+
+.category-toggle.is-selected em {
+  color: var(--muted);           /* ← var(--cat) */
+}
+
+/* --- 8) 전형일정표: 파란 머리띠와 얼룩말을 지운다 ---------------------- */
+/* 화면에서 가장 큰 색 면적이고 '지어낸 팔레트' 티가 가장 나던 곳이다. */
+.schedule-table th {
+  background: var(--surface-2);  /* ← var(--accent) */
+  color: var(--ink);             /* ← var(--accent-ink) */
+  border-bottom: 2px solid var(--line-strong);
+}
+
+.schedule-table tbody tr:nth-child(even) td {
+  background: transparent;       /* 얼룩말 삭제 — 가로 헤어라인만 남긴다 */
+}
+
+.schedule-table tbody tr:hover td {
+  background: var(--surface-2);  /* ← var(--accent-soft). 파랑이 표를 훑고 다니면
+                                    '파랑 = 오늘·선택' 규칙이 깨진다 */
+}
+
+.schedule-table tbody tr:hover td.is-university {
+  background: var(--surface-2);  /* sticky 첫 칸도 같이 따라오게 */
+}
+
+/* --- 9) 대학 고르기 배너: 파란 면을 뺀다 ------------------------------- */
+/* 채운 파랑은 안쪽 버튼(.button--pick.is-nudge) 하나만 남는다. */
+.pick {
+  border-color: var(--line);     /* ← var(--accent) */
+  background: var(--surface);    /* ← var(--accent-soft) */
+}
+
+/* --- 10) 스크림: 블러 제거 --------------------------------------------- */
+dialog::backdrop {
+  background: rgba(32, 33, 36, 0.6);
+  backdrop-filter: none;         /* ← blur(3px) */
 }
