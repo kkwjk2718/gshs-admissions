@@ -9,6 +9,7 @@ import { EventRow } from "../components/EventRow";
 import { SiteFooter } from "../components/SiteFooter";
 import { EmptySelection, ErrorState, LoadingState, OfflineBanner } from "../components/StateNotices";
 import { useAdmissions } from "../hooks/useAdmissions";
+import { useIsCompact } from "../hooks/useMediaQuery";
 import { usePreferences } from "../hooks/usePreferences";
 import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { formatDayLabel, getCalendarWeeks, isDateInRange, toDateKey, todayKey } from "../lib/date";
@@ -19,6 +20,7 @@ const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 export function CalendarPage() {
   const { status } = useAdmissions();
   const { universities, categories } = usePreferences();
+  const compact = useIsCompact();
   const visibleEvents = useVisibleEvents();
   const [params] = useSearchParams();
   const today = todayKey();
@@ -80,7 +82,7 @@ export function CalendarPage() {
   return (
     <main className="page page--calendar">
       <OfflineBanner />
-      <h1 className="sr-only">2027학년도 수시모집 일정 달력</h1>
+      <h1 className="sr-only">2027 수시 일정 달력</h1>
 
       {universities.length === 0 || categories.length === 0 ? (
         <EmptySelection />
@@ -121,7 +123,9 @@ export function CalendarPage() {
             />
 
             <p className="calendar-hint">
-              칸에는 그날 마감·발표·면접만 표시해요. 접수·제출이 진행 중인 일정은 아래 목록에 있어요.
+              {compact
+                ? "속이 빈 점은 시작, 채운 점은 마감·발표·면접. 날짜를 누르면 아래에 그 날 일정이 나옵니다."
+                : "점선은 시작, 실선은 마감·발표·면접. 대학 이름을 누르면 자세히 볼 수 있습니다."}
             </p>
           </section>
 
@@ -131,7 +135,7 @@ export function CalendarPage() {
               {selectedDate === today && <span className="tag tag--today">오늘</span>}
             </h2>
 
-            <h3 className="day-panel__section">이 날 마감·발표·면접 {dueToday.length}건</h3>
+            <h3 className="day-panel__section">마감·발표·면접 {dueToday.length}건</h3>
             {dueToday.length ? (
               <div className="day-panel__list">
                 {dueToday.map((event) => (
@@ -139,7 +143,7 @@ export function CalendarPage() {
                 ))}
               </div>
             ) : (
-              <p className="day-panel__empty">이 날은 마감·발표·면접 일정이 없어요.</p>
+              <p className="day-panel__empty">이 날 마감·발표·면접 없음</p>
             )}
 
             {ongoing.length > 0 && (

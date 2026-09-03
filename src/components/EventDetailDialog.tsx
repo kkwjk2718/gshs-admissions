@@ -87,7 +87,7 @@ export function EventDetailDialog({ event, onClose }: EventDetailDialogProps) {
         {hasAmbiguousSchedule(event) && (
           <p className="detail-dialog__warning">
             <TriangleAlert size={16} aria-hidden="true" />
-            원문에 이 일정 말고 다른 날짜도 적혀 있어요. 아래 ‘원문 표기’를 그대로 확인하세요.
+            원문에 다른 날짜도 있습니다. 아래 원문 표기를 확인하세요.
           </p>
         )}
 
@@ -103,7 +103,7 @@ export function EventDetailDialog({ event, onClose }: EventDetailDialogProps) {
           </Link>
         </div>
 
-        {guide && <p className="detail-dialog__verified">모집요강 링크는 {guide.verifiedAt} 확인했어요.</p>}
+        {guide && <p className="detail-dialog__verified">요강 링크 확인 {guide.verifiedAt}</p>}
       </div>
     </dialog>
   );

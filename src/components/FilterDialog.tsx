@@ -79,7 +79,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
                 type="search"
                 value={query}
                 onChange={(changeEvent) => setQuery(changeEvent.target.value)}
-                placeholder="대학 이름 검색"
+                placeholder="대학 검색"
                 aria-label="대학 이름 검색"
               />
             </label>
@@ -115,7 +115,7 @@ export function FilterDialog({ open, onClose }: FilterDialogProps) {
                   </li>
                 );
               })}
-              {visible.length === 0 && <li className="university-list__empty">찾는 대학이 없어요.</li>}
+              {visible.length === 0 && <li className="university-list__empty">검색 결과 없음</li>}
             </ul>
           </section>
 

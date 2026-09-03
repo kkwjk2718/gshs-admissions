@@ -102,7 +102,7 @@ export function DeadlinesPage() {
         <h1>남은 일정</h1>
         <p className="page__meta">
           {searching ? (
-            <>전체 대학에서 찾은 결과 {remaining}건 · 마감일 {groups.length}일</>
+            <>전체 대학 검색 · {remaining}건 · 마감일 {groups.length}일</>
           ) : (
             <>
               내 대학 {universities.length}곳 · 남은 일정 {remaining}건 · 마감일 {groups.length}일
@@ -123,14 +123,14 @@ export function DeadlinesPage() {
             setQuery(changeEvent.target.value);
             setShownGroups(GROUPS_PER_PAGE);
           }}
-          placeholder="대학, 전형, 일정 종류 검색"
+          placeholder="대학·전형·종류 검색"
           aria-label="일정 검색"
         />
       </label>
 
       {searching && groups.length === 0 ? (
         <div className="state-block">
-          <p>‘{query.trim()}’와 맞는 남은 일정이 없어요.</p>
+          <p>‘{query.trim()}’ 검색 결과 없음</p>
           <div className="state-block__actions">
             <button type="button" className="button button--primary" onClick={() => setQuery("")}>
               검색어 지우기
@@ -141,7 +141,7 @@ export function DeadlinesPage() {
         <EmptySelection />
       ) : groups.length === 0 ? (
         <div className="state-block">
-          <p>남은 일정이 없어요. 고른 대학의 2027학년도 수시 일정이 모두 끝났어요.</p>
+          <p>남은 일정 없음</p>
         </div>
       ) : (
         <div className="deadlines-layout">
@@ -154,8 +154,8 @@ export function DeadlinesPage() {
                 </p>
                 <p className="highlight__body">
                   {formatRelativeDay(first.date, today)} · {first.events.length}건
-                  {headline.mixed && " · 대학마다 시각이 달라요"}
-                  {ongoing > 0 && ` · 지금 진행 중인 일정 ${ongoing}건`}
+                  {headline.mixed && " · 시각은 대학마다 다름"}
+                  {ongoing > 0 && ` · 진행 중 ${ongoing}건`}
                 </p>
               </div>
             )}

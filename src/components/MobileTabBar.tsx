@@ -2,8 +2,8 @@ import { CalendarDays, ListChecks, Table2 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const TABS = [
-  { to: "/", label: "남은 일정", icon: ListChecks, end: true },
-  { to: "/calendar", label: "달력", icon: CalendarDays, end: false },
+  { to: "/", label: "달력", icon: CalendarDays, end: true },
+  { to: "/deadlines", label: "남은 일정", icon: ListChecks, end: false },
   { to: "/schedule", label: "전형표", icon: Table2, end: false },
 ];
 

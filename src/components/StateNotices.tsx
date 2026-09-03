@@ -9,7 +9,7 @@ export function LoadingState() {
   return (
     <div className="state-block" role="status">
       <span className="spinner" aria-hidden="true" />
-      일정을 불러오고 있어요
+      불러오는 중
     </div>
   );
 }
@@ -19,7 +19,7 @@ export function ErrorState() {
   return (
     <div className="state-block state-block--error" role="alert">
       <CircleAlert size={22} aria-hidden="true" />
-      <p>일정을 불러오지 못했어요. 인터넷 연결을 확인해 주세요.</p>
+      <p>일정을 불러오지 못했습니다. 연결을 확인하세요.</p>
       <button type="button" className="button button--primary" onClick={reload}>
         <RefreshCw size={16} aria-hidden="true" />
         다시 시도
@@ -34,7 +34,7 @@ export function OfflineBanner() {
   return (
     <p className="notice notice--warn" role="status">
       <Info size={16} aria-hidden="true" />
-      지금은 인터넷에 연결되지 않아 {formatDotted(offlineSavedAt.slice(0, 10))} 저장해 둔 자료를 보여주고 있어요.
+      오프라인 · {formatDotted(offlineSavedAt.slice(0, 10))}에 저장한 자료
     </p>
   );
 }
@@ -52,8 +52,8 @@ export function EmptySelection() {
     <div className="state-block">
       <p>
         {noUniversity
-          ? "고른 대학이 없어서 보여줄 일정이 없어요."
-          : "일정 종류를 모두 꺼놔서 보여줄 일정이 없어요."}
+          ? "선택한 대학 없음"
+          : "일정 종류가 모두 꺼져 있음"}
       </p>
       <div className="state-block__actions">
         {noUniversity ? (

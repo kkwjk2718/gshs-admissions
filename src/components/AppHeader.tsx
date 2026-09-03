@@ -6,8 +6,8 @@ import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { downloadIcs } from "../lib/ics";
 
 export const NAV_ITEMS = [
-  { to: "/", label: "남은 일정", end: true },
-  { to: "/calendar", label: "달력", end: false },
+  { to: "/", label: "달력", end: true },
+  { to: "/deadlines", label: "남은 일정", end: false },
   { to: "/schedule", label: "전형표", end: false },
 ];
 
@@ -60,7 +60,7 @@ export function AppHeader() {
             className="button button--ghost app-header__export"
             onClick={() => downloadIcs(visibleEvents)}
             disabled={visibleEvents.length === 0}
-            title="고른 대학의 일정을 .ics 파일로 내려받아요"
+            title="고른 대학 일정을 .ics 파일로 내려받습니다"
           >
             <CalendarPlus size={16} aria-hidden="true" />
             캘린더에 담기

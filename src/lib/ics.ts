@@ -98,7 +98,7 @@ function buildEvent(event: AdmissionEvent, stamp: string) {
     `전형: ${event.admissionDetail}`,
     `원문 표기: ${event.rawSchedule}`,
     event.excludedDates.length ? `제외: ${event.excludedDates.join(", ")}` : "",
-    "일정이 바뀔 수 있어요. 지원 전 각 대학 입학처에서 다시 확인하세요.",
+    "일정은 바뀔 수 있습니다. 지원 전 입학처 모집요강에서 다시 확인하세요.",
   ]
     .filter(Boolean)
     .join("\n");

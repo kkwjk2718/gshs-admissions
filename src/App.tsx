@@ -32,9 +32,11 @@ export default function App() {
             <ScrollToTop />
             <AppHeader />
             <Routes>
-              <Route path="/" element={<DeadlinesPage />} />
-              <Route path="/calendar" element={<CalendarPage />} />
+              <Route path="/" element={<CalendarPage />} />
+              <Route path="/deadlines" element={<DeadlinesPage />} />
               <Route path="/schedule" element={<SchedulePage />} />
+              {/* 첫 배포에서 목록이 / 였다. 저장해 둔 링크를 살려 둔다. */}
+              <Route path="/calendar" element={<Navigate to="/" replace />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             <MobileTabBar />
