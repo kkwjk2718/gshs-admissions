@@ -46,6 +46,12 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
   const weeks = getCalendarWeeks(month);
   const today = todayKey();
 
+  // 달을 넘기면 선택일이 이 격자 밖으로 나갈 수 있다. 그때도 Tab 으로 들어올
+  // 진입점이 하나는 남아 있어야 키보드로 달력을 계속 쓸 수 있다.
+  const focusKey = weeks.flat().some((day) => toDateKey(day) === selectedDate)
+    ? selectedDate
+    : toDateKey(weeks[0].find((day) => isSameMonth(day, month)) ?? weeks[0][0]);
+
   // 마감은 그 날 셀에만 그린다. 기간 중간 날에 같은 칩을 반복하면
   // 아무 마감도 없는 날이 가장 빽빽해 보인다.
   const { buckets, ensure } = bucketByDay(events);
@@ -79,7 +85,7 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
     const delta = deltas[keyEvent.key];
     if (delta === undefined) return;
     keyEvent.preventDefault();
-    moveFocus(selectedDate, delta);
+    moveFocus(focusKey, delta);
   };
 
   return (
@@ -122,7 +128,7 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
                   <button
                     type="button"
                     className={`day-number ${isSameDay(day, new Date(`${today}T12:00:00`)) ? "is-today" : ""}`}
-                    tabIndex={key === selectedDate ? 0 : -1}
+                    tabIndex={key === focusKey ? 0 : -1}
                     onClick={(clickEvent) => {
                       clickEvent.stopPropagation();
                       onSelectDate(key);
@@ -152,7 +158,6 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
                     <div className="day-chips">
                       {deadlines.slice(0, MAX_CHIPS).map((event) => {
                         const meta = CATEGORY_UI[event.categoryId];
-                        const Icon = meta.icon;
                         return (
                           <button
                             type="button"
@@ -166,8 +171,8 @@ export function CalendarGrid({ month, events, selectedDate, onSelectDate, onSele
                             title={`${event.university} ${meta.label} ${event.timeLabels[0] ?? ""}`.trim()}
                             aria-label={`${event.university} ${meta.label} 자세히 보기`}
                           >
-                            <Icon size={14} aria-hidden="true" />
                             <span className="day-chip__name">{event.university}</span>
+                            <span className="day-chip__kind">{meta.short}</span>
                           </button>
                         );
                       })}

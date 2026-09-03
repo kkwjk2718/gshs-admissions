@@ -18,7 +18,7 @@ const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 
 export function CalendarPage() {
   const { status } = useAdmissions();
-  const { universities } = usePreferences();
+  const { universities, categories } = usePreferences();
   const visibleEvents = useVisibleEvents();
   const [params] = useSearchParams();
   const today = todayKey();
@@ -82,7 +82,7 @@ export function CalendarPage() {
       <OfflineBanner />
       <h1 className="sr-only">2027학년도 수시모집 일정 달력</h1>
 
-      {universities.length === 0 ? (
+      {universities.length === 0 || categories.length === 0 ? (
         <EmptySelection />
       ) : (
         <div className="calendar-layout">
@@ -120,7 +120,9 @@ export function CalendarPage() {
               onSelectEvent={setSelectedEvent}
             />
 
-            <p className="calendar-hint">칸에는 그날 마감·발표만 표시해요. 진행 중인 일정은 아래 목록에서 볼 수 있어요.</p>
+            <p className="calendar-hint">
+              칸에는 그날 마감·발표·면접만 표시해요. 접수·제출이 진행 중인 일정은 아래 목록에 있어요.
+            </p>
           </section>
 
           <section className="day-panel" aria-label="선택한 날의 일정">
@@ -129,7 +131,7 @@ export function CalendarPage() {
               {selectedDate === today && <span className="tag tag--today">오늘</span>}
             </h2>
 
-            <h3 className="day-panel__section">이 날 마감·발표 {dueToday.length}건</h3>
+            <h3 className="day-panel__section">이 날 마감·발표·면접 {dueToday.length}건</h3>
             {dueToday.length ? (
               <div className="day-panel__list">
                 {dueToday.map((event) => (
@@ -137,7 +139,7 @@ export function CalendarPage() {
                 ))}
               </div>
             ) : (
-              <p className="day-panel__empty">이 날 마감되는 일정은 없어요.</p>
+              <p className="day-panel__empty">이 날은 마감·발표·면접 일정이 없어요.</p>
             )}
 
             {ongoing.length > 0 && (

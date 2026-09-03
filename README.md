@@ -9,7 +9,7 @@
 | 경로 | 이름 | 하는 일 |
 | --- | --- | --- |
 | `/` | 남은 일정 | 마감일로 묶은 목록. 오늘 이후 마감만, 가까운 순. 진행 중인 일정도 함께 나온다. |
-| `/calendar` | 달력 | 월간 격자. 칸에는 **그날 마감·발표만** 그리고, 진행 중인 건수는 칸 모서리에 숫자로 둔다. |
+| `/calendar` | 달력 | 월간 격자. 칸에는 **그날 마감·발표·면접만** 그리고, 진행 중인 건수는 칸 모서리에 숫자로 둔다. |
 | `/schedule` | 전형표 | 원본 PDF의 대학×전형 표. 데스크톱은 표, 폰은 카드. |
 
 세 화면 모두 위쪽 `내 대학 N곳` 버튼 하나로 필터를 공유한다. 버튼 라벨이 곧 필터 상태라
@@ -67,7 +67,7 @@ python src/data/generate_admissions_data.py
 
 일정 종류 8종 — `application` 원서 접수 / `essay` 자소서 입력 / `recommendation` 추천서 입력 /
 `documents` 서류 제출 / `first-result` 1차 합격 발표 / `interview` 면접 /
-`final-result` 최종 합격 발표 / `additional-result` 충원 합격 발표.
+`final-result` 최종 합격 발표 / `additional-result` 추가 합격 발표(추합).
 
 대학별 모집요강 링크는 `src/data/admissionGuides.ts`에 손으로 관리한다. 확인일(`verifiedAt`)을
 화면에 같이 노출하므로 링크를 고칠 때 날짜도 함께 고칠 것.

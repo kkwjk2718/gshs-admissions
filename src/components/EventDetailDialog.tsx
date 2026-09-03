@@ -87,7 +87,7 @@ export function EventDetailDialog({ event, onClose }: EventDetailDialogProps) {
         {hasAmbiguousSchedule(event) && (
           <p className="detail-dialog__warning">
             <TriangleAlert size={16} aria-hidden="true" />
-            원문에 날짜가 여러 개 적혀 있어요. 모집단위나 전형에 따라 날짜가 다를 수 있으니 모집요강을 확인하세요.
+            원문에 이 일정 말고 다른 날짜도 적혀 있어요. 아래 ‘원문 표기’를 그대로 확인하세요.
           </p>
         )}
 

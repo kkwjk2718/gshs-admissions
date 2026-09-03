@@ -10,14 +10,13 @@ import { usePreferences } from "../hooks/usePreferences";
 import { useDeadlineGroups, useOngoingCount, useVisibleEvents } from "../hooks/useVisibleEvents";
 import { CATEGORY_UI } from "../lib/categories";
 import { formatDayLabel, formatDday, formatRelativeDay, daysUntil, todayKey, urgencyOf } from "../lib/date";
-import { deadlineTimeLabel } from "../lib/eventInfo";
 import type { AdmissionEvent } from "../types";
 
 const GROUPS_PER_PAGE = 8;
 
 export function DeadlinesPage() {
   const { status, events } = useAdmissions();
-  const { universities } = usePreferences();
+  const { universities, categories } = usePreferences();
   const { openDialog } = useFilterDialog();
   const visibleEvents = useVisibleEvents();
   const today = todayKey();
@@ -52,6 +51,22 @@ export function DeadlinesPage() {
 
   const remaining = groups.reduce((count, group) => count + group.events.length, 0);
   const first = groups[0];
+
+  /**
+   * 배너는 그 날 전체를 대표해야 한다. 시각이 섞여 있으면(52개 마감일 중 13일이 그렇다)
+   * 대표값을 하나 뽑는 순간 나머지 대학의 마감을 늦게 알려주게 되므로 시각을 빼고,
+   * "마감"인지 "발표"인지도 그룹이 한 종류일 때만 단정한다.
+   */
+  const headline = useMemo(() => {
+    if (!first) return null;
+    const times = [...new Set(first.events.map((event) => event.timeLabels[0]).filter(Boolean))];
+    const nouns = new Set(first.events.map((event) => CATEGORY_UI[event.categoryId].noun));
+    return {
+      noun: nouns.size === 1 ? [...nouns][0] : "일정",
+      time: times.length === 1 ? times[0] : "",
+      mixed: times.length > 1,
+    };
+  }, [first]);
 
   /** 대학마다 가장 가까운 마감 하나. 전형별로 다른 일정을 합치지 않는다. */
   const nextByUniversity = useMemo(() => {
@@ -122,23 +137,24 @@ export function DeadlinesPage() {
             </button>
           </div>
         </div>
-      ) : !searching && universities.length === 0 ? (
+      ) : !searching && (universities.length === 0 || categories.length === 0) ? (
         <EmptySelection />
       ) : groups.length === 0 ? (
         <div className="state-block">
-          <p>남은 일정이 없어요. 고른 대학의 2027학년도 수시 일정이 모두 지났습니다.</p>
+          <p>남은 일정이 없어요. 고른 대학의 2027학년도 수시 일정이 모두 끝났어요.</p>
         </div>
       ) : (
         <div className="deadlines-layout">
           <div className="deadlines-main">
-            {!searching && first && daysUntil(first.date, today) <= 7 && (
+            {!searching && first && headline && daysUntil(first.date, today) <= 7 && (
               <div className={`highlight highlight--${urgencyOf(first.date, today)}`}>
                 <p className="highlight__title">
-                  가장 가까운 마감 — {formatDayLabel(first.date)}
-                  {first.events[0] && deadlineTimeLabel(first.events[0]) ? ` ${first.events[0].timeLabels[0]}` : ""}
+                  가장 가까운 {headline.noun} — {formatDayLabel(first.date)}
+                  {headline.time && ` ${headline.time}`}
                 </p>
                 <p className="highlight__body">
                   {formatRelativeDay(first.date, today)} · {first.events.length}건
+                  {headline.mixed && " · 대학마다 시각이 달라요"}
                   {ongoing > 0 && ` · 지금 진행 중인 일정 ${ongoing}건`}
                 </p>
               </div>

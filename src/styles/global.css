@@ -41,8 +41,9 @@
   --ink: #16202b;
   --ink-2: #3a4956;
   --muted: #57646f;
-  --line: #e0e6ec;
-  --line-strong: #b7c2cc;
+  --line: #dde4ea;      /* 면을 나누는 장식선 */
+  --line-grid: #ccd5dd; /* 달력 격자·표 칸 경계 */
+  --line-strong: #85909b; /* 버튼·입력·체크박스 경계. 흰 배경 3.25:1 (WCAG 1.4.11) */
   --accent: #12467a;
   --accent-ink: #ffffff;
   --accent-soft: #e7f0f9;
@@ -55,14 +56,14 @@
 }
 
 /* 일정 종류 8가지. 색은 보조 채널이고, 아이콘과 라벨이 1차 채널이다. */
-.cat-application { --cat: #5b34c4; --cat-soft: #efeaff; }
-.cat-essay { --cat: #1f5aa8; --cat-soft: #e8f1fd; }
-.cat-recommendation { --cat: #0f6675; --cat-soft: #e0f2f4; }
-.cat-documents { --cat: #8a5709; --cat-soft: #fdf1dc; }
-.cat-first-result { --cat: #4c5a6b; --cat-soft: #eceff3; }
-.cat-interview { --cat: #b03b36; --cat-soft: #fdeae8; }
-.cat-final-result { --cat: #1f6b45; --cat-soft: #e4f3ea; }
-.cat-additional-result { --cat: #9c3168; --cat-soft: #fbe9f1; }
+.cat-application { --cat: #5b34c4; --cat-soft: #ece5ff; }
+.cat-essay { --cat: #1f5aa8; --cat-soft: #e2edfc; }
+.cat-recommendation { --cat: #0f6675; --cat-soft: #d8eff2; }
+.cat-documents { --cat: #8a5709; --cat-soft: #fbecd0; }
+.cat-first-result { --cat: #4c5a6b; --cat-soft: #e7ebf0; }
+.cat-interview { --cat: #b03b36; --cat-soft: #fce2df; }
+.cat-final-result { --cat: #1f6b45; --cat-soft: #dcefe4; }
+.cat-additional-result { --cat: #9c3168; --cat-soft: #fae0ec; }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -72,8 +73,9 @@
     --ink: #e9eef3;
     --ink-2: #c3ccd5;
     --muted: #9dabb7;
-    --line: #2a343d;
-    --line-strong: #45535f;
+    --line: #303b45;
+    --line-grid: #3d4954;
+    --line-strong: #73818f;
     --accent: #8ec0f0;
     --accent-ink: #0d1a26;
     --accent-soft: #1b2c3d;
@@ -88,14 +90,14 @@
     --shadow-3: 0 24px 64px rgba(0, 0, 0, 0.6);
   }
 
-  .cat-application { --cat: #bfa9fb; --cat-soft: #251d3e; }
-  .cat-essay { --cat: #8fc0f5; --cat-soft: #14253a; }
-  .cat-recommendation { --cat: #6fcbd9; --cat-soft: #0e2a30; }
-  .cat-documents { --cat: #e3b56b; --cat-soft: #2f2410; }
-  .cat-first-result { --cat: #b3c0cd; --cat-soft: #232b33; }
-  .cat-interview { --cat: #f2988f; --cat-soft: #361c1a; }
-  .cat-final-result { --cat: #79cfa1; --cat-soft: #113022; }
-  .cat-additional-result { --cat: #f09ac6; --cat-soft: #33162a; }
+  .cat-application { --cat: #bfa9fb; --cat-soft: #302650; }
+  .cat-essay { --cat: #8fc0f5; --cat-soft: #1c3350; }
+  .cat-recommendation { --cat: #6fcbd9; --cat-soft: #153a42; }
+  .cat-documents { --cat: #e3b56b; --cat-soft: #3f3016; }
+  .cat-first-result { --cat: #b3c0cd; --cat-soft: #2d3740; }
+  .cat-interview { --cat: #f2988f; --cat-soft: #472725; }
+  .cat-final-result { --cat: #79cfa1; --cat-soft: #193f2f; }
+  .cat-additional-result { --cat: #f09ac6; --cat-soft: #442038; }
 }
 
 /* ========================================================================= */
@@ -885,7 +887,7 @@ a {
 }
 
 .calendar__week + .calendar__week {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-grid);
 }
 
 .calendar__day {
@@ -901,7 +903,7 @@ a {
 }
 
 .calendar__day + .calendar__day {
-  border-left: 1px solid var(--line);
+  border-left: 1px solid var(--line-grid);
 }
 
 .calendar__day:hover {
@@ -968,11 +970,11 @@ a {
 .day-chip {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 5px;
   width: 100%;
   min-height: 28px;
-  padding: 0 7px;
+  padding: 0 6px;
   border-left: 4px solid var(--cat);
   border-radius: 5px;
   background: var(--cat-soft);
@@ -992,6 +994,12 @@ a {
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.day-chip__kind {
+  flex: 0 0 auto;
+  font-size: var(--fs-xs);
+  font-weight: 700;
 }
 
 .day-chip svg {
@@ -1118,7 +1126,8 @@ a {
   outline: 0;
   background: transparent;
   color: var(--ink);
-  font-size: var(--fs-base);
+  /* 16px 미만이면 iOS Safari 가 포커스 때 화면을 확대하고 되돌리지 않는다. */
+  font-size: 16px;
 }
 
 .search-field input::placeholder {
@@ -1132,7 +1141,7 @@ a {
   border-radius: var(--r-sm);
   background: var(--surface);
   color: var(--ink);
-  font-size: var(--fs-base);
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -1151,9 +1160,14 @@ a {
   background: var(--surface);
 }
 
+/* 표는 11열이라 본문 기준 폭(1180px)에 들어가지 않는다.
+   이 화면에서만 페이지를 넓혀 '모집요강' 열이 잘리지 않게 한다. */
+.page--schedule {
+  --page-max: 1400px;
+}
+
 .schedule-table {
   width: 100%;
-  min-width: 1180px;
   border-collapse: separate;
   border-spacing: 0;
   font-size: var(--fs-base);
@@ -1175,10 +1189,10 @@ a {
 }
 
 .schedule-table td {
-  min-width: 118px;
-  padding: 12px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  min-width: 110px;
+  padding: 12px 10px;
+  border-right: 1px solid var(--line-grid);
+  border-bottom: 1px solid var(--line-grid);
   color: var(--ink-2);
   line-height: var(--lh-tight);
   text-align: center;
@@ -1254,9 +1268,10 @@ a {
 }
 
 .schedule-legend {
-  margin-top: 12px;
+  margin-bottom: 12px;
   color: var(--muted);
   font-size: var(--fs-sm);
+  line-height: var(--lh-base);
 }
 
 .schedule-legend strong {
@@ -1720,10 +1735,13 @@ dialog::backdrop {
   .deadlines-side {
     position: sticky;
     top: calc(var(--header-h) + 20px);
+    /* 24곳을 다 켜면 목록이 1,200px 가까이 된다. 없으면 아래쪽이 영영 화면 밖에 고정된다. */
+    max-height: calc(100dvh - var(--header-h) - 40px);
+    overflow: auto;
   }
 
   .calendar-layout {
-    grid-template-columns: minmax(0, 1fr) 360px;
+    grid-template-columns: minmax(0, 1fr) 330px;
     align-items: start;
   }
 

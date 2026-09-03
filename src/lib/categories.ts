@@ -46,10 +46,11 @@ export const CATEGORY_UI: Record<CategoryId, CategoryUi> = {
   "first-result": { label: "1차 합격 발표", short: "1차", group: "발표", icon: ListChecks, noun: "발표" },
   interview: { label: "면접", short: "면접", group: "평가", icon: MessageSquare, noun: "면접" },
   "final-result": { label: "최종 합격 발표", short: "최종", group: "발표", icon: Trophy, noun: "발표" },
+  // 원본 표기는 "충원 합격자 발표"지만 학생이 쓰고 검색하는 말은 "추합"이다.
   "additional-result": {
-    label: "충원 합격 발표",
-    short: "충원",
-    hint: "추가합격",
+    label: "추가 합격 발표",
+    short: "추합",
+    hint: "충원 합격 발표",
     group: "발표",
     icon: UserPlus,
     noun: "발표",

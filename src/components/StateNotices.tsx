@@ -2,6 +2,7 @@ import { CircleAlert, Info, RefreshCw } from "lucide-react";
 import { useAdmissions } from "../hooks/useAdmissions";
 import { useFilterDialog } from "../hooks/useFilterDialog";
 import { usePreferences } from "../hooks/usePreferences";
+import { CATEGORY_ORDER } from "../lib/categories";
 import { formatDotted } from "../lib/date";
 
 export function LoadingState() {
@@ -41,20 +42,35 @@ export function OfflineBanner() {
 /** 대학이나 종류를 전부 꺼놓으면 "일정이 없다"로 오해하기 쉽다. 원인과 되돌리는 길을 함께 준다. */
 export function EmptySelection() {
   const { universities: allUniversities } = useAdmissions();
-  const { universities, categories, resetAll } = usePreferences();
+  const { universities, categories, setCategories, resetAll } = usePreferences();
   const { openDialog } = useFilterDialog();
-  const reason = universities.length === 0 ? "대학" : categories.length === 0 ? "일정 종류" : null;
-  if (!reason) return null;
+
+  if (universities.length > 0 && categories.length > 0) return null;
+  const noUniversity = universities.length === 0;
 
   return (
     <div className="state-block">
-      <p>고른 {reason}이 없어서 보여줄 일정이 없어요.</p>
+      <p>
+        {noUniversity
+          ? "고른 대학이 없어서 보여줄 일정이 없어요."
+          : "일정 종류를 모두 꺼놔서 보여줄 일정이 없어요."}
+      </p>
       <div className="state-block__actions">
-        <button type="button" className="button button--primary" onClick={resetAll}>
-          전체 {allUniversities.length}곳 보기
-        </button>
+        {noUniversity ? (
+          <button type="button" className="button button--primary" onClick={resetAll}>
+            전체 {allUniversities.length}곳 보기
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="button button--primary"
+            onClick={() => setCategories([...CATEGORY_ORDER])}
+          >
+            일정 종류 {CATEGORY_ORDER.length}종 모두 켜기
+          </button>
+        )}
         <button type="button" className="button" onClick={openDialog}>
-          내 대학 고르기
+          {noUniversity ? "내 대학 고르기" : "일정 종류 고르기"}
         </button>
       </div>
     </div>
