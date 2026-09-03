@@ -8,6 +8,8 @@ export interface TimeLine {
   time: string;
   universities: string[];
   events: AdmissionEvent[];
+  /** 그 대학이 이 줄에서 몇 건을 대표하는가. 2 이상이면 하나를 골라 열 수 없다. */
+  counts: number[];
 }
 
 export interface DayEntry {
@@ -20,16 +22,24 @@ export interface DayEntry {
   count: number;
 }
 
+/** 제출 계열. 같은 날 여러 개가 함께 열리면 종이 달력처럼 "접수 시작" 한 줄로 묶는다. */
+const SUBMISSION: CategoryId[] = ["application", "essay", "recommendation", "documents"];
+
+/** 시작 줄은 "추합 시작"처럼 토막 내지 않고 하는 일을 그대로 쓴다. */
+const START_LABEL: Record<CategoryId, string> = {
+  application: "원서 접수 시작",
+  essay: "자소서 입력 시작",
+  recommendation: "추천서 입력 시작",
+  documents: "서류 제출 시작",
+  "first-result": "1차 발표 시작",
+  interview: "면접 시작",
+  "final-result": "최종 발표 시작",
+  "additional-result": "추합 발표 시작",
+};
+
 function endLabel(categoryId: CategoryId) {
   const meta = CATEGORY_UI[categoryId];
   return meta.noun === "면접" ? meta.short : `${meta.short} ${meta.noun}`;
-}
-
-/** 같은 날 여러 서류가 함께 열리면 종이 달력처럼 "접수 시작" 한 줄로 묶는다. */
-function startLabel(categoryIds: CategoryId[]) {
-  const shorts = CATEGORY_ORDER.filter((id) => categoryIds.includes(id)).map((id) => CATEGORY_UI[id].short);
-  if (shorts.length >= 3) return "접수 시작";
-  return `${shorts.join("·")} 시작`;
 }
 
 function toLines(events: AdmissionEvent[], withTime: boolean): TimeLine[] {
@@ -37,18 +47,24 @@ function toLines(events: AdmissionEvent[], withTime: boolean): TimeLine[] {
   for (const event of events) {
     // 원문의 시각은 마감 시각이다. 시작일 칸에 붙이면 시작 시각처럼 읽힌다.
     const time = withTime ? (event.timeLabels[0] ?? "") : "";
-    const line = byTime.get(time);
-    if (line) {
-      if (!line.universities.includes(event.university)) {
-        line.universities.push(event.university);
-        line.events.push(event);
-      }
+    let line = byTime.get(time);
+    if (!line) {
+      line = { time, universities: [], events: [], counts: [] };
+      byTime.set(time, line);
+    }
+    const index = line.universities.indexOf(event.university);
+    if (index >= 0) {
+      line.counts[index] += 1;
     } else {
-      byTime.set(time, { time, universities: [event.university], events: [event] });
+      line.universities.push(event.university);
+      line.events.push(event);
+      line.counts.push(1);
     }
   }
   // 시각이 없는 줄은 맨 아래로 보낸다.
-  return [...byTime.values()].sort((a, b) => (a.time || "~").localeCompare(b.time || "~"));
+  return [...byTime.values()].sort(
+    (a, b) => Number(!a.time) - Number(!b.time) || a.time.localeCompare(b.time),
+  );
 }
 
 /**
@@ -82,15 +98,31 @@ export function buildDayEntries(events: AdmissionEvent[], dateKey: string): DayE
     };
   });
 
-  if (starting.length) {
-    const categoryIds = [...new Set(starting.map((event) => event.categoryId))];
+  const submissionStarts = starting.filter((event) => SUBMISSION.includes(event.categoryId));
+  if (submissionStarts.length) {
+    const ids = CATEGORY_ORDER.filter((id) => submissionStarts.some((event) => event.categoryId === id));
     entries.push({
-      id: "start",
-      categoryId: CATEGORY_ORDER.find((id) => categoryIds.includes(id)) as CategoryId,
+      id: "start:submission",
+      categoryId: ids[0],
       phase: "start",
-      label: startLabel(categoryIds),
-      lines: toLines(starting, false),
-      count: starting.length,
+      label: ids.length >= 2 ? "접수 시작" : START_LABEL[ids[0]],
+      lines: toLines(submissionStarts, false),
+      count: submissionStarts.length,
+    });
+  }
+
+  // 면접·발표 기간은 제출과 성격이 달라 따로 둔다.
+  for (const id of CATEGORY_ORDER) {
+    if (SUBMISSION.includes(id)) continue;
+    const list = starting.filter((event) => event.categoryId === id);
+    if (!list.length) continue;
+    entries.push({
+      id: `start:${id}`,
+      categoryId: id,
+      phase: "start",
+      label: START_LABEL[id],
+      lines: toLines(list, false),
+      count: list.length,
     });
   }
 

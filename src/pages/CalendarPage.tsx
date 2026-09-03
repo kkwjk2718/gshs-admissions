@@ -34,10 +34,19 @@ export function CalendarPage() {
     () => visibleEvents.filter((event) => event.deadlineDate === selectedDate),
     [selectedDate, visibleEvents],
   );
+  // 달력 칸과 같은 기준으로 나눈다. 시작을 "진행 중"에 섞으면 칸과 패널이 서로 다른 말을 한다.
+  const starting = useMemo(
+    () =>
+      visibleEvents.filter(
+        (event) => event.isDateRange && event.startDate === selectedDate && event.deadlineDate !== selectedDate,
+      ),
+    [selectedDate, visibleEvents],
+  );
   const ongoing = useMemo(
     () =>
       visibleEvents.filter(
         (event) =>
+          event.startDate !== selectedDate &&
           event.deadlineDate !== selectedDate &&
           isDateInRange(selectedDate, event.startDate, event.deadlineDate),
       ),
@@ -136,14 +145,23 @@ export function CalendarPage() {
             </h2>
 
             <h3 className="day-panel__section">마감·발표·면접 {dueToday.length}건</h3>
-            {dueToday.length ? (
+            {dueToday.length > 0 && (
               <div className="day-panel__list">
                 {dueToday.map((event) => (
                   <EventRow key={event.id} event={event} onSelect={setSelectedEvent} showDday today={today} />
                 ))}
               </div>
-            ) : (
-              <p className="day-panel__empty">이 날 마감·발표·면접 없음</p>
+            )}
+
+            {starting.length > 0 && (
+              <>
+                <h3 className="day-panel__section">시작 {starting.length}건</h3>
+                <div className="day-panel__list">
+                  {starting.map((event) => (
+                    <EventRow key={event.id} event={event} onSelect={setSelectedEvent} showDday today={today} />
+                  ))}
+                </div>
+              </>
             )}
 
             {ongoing.length > 0 && (

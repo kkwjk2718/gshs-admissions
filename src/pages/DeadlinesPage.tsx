@@ -182,7 +182,7 @@ export function DeadlinesPage() {
                 className="button button--wide"
                 onClick={() => setShownGroups((value) => value + GROUPS_PER_PAGE)}
               >
-                마감일 {groups.length - shownGroups}일치 더 보기
+                마감일 {Math.min(GROUPS_PER_PAGE, groups.length - shownGroups)}일 더 보기 (남은 {groups.length - shownGroups}일)
               </button>
             )}
           </div>
