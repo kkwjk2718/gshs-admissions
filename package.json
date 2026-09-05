@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "test": "python -m unittest discover -s tests -v && node --test tests/unist-ui.test.cjs",
+    "test": "python -m unittest discover -s tests -v && node --test tests/*.test.cjs",
     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },

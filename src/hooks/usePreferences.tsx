@@ -88,9 +88,8 @@ function readStored(): StoredPreferences | null {
 export function PreferencesProvider({ children }: { children: ReactNode }) {
   const { universities: allUniversities } = useAdmissions();
   const [stored] = useState(readStored);
-  // 빈 배열이 저장돼 있으면 "고른 게 없다"가 아니라 "아직 안 골랐다"로 본다.
-  // 그렇지 않으면 한 번 전체 해제한 사용자가 영영 빈 화면만 보게 된다.
-  const [hasChoice, setHasChoice] = useState(Boolean(stored?.universities?.length));
+  // 명시적으로 전체 해제한 선택도 유지한다. 재접속·인쇄 때 전체 대학으로 바꾸지 않는다.
+  const [hasChoice, setHasChoice] = useState(stored !== null);
   const [universities, setUniversitiesState] = useState<string[]>(stored?.universities ?? []);
   const [categories, setCategoriesState] = useState<CategoryId[]>(
     stored?.categories?.length ? stored.categories : [...CATEGORY_ORDER],

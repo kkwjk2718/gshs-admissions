@@ -1,4 +1,6 @@
-import { CalendarPlus, Moon, SlidersHorizontal, Sun } from "lucide-react";
+import { CalendarPlus, Moon, Printer, SlidersHorizontal, Sun } from "lucide-react";
+import { useAdmissions } from "../hooks/useAdmissions";
+import { PRINT_SCOPE } from "./PrintSchedule";
 import { NavLink, Link } from "react-router-dom";
 import { useFilterDialog } from "../hooks/useFilterDialog";
 import { usePreferences } from "../hooks/usePreferences";
@@ -17,6 +19,7 @@ export function AppHeader() {
   const { universities, hasChosen } = usePreferences();
   const { theme, toggle } = useTheme();
   const visibleEvents = useVisibleEvents();
+  const { status } = useAdmissions();
 
   return (
     <header className="app-header">
@@ -50,6 +53,16 @@ export function AppHeader() {
           >
             <CalendarPlus size={16} aria-hidden="true" />
             캘린더에 담기
+          </button>
+          <button
+            type="button"
+            className="button button--ghost app-header__print"
+            onClick={() => window.print()}
+            disabled={universities.length === 0 || status !== "ready"}
+            title={`A4 인쇄 · ${PRINT_SCOPE}`}
+            aria-label="선택 대학 A4 인쇄"
+          >
+            <Printer size={16} aria-hidden="true" /><span>인쇄</span>
           </button>
           <button
             type="button"

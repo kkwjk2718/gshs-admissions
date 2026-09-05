@@ -4,6 +4,7 @@ import { AppHeader } from "./components/AppHeader";
 import { DeadlineTicker } from "./components/DeadlineTicker";
 import { FilterDialog } from "./components/FilterDialog";
 import { MobileTabBar } from "./components/MobileTabBar";
+import { PrintSchedule } from "./components/PrintSchedule";
 import { AdmissionsProvider } from "./hooks/useAdmissions";
 import { FilterDialogProvider, useFilterDialog } from "./hooks/useFilterDialog";
 import { PreferencesProvider } from "./hooks/usePreferences";
@@ -44,6 +45,7 @@ export default function App() {
             <MobileTabBar />
             <FilterDialogHost />
           </div>
+          <PrintSchedule />
         </FilterDialogProvider>
       </PreferencesProvider>
     </AdmissionsProvider>
