@@ -20,6 +20,15 @@ test('calendar summary enforces selection and has no attached detail pages', () 
   assert.match(html, /대학별 전체 일정/);
   assert.equal((html.match(/data-outside-month="false"/g) || []).length, 30);
 });
+test('calendar selection header lists every school without an overflow count', () => {
+  const all = data.universities.map(u => u.name);
+  for (const universities of [all.slice(0, 9), all]) {
+    const html = render({ universities });
+    const selection = html.match(/<p class="print-document__selection">([\s\S]*?)<\/p>/)[1].replace(/<[^>]+>/g, '');
+    assert.equal(selection, `선택 대학 ${universities.length}곳 · ${universities.join(' / ')}`);
+    assert.doesNotMatch(selection, /외\s*\d+곳/);
+  }
+});
 test('empty categories, empty schools, unavailable data never leak entries', () => {
   for (const extra of [{universities: []}, {categories: []}, {status: 'loading'}, {status: 'error'}]) assert.doesNotMatch(render(extra), /data-print-phase=/);
 });

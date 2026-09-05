@@ -32,7 +32,7 @@ interface Props {
 export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events: input, universities, categories, month, monthSource }: Props) {
   const { events, weeks } = buildPrintCalendar(status === "ready" && dataset ? input : [], universities, categories, month);
   const monthLabel = format(month, "yyyy년 M월");
-  const selectedLabel = universities.slice(0, 8).join(" / ") + (universities.length > 8 ? ` 외 ${universities.length - 8}곳` : "");
+  const selectedLabel = universities.join(" / ");
   const unavailable = !universities.length ? "선택한 대학이 없습니다. ‘내 대학’에서 대학을 선택하세요."
     : status !== "ready" || !dataset ? (status === "error" ? "일정 자료를 불러오지 못했습니다." : "일정 자료를 불러오는 중입니다.")
     : !events.length ? "이 월과 선택한 일정 종류에 해당하는 일정이 없습니다." : null;
