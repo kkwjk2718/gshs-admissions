@@ -24,7 +24,7 @@ export function PrintChooser() {
     <p id="print-chooser-scope">선택 대학 {universities.length}곳만 인쇄합니다. {universities.join(" / ")}</p>
     <fieldset><legend>인쇄할 내용</legend>
       <label className="print-choice"><input autoFocus type="radio" name="print-mode" value="schedule" checked={mode === "schedule"} onChange={() => setMode("schedule")} /><span><strong>대학별 전체 일정</strong><small>{PRINT_SCOPE}</small></span></label>
-      <label className="print-choice"><input type="radio" name="print-mode" value="calendar" checked={mode === "calendar"} onChange={() => setMode("calendar")} /><span><strong>월간 달력 · {format(month, "yyyy년 M월")}</strong><small>{monthSource}. 선택한 일정 종류만 포함합니다. 월간 개요 + 전체 상세 페이지 (A4 가로).</small></span></label>
+      <label className="print-choice"><input type="radio" name="print-mode" value="calendar" checked={mode === "calendar"} onChange={() => setMode("calendar")} /><span><strong>월간 달력 · {format(month, "yyyy년 M월")}</strong><small>{monthSource}. 선택한 일정 종류만 포함합니다. 한 달을 A4 가로 한 장에 요약합니다. 상세 페이지는 붙지 않습니다.</small></span></label>
     </fieldset>
     <p className="print-chooser__hint">달력 일정 종류: {categories.map(id => CATEGORY_UI[id].label).join(" / ") || "선택 없음"}. 대학 검색어는 대학 선택창 검색에만 적용됩니다.</p>
     <p className="print-chooser__hint">Ctrl+P / 브라우저 인쇄도 지금 선택한 형식을 사용합니다. 처음에는 대학별 전체 일정입니다.</p>

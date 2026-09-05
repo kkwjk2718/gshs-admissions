@@ -1,4 +1,5 @@
 import { endOfMonth, format, isSameMonth, startOfMonth } from "date-fns";
+import type { CSSProperties } from "react";
 import { useAdmissions } from "../hooks/useAdmissions";
 import { useCalendarMonth } from "../hooks/useCalendarMonth";
 import { usePreferences } from "../hooks/usePreferences";
@@ -6,17 +7,14 @@ import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { CATEGORY_UI } from "../lib/categories";
 import { buildDayEntries } from "../lib/dayEntries";
 import { getCalendarWeeks, toDateKey } from "../lib/date";
-import { eventBadges } from "../lib/eventInfo";
 import type { AdmissionEvent, AdmissionsDataset, CategoryId } from "../types";
-import { PrintedSchedule } from "./PrintSchedule";
 
-/** Keep full records, not dayEntries.lines.events: those are one representative per university. */
+/** Full filtered records drive counts; printed calendar is explicitly a one-page summary. */
 export function buildPrintCalendar(input: AdmissionEvent[], universities: string[], categories: CategoryId[], month: Date) {
   const first = toDateKey(startOfMonth(month));
   const last = toDateKey(endOfMonth(month));
   const events = input.filter(e => universities.includes(e.university) && categories.includes(e.categoryId) && e.startDate <= last && e.deadlineDate >= first)
     .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.deadlineDate.localeCompare(b.deadlineDate) || a.university.localeCompare(b.university, "ko") || a.id.localeCompare(b.id));
-  const numbers = new Map(events.map((e, i) => [e.id, i + 1]));
   const weeks = getCalendarWeeks(month).map(week => week.map(date => {
     const key = toDateKey(date);
     const inside = isSameMonth(date, month);
@@ -25,59 +23,44 @@ export function buildPrintCalendar(input: AdmissionEvent[], universities: string
     const ongoing = active.filter(e => e.startDate < key && e.deadlineDate > key);
     return { date, key, inside, entries, active, ongoing };
   }));
-  return { events, numbers, weeks };
+  return { events, weeks };
 }
 interface Props {
   dataset: AdmissionsDataset | null; status: "loading" | "ready" | "error"; offlineSavedAt: string | null;
   events: AdmissionEvent[]; universities: string[]; categories: CategoryId[]; month: Date; monthSource: string;
 }
 export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events: input, universities, categories, month, monthSource }: Props) {
-  const { events, numbers, weeks } = buildPrintCalendar(status === "ready" && dataset ? input : [], universities, categories, month);
+  const { events, weeks } = buildPrintCalendar(status === "ready" && dataset ? input : [], universities, categories, month);
   const monthLabel = format(month, "yyyy년 M월");
-  const reference = (items: AdmissionEvent[]) => {
-    const ids = items.map(e => numbers.get(e.id));
-    return ids.slice(0, 3).map(id => `#${id}`).join("·") + (ids.length > 3 ? ` 외 ${ids.length - 3}건` : "");
-  };
-  return <article className="print-document print-calendar" lang="ko" aria-label="선택 대학 월간 인쇄 달력" data-print-month={format(month, "yyyy-MM")}>
+  const selectedLabel = universities.slice(0, 8).join(" / ") + (universities.length > 8 ? ` 외 ${universities.length - 8}곳` : "");
+  const unavailable = !universities.length ? "선택한 대학이 없습니다. ‘내 대학’에서 대학을 선택하세요."
+    : status !== "ready" || !dataset ? (status === "error" ? "일정 자료를 불러오지 못했습니다." : "일정 자료를 불러오는 중입니다.")
+    : !events.length ? "이 월과 선택한 일정 종류에 해당하는 일정이 없습니다." : null;
+  return <article className="print-document print-calendar" lang="ko" aria-label="선택 대학 월간 인쇄 달력" data-print-month={format(month, "yyyy-MM")} data-print-event-count={events.length} style={{"--print-week-count": weeks.length} as CSSProperties}>
     <header className="print-document__header">
-      <p className="print-document__eyebrow">GSHS · ADMISSIONS / MONTHLY CALENDAR</p>
+      <p className="print-document__eyebrow">GSHS · ADMISSIONS / 한 달 · 한 장</p>
       <div className="print-month-mark" aria-hidden="true"><strong>{format(month, "MM")}</strong><span>{format(month, "yyyy")} / MONTH</span></div>
       <h1>{monthLabel} 수시 일정 달력</h1>
-      <p className="print-document__selection"><strong>선택 대학 {universities.length}곳</strong> · {universities.join(" / ") || "선택 없음"}</p>
-      <p className="print-document__help">{monthSource} · 이번 달만 / 일정 종류: {categories.map(id => CATEGORY_UI[id].label).join(" / ") || "선택 없음"}</p>
-      <p className="print-document__help">화면과 같은 대학·일정 종류 필터 적용. 대학 검색어는 선택창 검색용입니다. 이웃 달은 빈칸으로 표시합니다.</p>
-      <p className="print-document__help">날짜 칸은 개요입니다. #번호 → 뒤의 전체 일정 상세. ‘외’ 일정도 상세에 모두 포함됩니다. 시각·‘이전’·소인·제외일은 원문을 확인하세요.</p>
-      {offlineSavedAt && <p className="print-document__warning">오프라인 저장된 자료입니다. 최신 변경 사항은 대학 홈페이지에서 확인하세요.</p>}
+      <p className="print-document__selection"><strong>선택 대학 {universities.length}곳</strong> · {selectedLabel || "선택 없음"}</p>
+      <p className="print-document__help">{monthSource} · {categories.length === dataset?.categories.length ? "모든 일정 종류" : categories.map(id => CATEGORY_UI[id].label).join(" / ") || "선택 없음"} · 이달 {events.length}개 일정</p>
+      {unavailable && <p className="print-calendar-status">{unavailable}</p>}
     </header>
-    {!universities.length ? <p className="print-document__empty">선택한 대학이 없습니다. ‘내 대학’에서 대학을 선택하세요.</p>
-      : status !== "ready" || !dataset ? <p className="print-document__empty">{status === "error" ? "일정 자료를 불러오지 못했습니다." : "일정 자료를 불러오는 중입니다."}</p> : <>
-      {!events.length && <p className="print-document__empty">이 월과 선택한 일정 종류에 해당하는 일정이 없습니다.</p>}
-      <table className="print-month-grid" aria-label={`${monthLabel} 월간 개요`}>
-        <thead><tr>{["일", "월", "화", "수", "목", "금", "토"].map((d, index) => <th scope="col" key={d} data-weekday={index}>{d}</th>)}</tr></thead>
-        <tbody>{weeks.map(week => <tr key={week[0].key}>{week.map(day => <td key={day.key} data-print-day={day.key} data-weekday={day.date.getDay()} data-outside-month={!day.inside} data-has-entries={day.entries.length > 0}>
-          {day.inside && <><strong className="print-day-number">{format(day.date, "d")}</strong>
-            {day.entries.slice(0, 2).map(entry => {
-              const matching = day.active.filter(e => buildDayEntries([e], day.key).some(single => single.id === entry.id));
-              return <p className="print-day-summary" data-print-phase={entry.phase} key={entry.id}><b>{entry.label}</b><span>{[...new Set(entry.lines.flatMap(line => line.universities))].slice(0, 3).join("·")}{new Set(entry.lines.flatMap(line => line.universities)).size > 3 ? " 외" : ""} ({entry.count}건)</span><span className="print-day-ids">{reference(matching)}</span></p>;
-            })}
-            {day.entries.length > 2 && <p className="print-day-more">외 {day.entries.length - 2}종 · 전체 상세 확인</p>}
-            {day.ongoing.length > 0 && <p className="print-day-more">진행 중 {day.ongoing.length}건 · {reference(day.ongoing)}</p>}
-          </>}
-        </td>)}</tr>)}</tbody>
-      </table>
-      {events.length > 0 && <section className="print-calendar-details">
-        <h2>{monthLabel} · 전체 일정 상세 ({events.length}건)</h2>
-        <table className="print-table"><colgroup><col style={{width: "7%"}} /><col style={{width: "17%"}} /><col style={{width: "29%"}} /><col /></colgroup>
-          <thead><tr><th scope="col">번호</th><th scope="col">대학 · 일정</th><th scope="col">전형 · 해당 날짜</th><th scope="col">원문 날짜·시각·조건</th></tr></thead>
-          <tbody>{events.map(e => <tr key={e.id} data-print-event-id={e.id} data-print-university={e.university}>
-            <th scope="row"><span className="print-reference-number">#{numbers.get(e.id)}</span></th><td><strong>{e.university}</strong><br /><span className="print-category-label">{e.category}</span></td>
-            <td>{e.admissionDetail || "전형명 미표기"}<small className="print-event-date">{e.isDateRange ? `기간: ${e.startDate} ~ ${e.deadlineDate}` : `해당일: ${e.deadlineDate}`}</small></td>
-            <td><PrintedSchedule raw={e.rawSchedule} />{eventBadges(e).length > 0 && <small className="print-event-date">{eventBadges(e).join(" · ")}</small>}{e.excludedDates.length > 0 && <small className="print-exclusions">제외일: {e.excludedDates.join(", ")}</small>}{e.note && <small className="print-event-date">{e.note}</small>}</td>
-          </tr>)}</tbody>
-        </table>
-      </section>}
-    </>}
-    <footer className="print-document__footer"><strong>참고용 · 지원 전 대학 홈페이지와 모집요강에서 반드시 최종 확인하세요.</strong><p>{dataset?.meta.notice}</p><p>자료: https://admissions.gshs.app · 한국 시간 기준 · 미표기 시각은 추정하지 않습니다.</p></footer>
+    <table className="print-month-grid" aria-label={`${monthLabel} 월간 개요`}>
+      <thead><tr>{["일", "월", "화", "수", "목", "금", "토"].map((d, index) => <th scope="col" key={d} data-weekday={index}>{d}</th>)}</tr></thead>
+      <tbody>{weeks.map(week => <tr key={week[0].key}>{week.map(day => <td key={day.key} data-print-day={day.key} data-weekday={day.date.getDay()} data-outside-month={!day.inside} data-has-entries={day.entries.length > 0}>
+        {day.inside && <><strong className="print-day-number">{format(day.date, "d")}</strong>
+          {day.entries.slice(0, 2).map(entry => {
+            const schools = [...new Set(entry.lines.flatMap(line => line.universities))];
+            return <p className="print-day-summary" data-print-phase={entry.phase} key={entry.id}><b>{entry.label} <small>{entry.count}</small></b><span>{schools.slice(0, 2).join("·")}{schools.length > 2 ? ` 외 ${schools.length - 2}곳` : ""}</span></p>;
+          })}
+          {(day.entries.length > 2 || day.ongoing.length > 0) && <p className="print-day-more">{[day.entries.length > 2 ? `외 ${day.entries.length - 2}종` : "", day.ongoing.length ? `진행 중 ${day.ongoing.length}건` : ""].filter(Boolean).join(" · ")}</p>}
+        </>}
+      </td>)}</tr>)}</tbody>
+    </table>
+    <footer className="print-document__footer">
+      <strong>월간 요약 · 전형·시각·‘이전’·제외일 등 상세 조건은 ‘대학별 전체 일정’으로 별도 인쇄하세요.</strong>
+      <p>{offlineSavedAt ? "오프라인 저장 자료 · " : ""}칸마다 최대 2종·대학 2곳을 표시하고 나머지는 ‘외’로 집계합니다. 진행 중에는 제외일이 있을 수 있습니다. 대학 모집요강 최종 확인 · admissions.gshs.app</p>
+    </footer>
   </article>;
 }
 export function PrintCalendar() {

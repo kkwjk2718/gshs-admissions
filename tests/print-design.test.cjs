@@ -14,7 +14,7 @@ test('calendar design adds month marker and semantic day/phase hooks without cha
  assert.match(html,/data-print-phase="start"/);
  assert.match(html,/data-print-phase="end"/);
  const expected=data.events.filter(e=>e.university==='UNIST' && e.startDate<='2026-09-30' && e.deadlineDate>='2026-09-01');
- assert.equal((html.match(/data-print-event-id=/g)||[]).length,expected.length);
+ assert(html.includes(`data-print-event-count="${expected.length}"`));
 });
 test('schedule design uses numbered university sections and category labels, never color alone',()=>{
  const html=renderToStaticMarkup(createElement(PrintDocument,{dataset:data,status:'ready',universities:['UNIST'],offlineSavedAt:null}));

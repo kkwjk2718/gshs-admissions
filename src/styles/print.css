@@ -117,31 +117,32 @@
   .print-document__empty { padding: 5mm 0; border-block: 1pt solid #111; }
   .print-document__footer { margin-top: 3mm; padding-top: 3mm; border-top: 1pt solid var(--print-ink); color: var(--print-muted); font-size: 8.5pt; break-inside: avoid; }
   .print-document__footer p { margin: 1mm 0 0; }
-  .print-calendar { page: calendar; }
-  .print-calendar h1 { font-size: 21pt; margin-bottom: 2mm; padding-right: 27mm; }
+  /* One physical sheet: no overflow clipping, scaling or appended detail pages. */
+  .print-calendar { page: calendar; display: flex; flex-direction: column; height: 186mm; box-sizing: border-box; break-inside: avoid; }
+  .print-calendar h1 { font-size: 21pt; margin-bottom: 1.5mm; padding-right: 27mm; }
   .print-month-mark { position: absolute; top: 1mm; right: 0; width: 23mm; text-align: right; color: var(--print-teal); }
   .print-month-mark strong { display: block; font: 800 38pt/1 Arial, sans-serif; letter-spacing: -.06em; }
   .print-month-mark span { display: block; margin-top: 1mm; font: 7pt/1.2 Arial, sans-serif; letter-spacing: .08em; }
-  .print-calendar .print-document__header { margin-bottom: 3mm; }
-  .print-calendar .print-document__help { font-size: 8.5pt; }
-  .print-month-grid { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 9pt; line-height: 1.2; }
-  .print-month-grid th { border: .6pt solid var(--print-line); border-block: 1pt solid var(--print-ink); padding: 1.2mm; text-align: center; color: var(--print-ink); background: #edf2f5; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .print-month-grid td { border: .6pt solid var(--print-line); vertical-align: top; padding: 1.2mm; height: 21mm; }
+  .print-calendar .print-document__header { flex: 0 0 auto; margin-bottom: 2mm; padding-block: 2mm; }
+  .print-calendar .print-document__selection { font-size: 9pt; margin-bottom: 1mm; }
+  .print-calendar .print-document__help { font-size: 8pt; margin-block: .5mm; }
+  .print-calendar-status { margin: 1mm 0; font-size: 9pt; }
+  .print-month-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-template-rows: 6mm repeat(var(--print-week-count), minmax(0, 1fr)); flex: 1 1 0; min-height: 0; width: 100%; font-size: 8pt; line-height: 1.12; border-top: .6pt solid var(--print-line); border-left: .6pt solid var(--print-line); }
+  .print-month-grid thead, .print-month-grid tbody, .print-month-grid tr { display: contents; }
+  .print-month-grid th, .print-month-grid td { min-width: 0; box-sizing: border-box; border-right: .6pt solid var(--print-line); border-bottom: .6pt solid var(--print-line); }
+  .print-month-grid th { padding: 1.2mm; text-align: center; color: var(--print-ink); background: #edf2f5; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .print-month-grid td { padding: 1mm; }
   .print-month-grid [data-weekday="0"] > .print-day-number, .print-month-grid th[data-weekday="0"] { color: #93483d; }
   .print-month-grid [data-weekday="6"] > .print-day-number, .print-month-grid th[data-weekday="6"] { color: #325983; }
   .print-month-grid [data-outside-month="true"] { background: #f4f6f7; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .print-month-grid tr { break-inside: avoid; }
-  .print-day-number { display: block; font: 700 12pt/1.15 Arial, sans-serif; color: var(--print-ink); margin-bottom: 1.2mm; font-variant-numeric: tabular-nums; }
-  .print-day-summary { margin: 0 0 1mm; padding-left: 1.2mm; border-left: 1.5pt solid var(--print-ink); font-size: 9pt; }
+  .print-day-number { display: block; font: 700 12pt/1.15 Arial, sans-serif; color: var(--print-ink); margin-bottom: .8mm; font-variant-numeric: tabular-nums; }
+  .print-day-summary { margin: 0 0 .7mm; padding-left: 1mm; border-left: 1.5pt solid var(--print-ink); font-size: 8.5pt; }
+  .print-day-summary b { display: block; }
+  .print-day-summary b small { font-size: 7.5pt; font-weight: 400; }
   .print-day-summary[data-print-phase="start"] { border-left: 1.5pt dashed var(--print-teal); }
   .print-day-summary[data-print-phase="start"] > b { color: var(--print-teal); }
   .print-day-summary span { display: block; font-size: 8pt; }
-  .print-day-more, .print-day-reference { margin: .5mm 0 0; font-size: 8pt; color: var(--print-muted); }
-  .print-day-ids { color: var(--print-muted); font-variant-numeric: tabular-nums; }
-  .print-day-reference { font-weight: 700; }
-  .print-calendar-details { break-before: page; }
-  .print-calendar h2 { font-size: 16pt; margin: 0 0 3mm; padding-top: 2mm; border-top: 2pt solid var(--print-ink); color: var(--print-ink); }
-  /* Arbitrarily long source conditions must be allowed to fragment, never clipped. */
-  .print-calendar-details .print-table tr { break-inside: auto; page-break-inside: auto; }
+  .print-day-more { margin: 0; font-size: 7.5pt; color: var(--print-muted); }
+  .print-calendar .print-document__footer { flex: 0 0 auto; margin-top: 2mm; padding-top: 1.5mm; font-size: 8pt; line-height: 1.3; }
 
 }

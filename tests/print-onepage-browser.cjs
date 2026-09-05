@@ -1,0 +1,20 @@
+// Real PDF regression: PLAYWRIGHT_MODULE points at an optional external installation.
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');const{execFileSync}=require('node:child_process');
+const data=require('../public/data/admissions.json');const base=process.env.ADMISSIONS_BASE||'http://127.0.0.1:18791';const out=process.env.PRINT_OUT||'/tmp/admissions-onepage';fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await chromium.launch();const reports=[];try{
+ const all=data.universities.map(u=>u.name);const months=Array.from({length:12},(_,i)=>`2026-${String(i+1).padStart(2,'0')}`).concat('2027-01');
+ const cases=months.map(month=>({name:month+'-all',month,schools:all})).concat([{name:'september-three',month:'2026-09',schools:['UNIST','KAIST','서울대']},{name:'december-mobile',month:'2026-12',schools:['UNIST'],mobile:true},{name:'empty-categories',month:'2026-08',schools:['UNIST'],categories:[]}]);
+ for(const c of cases){const p=await browser.newPage({viewport:c.mobile?{width:390,height:844}:{width:1440,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));const categories=c.categories||data.categories.map(e=>e.id);
+ await p.addInitScript(({schools,categories})=>{localStorage.setItem('gshs-admissions:preferences:v4',JSON.stringify({version:4,universities:schools,categories}));window.print=()=>window.__printed=true},{schools:c.schools,categories});
+ await p.goto(base+'/?d='+c.month+'-01',{waitUntil:'networkidle'});await p.locator('.app-header__print').click();await p.locator('input[value="calendar"]').check();await p.locator('[data-print-confirm]').click();await p.waitForFunction(()=>window.__printed);await p.emulateMedia({media:'print'});await p.evaluate(()=>document.fonts.ready);
+ const n=new Date(Number(c.month.slice(0,4)),Number(c.month.slice(5)),0).getDate();const expected=data.events.filter(e=>c.schools.includes(e.university)&&categories.includes(e.categoryId)&&e.startDate<=c.month+'-'+String(n)&&e.deadlineDate>=c.month+'-01');
+ assert.equal(await p.locator('.print-calendar').getAttribute('data-print-event-count'),String(expected.length));
+ const days=await p.locator('[data-outside-month="false"]').evaluateAll(es=>es.map(e=>e.dataset.printDay));assert.deepEqual(days,Array.from({length:n},(_,i)=>c.month+'-'+String(i+1).padStart(2,'0')));
+ assert.equal(await p.locator('.print-calendar-details').count(),0);assert.equal(await p.locator('.app-shell').isVisible(),false);
+ const overflow=await p.locator('.print-month-grid td').evaluateAll(cells=>cells.flatMap(cell=>{const b=cell.getBoundingClientRect();const nodes=[...cell.querySelectorAll('strong,p')];return nodes.filter(e=>{const r=e.getBoundingClientRect();return r.bottom>b.bottom+1||r.right>b.right+1}).map(e=>({day:cell.dataset.printDay,text:e.textContent}));}));assert.deepEqual(overflow,[],c.name+' cell overflow');
+ const pdf=path.join(out,c.name+'.pdf');await p.pdf({path:pdf,preferCSSPageSize:true,printBackground:false,displayHeaderFooter:false});const info=execFileSync('pdfinfo',[pdf],{encoding:'utf8'});const count=Number(info.match(/Pages:\s*(\d+)/)[1]);assert.equal(count,1,c.name+' must print exactly ONE sheet');assert.match(info,/Page size:\s*841\.\d+ x 594\.\d+/);
+ const txt=execFileSync('pdftotext',['-raw',pdf,'-'],{encoding:'utf8'});assert(txt.includes('한 달'));assert.deepEqual(errors,[]);reports.push({name:c.name,days:n,weeks:await p.locator('.print-calendar').evaluate(e=>e.style.getPropertyValue('--print-week-count')),pages:count,events:expected.length,pdf});fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(reports,null,2));await p.close();
+ }
+ assert.equal(reports.length,cases.length);assert.deepEqual([...new Set(reports.map(r=>r.weeks))].sort(),['4','5','6']);console.log(JSON.stringify(reports,null,2));
+}finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});
