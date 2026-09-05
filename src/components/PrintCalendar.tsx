@@ -59,7 +59,7 @@ export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events:
     </table>
     <footer className="print-document__footer">
       <strong>월간 요약 · 전형·시각·‘이전’·제외일 등 상세 조건은 ‘대학별 전체 일정’으로 별도 인쇄하세요.</strong>
-      <p>{offlineSavedAt ? "오프라인 저장 자료 · " : ""}칸마다 최대 2종·대학 2곳을 표시하고 나머지는 ‘외’로 집계합니다. 진행 중에는 제외일이 있을 수 있습니다. 대학 모집요강 최종 확인 · admissions.gshs.app</p>
+      <p>{offlineSavedAt ? "오프라인 저장 자료 · " : ""}칸마다 최대 2개 요약 항목, 항목마다 대학 2곳을 표시하고 나머지는 ‘외’로 집계합니다. 진행 중에는 제외일이 있을 수 있습니다. 대학 모집요강 최종 확인 · admissions.gshs.app</p>
     </footer>
   </article>;
 }
