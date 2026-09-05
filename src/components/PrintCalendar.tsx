@@ -41,6 +41,7 @@ export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events:
   return <article className="print-document print-calendar" lang="ko" aria-label="선택 대학 월간 인쇄 달력" data-print-month={format(month, "yyyy-MM")}>
     <header className="print-document__header">
       <p className="print-document__eyebrow">GSHS · ADMISSIONS / MONTHLY CALENDAR</p>
+      <div className="print-month-mark" aria-hidden="true"><strong>{format(month, "MM")}</strong><span>{format(month, "yyyy")} / MONTH</span></div>
       <h1>{monthLabel} 수시 일정 달력</h1>
       <p className="print-document__selection"><strong>선택 대학 {universities.length}곳</strong> · {universities.join(" / ") || "선택 없음"}</p>
       <p className="print-document__help">{monthSource} · 이번 달만 / 일정 종류: {categories.map(id => CATEGORY_UI[id].label).join(" / ") || "선택 없음"}</p>
@@ -52,12 +53,12 @@ export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events:
       : status !== "ready" || !dataset ? <p className="print-document__empty">{status === "error" ? "일정 자료를 불러오지 못했습니다." : "일정 자료를 불러오는 중입니다."}</p> : <>
       {!events.length && <p className="print-document__empty">이 월과 선택한 일정 종류에 해당하는 일정이 없습니다.</p>}
       <table className="print-month-grid" aria-label={`${monthLabel} 월간 개요`}>
-        <thead><tr>{["일", "월", "화", "수", "목", "금", "토"].map(d => <th scope="col" key={d}>{d}</th>)}</tr></thead>
-        <tbody>{weeks.map(week => <tr key={week[0].key}>{week.map(day => <td key={day.key} data-print-day={day.key}>
+        <thead><tr>{["일", "월", "화", "수", "목", "금", "토"].map((d, index) => <th scope="col" key={d} data-weekday={index}>{d}</th>)}</tr></thead>
+        <tbody>{weeks.map(week => <tr key={week[0].key}>{week.map(day => <td key={day.key} data-print-day={day.key} data-weekday={day.date.getDay()} data-outside-month={!day.inside} data-has-entries={day.entries.length > 0}>
           {day.inside && <><strong className="print-day-number">{format(day.date, "d")}</strong>
             {day.entries.slice(0, 2).map(entry => {
               const matching = day.active.filter(e => buildDayEntries([e], day.key).some(single => single.id === entry.id));
-              return <p className="print-day-summary" key={entry.id}><b>{entry.label}</b><span>{[...new Set(entry.lines.flatMap(line => line.universities))].slice(0, 3).join("·")}{new Set(entry.lines.flatMap(line => line.universities)).size > 3 ? " 외" : ""} ({entry.count}건)</span><span>{reference(matching)}</span></p>;
+              return <p className="print-day-summary" data-print-phase={entry.phase} key={entry.id}><b>{entry.label}</b><span>{[...new Set(entry.lines.flatMap(line => line.universities))].slice(0, 3).join("·")}{new Set(entry.lines.flatMap(line => line.universities)).size > 3 ? " 외" : ""} ({entry.count}건)</span><span className="print-day-ids">{reference(matching)}</span></p>;
             })}
             {day.entries.length > 2 && <p className="print-day-more">외 {day.entries.length - 2}종 · 전체 상세 확인</p>}
             {day.ongoing.length > 0 && <p className="print-day-more">진행 중 {day.ongoing.length}건 · {reference(day.ongoing)}</p>}
@@ -69,7 +70,7 @@ export function PrintCalendarDocument({ dataset, status, offlineSavedAt, events:
         <table className="print-table"><colgroup><col style={{width: "7%"}} /><col style={{width: "17%"}} /><col style={{width: "29%"}} /><col /></colgroup>
           <thead><tr><th scope="col">번호</th><th scope="col">대학 · 일정</th><th scope="col">전형 · 해당 날짜</th><th scope="col">원문 날짜·시각·조건</th></tr></thead>
           <tbody>{events.map(e => <tr key={e.id} data-print-event-id={e.id} data-print-university={e.university}>
-            <th scope="row">#{numbers.get(e.id)}</th><td><strong>{e.university}</strong><br />{e.category}</td>
+            <th scope="row"><span className="print-reference-number">#{numbers.get(e.id)}</span></th><td><strong>{e.university}</strong><br /><span className="print-category-label">{e.category}</span></td>
             <td>{e.admissionDetail || "전형명 미표기"}<small className="print-event-date">{e.isDateRange ? `기간: ${e.startDate} ~ ${e.deadlineDate}` : `해당일: ${e.deadlineDate}`}</small></td>
             <td><PrintedSchedule raw={e.rawSchedule} />{eventBadges(e).length > 0 && <small className="print-event-date">{eventBadges(e).join(" · ")}</small>}{e.excludedDates.length > 0 && <small className="print-exclusions">제외일: {e.excludedDates.join(", ")}</small>}{e.note && <small className="print-event-date">{e.note}</small>}</td>
           </tr>)}</tbody>

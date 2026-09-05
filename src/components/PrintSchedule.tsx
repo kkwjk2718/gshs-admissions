@@ -43,16 +43,16 @@ export function PrintDocument({ dataset, universities, status, offlineSavedAt }:
       </header>
       {universities.length === 0 ? <p className="print-document__empty">선택한 대학이 없습니다. 화면의 ‘내 대학’에서 대학을 선택한 뒤 다시 인쇄하세요.</p>
         : status !== "ready" || !dataset ? <p className="print-document__empty">{status === "error" ? "일정 자료를 불러오지 못했습니다." : "일정 자료를 불러오는 중입니다."} 화면에서 자료를 확인한 뒤 다시 인쇄하세요.</p>
-        : groups.map(({ university, events }) => (
+        : groups.map(({ university, events }, index) => (
           <section className="print-university" data-print-university={university} key={university}>
             <table className="print-table" aria-label={`${university} 전체 일정`}>
               <colgroup><col className="print-table__category" /><col className="print-table__track" /><col /></colgroup>
               {/* University title repeats with column headings, rather than being orphaned on the previous page. */}
-              <thead><tr><th colSpan={3} className="print-table__university"><h2>{university}<span>{events.length}개 일정 · 시작일순</span></h2></th></tr>
+              <thead><tr><th colSpan={3} className="print-table__university"><h2><b className="print-section-number">{String(index + 1).padStart(2, "0")}</b>{university}<span>{events.length}개 일정 · 시작일순</span></h2></th></tr>
                 <tr><th scope="col">일정</th><th scope="col">전형</th><th scope="col">날짜·시각</th></tr></thead>
               <tbody>{events.length === 0 ? <tr><td colSpan={3}>이 대학의 등록된 일정이 없습니다.</td></tr> : events.map(event => (
                 <tr key={event.id} data-print-event-id={event.id}>
-                  <th scope="row">{event.category}</th>
+                  <th scope="row"><span className="print-category-label">{event.category}</span></th>
                   <td>{event.admissionDetail || "전형명 미표기"}</td>
                   <td><PrintedSchedule raw={event.rawSchedule} />
                     {events.some(other => other.categoryId === event.categoryId && other.admissionDetail === event.admissionDetail && other.rawSchedule === event.rawSchedule && other.deadlineDate !== event.deadlineDate) && <small className="print-event-date">해당일: {event.deadlineDate}</small>}
