@@ -1,6 +1,20 @@
 /* Screen chrome keeps one labelled print action, including narrow phones. */
 .print-document { display: none; }
 .app-header__print { flex-shrink: 0; }
+.print-chooser { width: min(560px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow-y: auto; padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface, white); color: var(--ink, #111); }
+.print-chooser::backdrop { background: rgb(0 0 0 / .45); }
+.print-chooser h2 { margin: 0 0 12px; font-size: 22px; }
+.print-chooser > p { font-size: 14px; line-height: 1.6; }
+.print-chooser fieldset { margin: 20px 0 12px; border: 0; padding: 0; }
+.print-chooser legend { font-weight: 700; margin-bottom: 8px; }
+.print-choice { display: flex; align-items: flex-start; gap: 12px; border: 1px solid var(--line, #ccc); border-radius: 10px; padding: 16px; margin-bottom: 10px; cursor: pointer; }
+.print-choice:has(input:checked) { border-color: var(--accent, #315b9d); outline: 1px solid var(--accent, #315b9d); }
+.print-choice input { margin-top: 4px; flex-shrink: 0; width: 18px; height: 18px; }
+.print-choice small { display: block; font-size: 13px; line-height: 1.6; margin-top: 6px; }
+.print-chooser__hint { font-size: 12px !important; }
+.print-chooser footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+@page calendar { size: A4 landscape; margin: 10mm; }
+
 @media screen and (max-width: 720px) {
   .app-header__inner { gap: 8px; }
   .app-header__actions { gap: 4px; }
@@ -95,4 +109,22 @@
   .print-document__empty { padding: 5mm 0; border-block: 1pt solid #111; }
   .print-document__footer { margin-top: 3mm; padding-top: 3mm; border-top: 1pt solid #111; font-size: 8.5pt; break-inside: avoid; }
   .print-document__footer p { margin: 1mm 0 0; }
+  .print-calendar { page: calendar; }
+  .print-calendar h1 { font-size: 21pt; margin-bottom: 2mm; }
+  .print-calendar .print-document__header { margin-bottom: 3mm; }
+  .print-calendar .print-document__help { font-size: 8.5pt; }
+  .print-month-grid { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 9pt; line-height: 1.2; }
+  .print-month-grid th { border: .6pt solid #444; padding: 1mm; text-align: center; }
+  .print-month-grid td { border: .6pt solid #777; vertical-align: top; padding: 1.2mm; height: 21mm; }
+  .print-month-grid tr { break-inside: avoid; }
+  .print-day-number { display: block; font-size: 11pt; margin-bottom: 1mm; }
+  .print-day-summary { margin: 0 0 1mm; font-size: 9pt; }
+  .print-day-summary span { display: block; font-size: 8pt; }
+  .print-day-more, .print-day-reference { margin: .5mm 0 0; font-size: 8pt; }
+  .print-day-reference { font-weight: 700; }
+  .print-calendar-details { break-before: page; }
+  .print-calendar h2 { font-size: 16pt; margin: 0 0 3mm; }
+  /* Arbitrarily long source conditions must be allowed to fragment, never clipped. */
+  .print-calendar-details .print-table tr { break-inside: auto; page-break-inside: auto; }
+
 }

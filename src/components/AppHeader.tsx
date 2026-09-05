@@ -1,6 +1,6 @@
 import { CalendarPlus, Moon, Printer, SlidersHorizontal, Sun } from "lucide-react";
 import { useAdmissions } from "../hooks/useAdmissions";
-import { PRINT_SCOPE } from "./PrintSchedule";
+import { usePrintOptions } from "../hooks/usePrintOptions";
 import { NavLink, Link } from "react-router-dom";
 import { useFilterDialog } from "../hooks/useFilterDialog";
 import { usePreferences } from "../hooks/usePreferences";
@@ -16,6 +16,7 @@ export const NAV_ITEMS = [
 
 export function AppHeader() {
   const { openDialog } = useFilterDialog();
+  const { open: printOpen, setOpen: setPrintOpen } = usePrintOptions();
   const { universities, hasChosen } = usePreferences();
   const { theme, toggle } = useTheme();
   const visibleEvents = useVisibleEvents();
@@ -57,9 +58,12 @@ export function AppHeader() {
           <button
             type="button"
             className="button button--ghost app-header__print"
-            onClick={() => window.print()}
+            onClick={() => setPrintOpen(true)}
+            aria-haspopup="dialog"
+            aria-controls="print-chooser"
+            aria-expanded={printOpen}
             disabled={universities.length === 0 || status !== "ready"}
-            title={`A4 인쇄 · ${PRINT_SCOPE}`}
+            title="A4 인쇄 · 대학별 전체 일정 또는 표시 중인 월 달력 선택"
             aria-label="선택 대학 A4 인쇄"
           >
             <Printer size={16} aria-hidden="true" /><span>인쇄</span>

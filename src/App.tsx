@@ -4,7 +4,10 @@ import { AppHeader } from "./components/AppHeader";
 import { DeadlineTicker } from "./components/DeadlineTicker";
 import { FilterDialog } from "./components/FilterDialog";
 import { MobileTabBar } from "./components/MobileTabBar";
-import { PrintSchedule } from "./components/PrintSchedule";
+import { PrintHost } from "./components/PrintHost";
+import { PrintChooser } from "./components/PrintChooser";
+import { CalendarMonthProvider } from "./hooks/useCalendarMonth";
+import { PrintOptionsProvider } from "./hooks/usePrintOptions";
 import { AdmissionsProvider } from "./hooks/useAdmissions";
 import { FilterDialogProvider, useFilterDialog } from "./hooks/useFilterDialog";
 import { PreferencesProvider } from "./hooks/usePreferences";
@@ -29,6 +32,8 @@ export default function App() {
   return (
     <AdmissionsProvider>
       <PreferencesProvider>
+        <CalendarMonthProvider>
+        <PrintOptionsProvider>
         <FilterDialogProvider>
           <div className="app-shell">
             <ScrollToTop />
@@ -44,9 +49,12 @@ export default function App() {
             </Routes>
             <MobileTabBar />
             <FilterDialogHost />
+            <PrintChooser />
           </div>
-          <PrintSchedule />
+          <PrintHost />
         </FilterDialogProvider>
+        </PrintOptionsProvider>
+        </CalendarMonthProvider>
       </PreferencesProvider>
     </AdmissionsProvider>
   );

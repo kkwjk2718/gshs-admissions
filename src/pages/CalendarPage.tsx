@@ -1,7 +1,8 @@
 import { addMonths, format, subMonths } from "date-fns";
 import { ko } from "date-fns/locale";
 import { ChevronLeft, ChevronRight, PanelRightClose, PanelRightOpen } from "lucide-react";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useLayoutEffect, useMemo, useState } from "react";
+import { useCalendarMonth, validCalendarDate } from "../hooks/useCalendarMonth";
 import { useSearchParams } from "react-router-dom";
 import { CalendarGrid } from "../components/CalendarGrid";
 import { EventDetailDialog } from "../components/EventDetailDialog";
@@ -16,7 +17,6 @@ import { useVisibleEvents } from "../hooks/useVisibleEvents";
 import { formatDayLabel, getCalendarWeeks, isDateInRange, toDateKey, todayKey } from "../lib/date";
 import type { AdmissionEvent } from "../types";
 
-const DATE_PARAM = /^\d{4}-\d{2}-\d{2}$/;
 
 export function CalendarPage() {
   const { status } = useAdmissions();
@@ -26,9 +26,10 @@ export function CalendarPage() {
   const [params] = useSearchParams();
   const today = todayKey();
 
-  const initialDate = DATE_PARAM.test(params.get("d") ?? "") ? (params.get("d") as string) : today;
-  const [selectedDate, setSelectedDate] = useState(initialDate);
-  const [month, setMonth] = useState(() => new Date(`${initialDate}T12:00:00`));
+  const { month, setMonth } = useCalendarMonth();
+  const linkDate = validCalendarDate(params.get("d"));
+  const [selectedDate, setSelectedDate] = useState(linkDate ?? toDateKey(month));
+  useLayoutEffect(() => { if (linkDate) setSelectedDate(linkDate); }, [linkDate]);
   const [selectedEvent, setSelectedEvent] = useState<AdmissionEvent | null>(null);
 
   const dueToday = useMemo(
@@ -63,7 +64,7 @@ export function CalendarPage() {
       const lastDay = toDateKey(weeks[weeks.length - 1][6]);
       return date >= firstDay && date <= lastDay ? current : new Date(`${date}T12:00:00`);
     });
-  }, []);
+  }, [setMonth]);
 
   const goToday = () => {
     setSelectedDate(today);

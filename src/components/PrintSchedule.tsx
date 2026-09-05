@@ -15,7 +15,7 @@ export function groupPrintEvents(events: AdmissionEvent[], universities: string[
 }
 
 /** Style tokens in place: do not reformat, summarize or infer times from normalized dates. */
-function PrintedSchedule({ raw }: { raw: string }) {
+export function PrintedSchedule({ raw }: { raw: string }) {
   return <span className="print-schedule">{raw.split(/(\d{1,2}:\d{2}|(?:20\d{2}\.)?\d{1,2}\.\d{1,2}(?:\([월화수목금토일]\))?)/g)
     .map((part, index) => /\d/.test(part) && /^(?:\d{1,2}:\d{2}|(?:20\d{2}\.)?\d{1,2}\.\d{1,2}(?:\([월화수목금토일]\))?)$/.test(part)
       ? <strong key={index} className={part.includes(":") ? "print-time" : undefined}>{part}</strong>

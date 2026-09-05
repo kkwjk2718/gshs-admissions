@@ -92,7 +92,7 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
   const [hasChoice, setHasChoice] = useState(stored !== null);
   const [universities, setUniversitiesState] = useState<string[]>(stored?.universities ?? []);
   const [categories, setCategoriesState] = useState<CategoryId[]>(
-    stored?.categories?.length ? stored.categories : [...CATEGORY_ORDER],
+    stored?.categories ?? [...CATEGORY_ORDER],
   );
 
   // 저장된 선택이 없으면 전체를 보여준다. 임의의 대학 4곳을 조용히 골라두면
