@@ -117,9 +117,9 @@ DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260911
 SUMMARY:[원서 접수] [UNIST]
 DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
- 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목)~9.10(
- 목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으
- 므로 해당 대학 홈페이지에서 최종 확인하세요.
+ 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목) 09:00
+ ~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 
+ 있으므로 해당 대학 홈페이지에서 최종 확인하세요.
 CATEGORIES:원서 접수,UNIST
 X-GSHS-UNIVERSITY:UNIST
 X-GSHS-CATEGORY:원서 접수
@@ -134,10 +134,10 @@ DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260912
 SUMMARY:[서류 제출] [UNIST]
 DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
- 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목)~9.11(
- 금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이며 일
- 정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 
- 확인하세요.
+ 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목) 09:00
+ ~9.11(금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이
+ 며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 
+ 최종 확인하세요.
 CATEGORIES:서류 제출,UNIST
 X-GSHS-UNIVERSITY:UNIST
 X-GSHS-CATEGORY:서류 제출
@@ -152,9 +152,9 @@ DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260912
 SUMMARY:[자소서 입력] [UNIST]
 DESCRIPTION:대학: UNIST\n전형: 일반전형\, 탐구우수전형\, 
- 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목)~9.
- 11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있
- 으므로 해당 대학 홈페이지에서 최종 확인하세요.
+ 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목) 09
+ :00~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수
+  있으므로 해당 대학 홈페이지에서 최종 확인하세요.
 CATEGORIES:자소서 입력,UNIST
 X-GSHS-UNIVERSITY:UNIST
 X-GSHS-CATEGORY:자소서 입력
@@ -2503,6 +2503,23 @@ X-GSHS-UNIVERSITY:한양대
 X-GSHS-CATEGORY:합격자 발표
 X-GSHS-UNIVERSITY-ID:hanyang
 X-GSHS-CATEGORY-ID:final-result
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unist-grit-registration-2027@gshs.app
+DTSTAMP:20260903T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261224
+SUMMARY:[합격자 등록] [UNIST]
+DESCRIPTION:대학: UNIST\n전형: 그릿인재전형\n구분: 합격자 
+ 등록\n원문 일정: 12.21(월)~12.23(수) 16:00\n안내: 2027학년
+ 도 UNIST 그릿인재전형 모집요강 기준. 해당 대학 홈페
+ 이지에서 최종 확인하세요.
+CATEGORIES:합격자 등록,UNIST
+X-GSHS-UNIVERSITY:UNIST
+X-GSHS-CATEGORY:합격자 등록
+X-GSHS-UNIVERSITY-ID:unist
+X-GSHS-CATEGORY-ID:registration
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -4,7 +4,7 @@
     "calendarYear": 2026,
     "calendarName": "입시_일정",
     "timezone": "Asia/Seoul",
-    "eventCount": 176,
+    "eventCount": 177,
     "universityCount": 24,
     "tableRowCount": 37,
     "dateRange": {
@@ -69,6 +69,13 @@
       "sourceLabel": "충원 합격자 발표",
       "shortLabel": "충원",
       "eventCount": 30
+    },
+    {
+      "id": "registration",
+      "label": "합격자 등록",
+      "sourceLabel": "합격자 등록",
+      "shortLabel": "등록",
+      "eventCount": 1
     }
   ],
   "universities": [
@@ -100,7 +107,7 @@
       "id": "unist",
       "name": "UNIST",
       "tag": "UNIST",
-      "eventCount": 9
+      "eventCount": 10
     },
     {
       "id": "dgist",
@@ -373,8 +380,8 @@
         "18:00"
       ],
       "excludedDates": [],
-      "rawSchedule": "9.3(목)~9.10(목) 18:00",
-      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목)~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "rawSchedule": "9.3(목) 09:00~9.10(목) 18:00",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 원서 접수\n원문 일정: 9.3(목) 09:00~9.10(목) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
       "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
     },
     {
@@ -396,8 +403,8 @@
         "18:00"
       ],
       "excludedDates": [],
-      "rawSchedule": "9.3(목)~9.11(금) 18:00 온라인(PDF 스캔본)",
-      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목)~9.11(금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "rawSchedule": "9.3(목) 09:00~9.11(금) 18:00 온라인(PDF 스캔본)",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 서류 제출\n원문 일정: 9.3(목) 09:00~9.11(금) 18:00 온라인(PDF 스캔본)\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
       "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
     },
     {
@@ -419,8 +426,8 @@
         "18:00"
       ],
       "excludedDates": [],
-      "rawSchedule": "9.3(목)~9.11(금) 18:00",
-      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목)~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
+      "rawSchedule": "9.3(목) 09:00~9.11(금) 18:00",
+      "description": "대학: UNIST\n전형: 일반전형, 탐구우수전형, 그릿인재전형\n구분: 자소서 입력\n원문 일정: 9.3(목) 09:00~9.11(금) 18:00\n안내: 참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요.",
       "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
     },
     {
@@ -3443,6 +3450,29 @@
       "note": "참고용 자료이며 일정이 바뀔 수 있으므로 해당 대학 홈페이지에서 최종 확인하세요."
     },
     {
+      "id": "unist-grit-registration-2027",
+      "uid": "unist-grit-registration-2027@gshs.app",
+      "universityId": "unist",
+      "university": "UNIST",
+      "categoryId": "registration",
+      "category": "합격자 등록",
+      "sourceCategory": "합격자 등록",
+      "title": "UNIST 합격자 등록",
+      "taggedTitle": "[합격자 등록] [UNIST]",
+      "admissionDetail": "그릿인재전형",
+      "startDate": "2026-12-21",
+      "endDate": "2026-12-23",
+      "deadlineDate": "2026-12-23",
+      "isDateRange": true,
+      "timeLabels": [
+        "16:00"
+      ],
+      "excludedDates": [],
+      "rawSchedule": "12.21(월)~12.23(수) 16:00",
+      "note": "2027학년도 UNIST 그릿인재전형 모집요강 기준. 해당 대학 홈페이지에서 최종 확인하세요.",
+      "description": "대학: UNIST\n전형: 그릿인재전형\n구분: 합격자 등록\n원문 일정: 12.21(월)~12.23(수) 16:00\n안내: 2027학년도 UNIST 그릿인재전형 모집요강 기준. 해당 대학 홈페이지에서 최종 확인하세요."
+    },
+    {
       "id": "7ac6bdb61e13792041469be0",
       "uid": "7ac6bdb61e13792041469be0@codex.local",
       "universityId": "korea",
@@ -4173,7 +4203,8 @@
           "firstResult",
           "interview",
           "finalResult",
-          "additionalResult"
+          "additionalResult",
+          "registration"
         ],
         "columns": [
           {
@@ -4215,6 +4246,10 @@
           {
             "key": "additionalResult",
             "label": "충원 합격자 발표"
+          },
+          {
+            "key": "registration",
+            "label": "합격자 등록"
           }
         ],
         "rows": [
@@ -4472,11 +4507,11 @@
                 "rowSpan": 1
               },
               "application": {
-                "text": "9.3(목)~9.10(목)\n18:00",
+                "text": "9.3(목) 09:00~9.10(목)\n18:00",
                 "rowSpan": 3
               },
               "essay": {
-                "text": "9.3(목)~9.11(금)\n18:00",
+                "text": "9.3(목) 09:00~9.11(금)\n18:00",
                 "rowSpan": 3
               },
               "recommendation": {
@@ -4484,7 +4519,7 @@
                 "rowSpan": 2
               },
               "documents": {
-                "text": "9.3(목)~9.11(금)\n18:00 온라인(PDF\n스캔본)",
+                "text": "9.3(목) 09:00~9.11(금)\n18:00 온라인(PDF\n스캔본)",
                 "rowSpan": 3
               },
               "firstResult": {
@@ -4554,7 +4589,11 @@
                 "rowSpan": 1
               },
               "finalResult": null,
-              "additionalResult": null
+              "additionalResult": null,
+              "registration": {
+                "text": "12.21(월)~12.23(수) 16:00",
+                "rowSpan": 1
+              }
             }
           },
           {

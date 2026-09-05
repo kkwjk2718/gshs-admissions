@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import type { CategoryId } from "../types";
 
-export type CategoryGroup = "제출" | "평가" | "발표";
+export type CategoryGroup = "제출" | "평가" | "발표" | "등록";
 
 interface CategoryUi {
   /** 필터·상세용 정식 라벨 */
@@ -26,7 +26,7 @@ interface CategoryUi {
   noun: "마감" | "발표" | "면접";
 }
 
-/** 일정 종류 8가지. 원본 PDF의 컬럼 순서를 그대로 따른다. */
+/** 원본 PDF 순서에 모집요강으로 확인한 등록 일정을 덧붙인다. */
 export const CATEGORY_ORDER: CategoryId[] = [
   "application",
   "essay",
@@ -36,9 +36,11 @@ export const CATEGORY_ORDER: CategoryId[] = [
   "interview",
   "final-result",
   "additional-result",
+  "registration",
 ];
 
 export const CATEGORY_UI: Record<CategoryId, CategoryUi> = {
+  registration: { label: "합격자 등록", short: "등록", group: "등록", icon: UserCheck, noun: "마감" },
   application: { label: "원서 접수", short: "원서", group: "제출", icon: FileText, noun: "마감" },
   essay: { label: "자소서 입력", short: "자소서", group: "제출", icon: PenLine, noun: "마감" },
   recommendation: { label: "추천서 입력", short: "추천서", group: "제출", icon: UserCheck, noun: "마감" },
@@ -61,7 +63,16 @@ export const CATEGORY_GROUPS: { name: CategoryGroup; ids: CategoryId[] }[] = [
   { name: "제출", ids: ["application", "essay", "recommendation", "documents"] },
   { name: "평가", ids: ["interview"] },
   { name: "발표", ids: ["first-result", "final-result", "additional-result"] },
+  { name: "등록", ids: ["registration"] },
 ];
+
+/** v3에서 전체 종류를 선택했던 경우만 새 등록 종류를 포함한다. */
+export function migrateCategorySelection(ids: CategoryId[]): CategoryId[] {
+  const previous = CATEGORY_ORDER.filter((id) => id !== "registration");
+  return ids.length === previous.length && previous.every((id) => ids.includes(id))
+    ? [...CATEGORY_ORDER]
+    : ids;
+}
 
 /** CSS 변수(--cat, --cat-soft)를 실어 나르는 클래스 이름 */
 export function categoryClass(id: CategoryId) {

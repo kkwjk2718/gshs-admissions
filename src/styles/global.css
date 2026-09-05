@@ -81,6 +81,7 @@
 .cat-first-result      { --cat: #616161; } /* Graphite   — 6.19:1 */
 .cat-interview         { --cat: #d50000; } /* Tomato     — 5.48:1 */
 .cat-final-result      { --cat: #0b8043; } /* Basil      — 5.02:1 */
+.cat-registration      { --cat: #00796b; }
 .cat-additional-result { --cat: #8e24aa; } /* Grape      — 7.04:1 */
 
 /* --cat-soft 가 살아남는 자리는 필터 다이얼로그의 선택 배경 하나뿐이다.
@@ -94,7 +95,8 @@
 .cat-first-result,
 .cat-interview,
 .cat-final-result,
-.cat-additional-result {
+.cat-additional-result,
+.cat-registration {
   --cat-soft: var(--surface-2);
   --cat-soft: color-mix(in srgb, var(--cat) 12%, var(--surface));
 }
@@ -143,6 +145,7 @@
   :root:not([data-theme="light"]) .cat-first-result      { --cat: #9aa0a6; } /* Grey 500  4.93:1 */
   :root:not([data-theme="light"]) .cat-interview         { --cat: #f28b82; } /* Red 300   5.44:1 */
   :root:not([data-theme="light"]) .cat-final-result      { --cat: #81c995; } /* Green 300 6.64:1 */
+  :root:not([data-theme="light"]) .cat-registration { --cat: #80cbc4; }
   :root:not([data-theme="light"]) .cat-additional-result { --cat: #d7aefb; } /* Purple 300 7.02:1 */
 }
 
@@ -185,6 +188,7 @@
 :root[data-theme="dark"] .cat-first-result      { --cat: #9aa0a6; }
 :root[data-theme="dark"] .cat-interview         { --cat: #f28b82; }
 :root[data-theme="dark"] .cat-final-result      { --cat: #81c995; }
+:root[data-theme="dark"] .cat-registration { --cat: #80cbc4; }
 :root[data-theme="dark"] .cat-additional-result { --cat: #d7aefb; }
 
 /* ========================================================================= */

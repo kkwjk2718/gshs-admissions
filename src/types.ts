@@ -6,7 +6,8 @@ export type CategoryId =
   | "first-result"
   | "interview"
   | "final-result"
-  | "additional-result";
+  | "additional-result"
+  | "registration";
 
 export interface CategoryMeta {
   id: CategoryId;

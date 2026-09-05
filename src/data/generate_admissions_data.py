@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from collections import Counter
@@ -7,7 +8,6 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-import pdfplumber
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -124,6 +124,8 @@ TABLE_COLUMN_LABELS = {
 
 
 def find_source_files() -> tuple[Path, Path]:
+    import pdfplumber
+
     calendar_path = next(WORKSPACE_ROOT.glob("*.ics"))
     pdf_candidates = list(WORKSPACE_ROOT.glob("*.pdf"))
     detailed_pdf = next(
@@ -268,6 +270,8 @@ def clean_cell(value: str | None) -> str | None:
 
 
 def extract_table(detailed_pdf: Path) -> dict[str, Any]:
+    import pdfplumber
+
     pages: list[dict[str, Any]] = []
     total_rows = 0
     university_order: list[str] = []
@@ -409,7 +413,109 @@ def build_ics(events: list[dict[str, Any]]) -> bytes:
     return ("\r\n".join(physical_lines) + "\r\n").encode("utf-8")
 
 
+def apply_unist_2027_overrides(payload: dict[str, Any]) -> None:
+    """Apply user-supplied 2027 UNIST guidelines without re-importing the old PDF.
+
+    Keep shared-track events/UIDs and all other universities untouched. Safe to
+    run repeatedly, both after source generation and against published JSON.
+    """
+    if payload["meta"]["academicYear"] != 2027:
+        raise ValueError("UNIST override is only verified for academic year 2027")
+    events = payload["events"]
+    shared_categories = {"application", "essay", "documents"}
+
+    def with_start_time(raw: str) -> str:
+        return re.sub(r"9\.3\(목\)(?:\s*09:00)?\s*~", "9.3(목) 09:00~", raw)
+
+    for event in events:
+        if event["universityId"] == "unist" and event["categoryId"] in shared_categories:
+            raw = event["rawSchedule"]
+            event["rawSchedule"] = with_start_time(raw)
+            event["description"] = event["description"].replace(raw, event["rawSchedule"])
+            # timeLabels[0] is the deadline, never the opening time.
+            event["timeLabels"] = ["18:00"]
+
+    registration = {
+        "id": "unist-grit-registration-2027",
+        "uid": "unist-grit-registration-2027@gshs.app",
+        "universityId": "unist",
+        "university": "UNIST",
+        "categoryId": "registration",
+        "category": "합격자 등록",
+        "sourceCategory": "합격자 등록",
+        "title": "UNIST 합격자 등록",
+        "taggedTitle": "[합격자 등록] [UNIST]",
+        "admissionDetail": "그릿인재전형",
+        "startDate": "2026-12-21",
+        "endDate": "2026-12-23",
+        "deadlineDate": "2026-12-23",
+        "isDateRange": True,
+        "timeLabels": ["16:00"],
+        "excludedDates": [],
+        "rawSchedule": "12.21(월)~12.23(수) 16:00",
+        "note": "2027학년도 UNIST 그릿인재전형 모집요강 기준. 해당 대학 홈페이지에서 최종 확인하세요.",
+    }
+    registration["description"] = "\n".join([
+        "대학: UNIST", "전형: 그릿인재전형", "구분: 합격자 등록",
+        f"원문 일정: {registration['rawSchedule']}", f"안내: {registration['note']}",
+    ])
+    existing = next((event for event in events if event["id"] == registration["id"]), None)
+    if existing is None:
+        # Preserve chronological ordering without reordering existing events.
+        index = next((i for i, event in enumerate(events)
+                      if event["startDate"] > registration["startDate"]), len(events))
+        events.insert(index, registration)
+    else:
+        existing.update(registration)
+
+    for page in payload["admissionsTable"]["pages"]:
+        unist_rows = [row for row in page["rows"] if row["universityId"] == "unist"]
+        if not unist_rows:
+            continue
+        if "registration" not in page["columnKeys"]:
+            page["columnKeys"].append("registration")
+            page["columns"].append({"key": "registration", "label": "합격자 등록"})
+        for row in unist_rows:
+            for key in shared_categories:
+                cell = row["cells"].get(key)
+                if cell:
+                    cell["text"] = with_start_time(cell["text"])
+            if row["cells"]["admissionType"]["text"] == "그릿인재전형":
+                row["cells"]["registration"] = {"text": registration["rawSchedule"], "rowSpan": 1}
+
+    if not any(category["id"] == "registration" for category in payload["categories"]):
+        payload["categories"].append({
+            "id": "registration", "label": "합격자 등록",
+            "sourceLabel": "합격자 등록", "shortLabel": "등록", "eventCount": 0,
+        })
+    category_counts = Counter(event["categoryId"] for event in events)
+    university_counts = Counter(event["universityId"] for event in events)
+    for category in payload["categories"]:
+        category["eventCount"] = category_counts[category["id"]]
+    for university in payload["universities"]:
+        university["eventCount"] = university_counts[university["id"]]
+    payload["meta"]["eventCount"] = len(events)
+    payload["meta"]["dateRange"] = {
+        "start": min(event["startDate"] for event in events),
+        "end": max(event["endDate"] for event in events),
+    }
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--apply-overrides", action="store_true",
+                        help="Update published JSON/ICS only; do not read source PDF/ICS")
+    if parser.parse_args().apply_overrides:
+        payload = json.loads((PUBLIC_DATA_DIR / "admissions.json").read_text(encoding="utf-8"))
+        apply_unist_2027_overrides(payload)
+        (PUBLIC_DATA_DIR / "admissions.json").write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        # Published ICS uses LF; avoid unrelated line-ending churn.
+        (PUBLIC_DATA_DIR / "admissions.ics").write_bytes(
+            build_ics(payload["events"]).replace(b"\r\n", b"\n"))
+        print(json.dumps({"events": payload["meta"]["eventCount"], "overrides": "unist-2027"}))
+        return
+
     calendar_path, detailed_pdf = find_source_files()
     events = parse_ics_events(calendar_path)
     table = extract_table(detailed_pdf)
@@ -451,6 +557,7 @@ def main() -> None:
         "admissionsTable": table,
     }
 
+    apply_unist_2027_overrides(payload)
     PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
     (PUBLIC_DATA_DIR / "admissions.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",

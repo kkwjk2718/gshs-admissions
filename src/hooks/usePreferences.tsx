@@ -1,13 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { CATEGORY_ORDER } from "../lib/categories";
+import { CATEGORY_ORDER, migrateCategorySelection } from "../lib/categories";
 import { useAdmissions } from "./useAdmissions";
 import type { CategoryId } from "../types";
 
-const STORAGE_KEY = "gshs-admissions:preferences:v3";
+const STORAGE_KEY = "gshs-admissions:preferences:v4";
+const PREVIOUS_KEY = "gshs-admissions:preferences:v3";
 const LEGACY_KEY = "gshs-admissions:preferences:v2";
 
 interface StoredPreferences {
-  version: 3;
+  version: 4;
   universities: string[];
   categories: CategoryId[];
 }
@@ -55,9 +56,9 @@ function migrateLegacy(): StoredPreferences | null {
       ),
     ];
     return {
-      version: 3,
+      version: 4,
       universities,
-      categories: categories.length ? categories : [...CATEGORY_ORDER],
+      categories: categories.length ? migrateCategorySelection(categories) : [...CATEGORY_ORDER],
     };
   } catch {
     return null;
@@ -69,7 +70,14 @@ function readStored(): StoredPreferences | null {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw) as StoredPreferences | null;
-      if (parsed?.version === 3 && Array.isArray(parsed.universities)) return parsed;
+      if (parsed?.version === 4 && Array.isArray(parsed.universities)) return parsed;
+    }
+    const previous = localStorage.getItem(PREVIOUS_KEY);
+    if (previous) {
+      const parsed = JSON.parse(previous) as { version?: number; universities?: string[]; categories?: CategoryId[] };
+      if (parsed.version === 3 && Array.isArray(parsed.universities) && Array.isArray(parsed.categories)) {
+        return { version: 4, universities: parsed.universities, categories: migrateCategorySelection(parsed.categories) };
+      }
     }
   } catch {
     // 저장값이 깨졌으면 기본값으로 시작한다.
@@ -98,8 +106,9 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
   const persist = useCallback((next: { universities: string[]; categories: CategoryId[] }) => {
     setHasChoice(true);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 3, ...next } satisfies StoredPreferences));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 4, ...next } satisfies StoredPreferences));
       localStorage.removeItem(LEGACY_KEY);
+      localStorage.removeItem(PREVIOUS_KEY);
     } catch {
       // 저장에 실패해도 이번 세션에서는 그대로 동작한다.
     }

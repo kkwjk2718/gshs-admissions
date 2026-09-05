@@ -37,6 +37,7 @@ const START_LABEL: Record<CategoryId, string> = {
   interview: "면접 시작",
   "final-result": "최종 발표 시작",
   "additional-result": "추합 발표 시작",
+  registration: "합격자 등록 시작",
 };
 
 function endLabel(categoryId: CategoryId) {

@@ -16,6 +16,7 @@ const ONGOING_LABEL: Record<string, string> = {
   essay: "입력 중",
   recommendation: "입력 중",
   documents: "제출 중",
+  registration: "등록 중",
 };
 
 export function statusLabel(event: AdmissionEvent, today = todayKey()) {
@@ -33,7 +34,7 @@ export function deadlineTimeLabel(event: AdmissionEvent) {
 }
 
 /** 마감이 있는 종류. 발표·면접은 시각이 원문에 없는 게 정상이다. */
-const DEADLINE_CATEGORIES: CategoryId[] = ["application", "essay", "recommendation", "documents"];
+const DEADLINE_CATEGORIES: CategoryId[] = ["application", "essay", "recommendation", "documents", "registration"];
 
 /** "9.10(목) 소인 유효"처럼 우편 마감일이 접수 마감일보다 늦게 따로 적힌 경우를 잡는다. */
 function postmarkDate(raw: string) {
@@ -47,6 +48,10 @@ function postmarkDate(raw: string) {
 export function eventBadges(event: AdmissionEvent): string[] {
   const badges: string[] = [];
   const raw = event.rawSchedule;
+
+  const opening = raw.match(/\d{1,2}\.\d{1,2}\s*\([^)]*\)\s*(\d{1,2}:\d{2})\s*~/);
+  if (opening && event.isDateRange) badges.push(`${opening[1]} 시작`);
+  if (/이전/.test(raw)) badges.push(`${formatMonthDay(event.deadlineDate)} 이전`);
 
   const postmark = postmarkDate(raw);
   if (postmark) badges.push(`${Number(postmark[0])}월 ${Number(postmark[1])}일 소인까지 유효`);
