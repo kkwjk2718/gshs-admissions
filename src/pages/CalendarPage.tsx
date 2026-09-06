@@ -28,8 +28,12 @@ export function CalendarPage() {
 
   const { month, setMonth } = useCalendarMonth();
   const linkDate = validCalendarDate(params.get("d"));
-  const [selectedDate, setSelectedDate] = useState(linkDate ?? toDateKey(month));
-  useLayoutEffect(() => { if (linkDate) setSelectedDate(linkDate); }, [linkDate]);
+  const [selectedDate, setSelectedDate] = useState(linkDate ?? today);
+  useLayoutEffect(() => {
+    const date = linkDate ?? todayKey();
+    setSelectedDate(date);
+    setMonth(new Date(`${date}T12:00:00`));
+  }, [linkDate, setMonth]);
   const [selectedEvent, setSelectedEvent] = useState<AdmissionEvent | null>(null);
 
   const dueToday = useMemo(

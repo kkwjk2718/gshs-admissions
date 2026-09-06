@@ -17,7 +17,7 @@ export function CalendarMonthProvider({ children }: { children: ReactNode }) {
   const { pathname, search } = useLocation();
   const linkDate = pathname === "/" ? validCalendarDate(new URLSearchParams(search).get("d")) : null;
   const [initialStored] = useState(storedMonth);
-  const [month, setMonth] = useState(() => new Date(`${linkDate ?? initialStored ?? todayKey()}T12:00:00`));
+  const [month, setMonth] = useState(() => new Date(`${linkDate ?? (pathname === "/" ? todayKey() : initialStored ?? todayKey())}T12:00:00`));
   const [visited, setVisited] = useState(pathname === "/" || initialStored !== null);
   // A deep link reached through client navigation must update the same state as the toolbar.
   useLayoutEffect(() => {
