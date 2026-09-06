@@ -56,7 +56,7 @@ test('Dec 18 이전 is a prominent rendered badge, not only raw detail', () => {
 });
 
 test('old all-category selection includes registration but custom selections survive', () => {
-  const oldAll = CATEGORY_ORDER.filter(id => id !== 'registration');
+  const oldAll = ['application','essay','recommendation','documents','first-result','interview','final-result','additional-result'];
   assert.deepEqual(migrateCategorySelection(oldAll), CATEGORY_ORDER);
   assert.deepEqual(migrateCategorySelection(['application', 'interview']), ['application', 'interview']);
   assert.deepEqual(migrateCategorySelection([]), []);

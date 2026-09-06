@@ -3,12 +3,13 @@ import { CATEGORY_ORDER, migrateCategorySelection } from "../lib/categories";
 import { useAdmissions } from "./useAdmissions";
 import type { CategoryId } from "../types";
 
-const STORAGE_KEY = "gshs-admissions:preferences:v4";
-const PREVIOUS_KEY = "gshs-admissions:preferences:v3";
+const STORAGE_KEY = "gshs-admissions:preferences:v5";
+const PREVIOUS_KEY = "gshs-admissions:preferences:v4";
+const V3_KEY = "gshs-admissions:preferences:v3";
 const LEGACY_KEY = "gshs-admissions:preferences:v2";
 
 interface StoredPreferences {
-  version: 4;
+  version: 5;
   universities: string[];
   categories: CategoryId[];
 }
@@ -56,7 +57,7 @@ function migrateLegacy(): StoredPreferences | null {
       ),
     ];
     return {
-      version: 4,
+      version: 5,
       universities,
       categories: categories.length ? migrateCategorySelection(categories) : [...CATEGORY_ORDER],
     };
@@ -70,13 +71,13 @@ function readStored(): StoredPreferences | null {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw) as StoredPreferences | null;
-      if (parsed?.version === 4 && Array.isArray(parsed.universities)) return parsed;
+      if (parsed?.version === 5 && Array.isArray(parsed.universities)) return parsed;
     }
-    const previous = localStorage.getItem(PREVIOUS_KEY);
+    const previous = localStorage.getItem(PREVIOUS_KEY) ?? localStorage.getItem(V3_KEY);
     if (previous) {
       const parsed = JSON.parse(previous) as { version?: number; universities?: string[]; categories?: CategoryId[] };
-      if (parsed.version === 3 && Array.isArray(parsed.universities) && Array.isArray(parsed.categories)) {
-        return { version: 4, universities: parsed.universities, categories: migrateCategorySelection(parsed.categories) };
+      if ((parsed.version === 3 || parsed.version === 4) && Array.isArray(parsed.universities) && Array.isArray(parsed.categories)) {
+        return { version: 5, universities: parsed.universities, categories: migrateCategorySelection(parsed.categories, parsed.version) };
       }
     }
   } catch {
@@ -105,7 +106,7 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
   const persist = useCallback((next: { universities: string[]; categories: CategoryId[] }) => {
     setHasChoice(true);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 4, ...next } satisfies StoredPreferences));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 5, ...next } satisfies StoredPreferences));
       localStorage.removeItem(LEGACY_KEY);
       localStorage.removeItem(PREVIOUS_KEY);
     } catch {

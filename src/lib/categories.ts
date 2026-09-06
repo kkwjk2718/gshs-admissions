@@ -23,7 +23,7 @@ interface CategoryUi {
   group: CategoryGroup;
   icon: LucideIcon;
   /** D-day에 붙는 명사. "마감 D-6" / "발표 D-12" / "면접 D-3" */
-  noun: "마감" | "발표" | "면접";
+  noun: "마감" | "발표" | "면접" | "고사" | "참여";
 }
 
 /** 원본 PDF 순서에 모집요강으로 확인한 등록 일정을 덧붙인다. */
@@ -37,9 +37,14 @@ export const CATEGORY_ORDER: CategoryId[] = [
   "final-result",
   "additional-result",
   "registration",
+  "written-exam", "exam-notice", "stage-fee", "registration-program",
 ];
 
 export const CATEGORY_UI: Record<CategoryId, CategoryUi> = {
+  "written-exam": {label: "논술고사", short: "논술", group: "평가", icon: PenLine, noun: "고사"},
+  "exam-notice": {label: "고사장 안내", short: "고사장", group: "발표", icon: ListChecks, noun: "발표"},
+  "stage-fee": {label: "2단계 전형료", short: "전형료", group: "등록", icon: FileText, noun: "마감"},
+  "registration-program": {label: "등록 프로그램", short: "등록참여", group: "등록", icon: UserCheck, noun: "참여"},
   registration: { label: "합격자 등록", short: "등록", group: "등록", icon: UserCheck, noun: "마감" },
   application: { label: "원서 접수", short: "원서", group: "제출", icon: FileText, noun: "마감" },
   essay: { label: "자소서 입력", short: "자소서", group: "제출", icon: PenLine, noun: "마감" },
@@ -61,15 +66,17 @@ export const CATEGORY_UI: Record<CategoryId, CategoryUi> = {
 
 export const CATEGORY_GROUPS: { name: CategoryGroup; ids: CategoryId[] }[] = [
   { name: "제출", ids: ["application", "essay", "recommendation", "documents"] },
-  { name: "평가", ids: ["interview"] },
-  { name: "발표", ids: ["first-result", "final-result", "additional-result"] },
-  { name: "등록", ids: ["registration"] },
+  { name: "평가", ids: ["interview", "written-exam"] },
+  { name: "발표", ids: ["first-result", "final-result", "additional-result", "exam-notice"] },
+  { name: "등록", ids: ["registration", "stage-fee", "registration-program"] },
 ];
 
 /** v3에서 전체 종류를 선택했던 경우만 새 등록 종류를 포함한다. */
-export function migrateCategorySelection(ids: CategoryId[]): CategoryId[] {
-  const previous = CATEGORY_ORDER.filter((id) => id !== "registration");
-  return ids.length === previous.length && previous.every((id) => ids.includes(id))
+export function migrateCategorySelection(ids: CategoryId[], sourceVersion = 3): CategoryId[] {
+  const previous: CategoryId[] = ["application", "essay", "recommendation", "documents", "first-result", "interview", "final-result", "additional-result"];
+  const v4 = [...previous, "registration"] as CategoryId[];
+  const old = sourceVersion === 3 ? previous : sourceVersion === 4 ? v4 : CATEGORY_ORDER;
+  return ids.length === old.length && old.every((id) => ids.includes(id))
     ? [...CATEGORY_ORDER]
     : ids;
 }

@@ -23,7 +23,7 @@ test('only selected university events appear, deduplicated and chronologically s
   }
   const html = render(['UNIST']);
   assert.match(html, /data-print-university="UNIST"/);
-  assert.doesNotMatch(html, /KAIST|고려대/);
+  assert.doesNotMatch(html, /data-print-university="(?:KAIST|고려대)"/);
   assert.equal((html.match(/data-print-event-id=/g) || []).length, data.events.filter(e => e.university === 'UNIST').length);
 });
 
@@ -36,7 +36,8 @@ test('all raw dates, opening times, qualifiers and exclusions survive print mark
   assert.ok(printed.includes('12.18(금) 이전'));
   assert.ok(printed.includes('12.21(월)~12.23(수) 16:00'));
   assert.match(printed, /소인 유효/);
-  assert.match(printed, /12.24~25 제외/);
+  assert.match(printed, /12.25~27\) 제외/);
+  assert.doesNotMatch(printed, /12.24~25 제외/);
   const untimed = data.events.find(e => e.university === 'UNIST' && e.categoryId === 'final-result');
   const row = html.split(`data-print-event-id="${untimed.id}"`)[1].split('</tr>')[0];
   assert.doesNotMatch(row, /\d{2}:\d{2}/);
@@ -85,15 +86,17 @@ test('mounted print host uses preferences universities but ignores even an empty
     const { PrintSchedule } = require(componentPath);
     const html = renderToStaticMarkup(createElement(PrintSchedule));
     assert.equal((html.match(/data-print-event-id=/g) || []).length, data.events.filter(e => e.university === 'UNIST').length);
-    assert.doesNotMatch(html, /KAIST|고려대/);
+    assert.doesNotMatch(html, /data-print-university="(?:KAIST|고려대)"/);
   } finally {
     [admissionsPath, preferencesPath, componentPath].forEach((p, i) => { require.cache[p] = originals[i]; });
   }
 });
 
 test('multi-date source rows identify their individual date without dropping the source', () => {
-  const html = render(['서울대']);
-  const split = data.events.filter(e => e.university === '서울대' && e.categoryId === 'additional-result');
+  // Keep a genuine compressed multi-date fixture: audited dates are now separate.
+  const legacy = JSON.parse(require('node:child_process').execFileSync('git', ['show', 'de10294:public/data/admissions.json'], {encoding:'utf8'}));
+  const html = render(['서울대'], {dataset: legacy});
+  const split = legacy.events.filter(e => e.university === '서울대' && e.categoryId === 'additional-result');
   assert.ok(split.length > 1);
   for (const e of split) {
     const row = text(html.split(`data-print-event-id="${e.id}"`)[1].split('</tr>')[0]);

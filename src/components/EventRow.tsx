@@ -47,6 +47,8 @@ export function EventRow({ event, onSelect, showDday = false, today = todayKey()
         {time ? <span className="event-row__time">{time}</span> : null}
       </span>
 
+      <span className="event-row__schedule">{event.rawSchedule}</span>
+
       {badges.length > 0 && (
         <span className="event-row__badges">
           {badges.map((badge) => (

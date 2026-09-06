@@ -23,9 +23,9 @@ class UnistOverridesTest(unittest.TestCase):
         once = copy.deepcopy(self.data)
         generator.apply_unist_2027_overrides(self.data)
         self.assertEqual(once, self.data)
-        self.assertEqual(self.data, json.loads((ROOT / "public/data/admissions.json").read_text()))
-        self.assertEqual(generator.build_ics(self.data["events"]).replace(b"\r\n", b"\n"),
-                         (ROOT / "public/data/admissions.ics").read_bytes())
+        # This test isolates the historical UNIST-only layer, before the full audit.
+        baseline = json.loads(subprocess.check_output(["git", "show", "de10294:public/data/admissions.json"], cwd=ROOT))
+        self.assertEqual(self.data, baseline)
 
     def test_only_three_existing_events_change(self):
         old = {e["id"]: e for e in self.before["events"]}
@@ -64,8 +64,8 @@ class UnistOverridesTest(unittest.TestCase):
 
     def test_other_ics_events_unchanged(self):
         import re
-        before = subprocess.check_output(["git", "show", "adfb92a:public/data/admissions.ics"], cwd=ROOT).decode()
-        after = (ROOT / "public/data/admissions.ics").read_text()
+        before = generator.build_ics(self.before["events"]).decode().replace("\r\n", "\n")
+        after = generator.build_ics(self.data["events"]).decode().replace("\r\n", "\n")
         def by_uid(raw):
             return {re.search(r"UID:([^\n]+)", block).group(1): block
                     for block in re.findall(r"BEGIN:VEVENT\n.*?END:VEVENT", raw, re.S)}

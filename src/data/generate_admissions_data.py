@@ -384,17 +384,22 @@ def build_ics(events: list[dict[str, Any]]) -> bytes:
         "X-WR-CALNAME:" + escape_ics("입시_일정"),
         "X-WR-TIMEZONE:Asia/Seoul",
     ]
-    for event in events:
+    try:
+        from calendar_segments import split_calendar_events
+    except ModuleNotFoundError:
+        from src.data.calendar_segments import split_calendar_events
+    for event in split_calendar_events(events):
         start = date.fromisoformat(event["startDate"])
         end = date.fromisoformat(event["endDate"])
         lines.extend(
             [
                 "BEGIN:VEVENT",
                 f"UID:{event['uid']}",
-                "DTSTAMP:20260903T000000Z",
+                "DTSTAMP:20260906T000000Z",
+                "SEQUENCE:1",
                 f"DTSTART;VALUE=DATE:{start.strftime('%Y%m%d')}",
                 f"DTEND;VALUE=DATE:{(end + timedelta(days=1)).strftime('%Y%m%d')}",
-                "SUMMARY:" + escape_ics(event["taggedTitle"]),
+                "SUMMARY:" + escape_ics(f"{event['taggedTitle']} {event['admissionDetail']} — {event['rawSchedule']}"),
                 "DESCRIPTION:" + escape_ics(event["description"]),
                 "CATEGORIES:"
                 + escape_ics(event["category"])
@@ -508,12 +513,14 @@ def main() -> None:
     if parser.parse_args().apply_overrides:
         payload = json.loads((PUBLIC_DATA_DIR / "admissions.json").read_text(encoding="utf-8"))
         apply_unist_2027_overrides(payload)
+        from audit_2027 import apply as apply_audit
+        apply_audit(payload)
         (PUBLIC_DATA_DIR / "admissions.json").write_text(
             json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         # Published ICS uses LF; avoid unrelated line-ending churn.
         (PUBLIC_DATA_DIR / "admissions.ics").write_bytes(
             build_ics(payload["events"]).replace(b"\r\n", b"\n"))
-        print(json.dumps({"events": payload["meta"]["eventCount"], "overrides": "unist-2027"}))
+        print(json.dumps({"events": payload["meta"]["eventCount"], "overrides": "audit-2027-09-06"}))
         return
 
     calendar_path, detailed_pdf = find_source_files()
@@ -558,6 +565,9 @@ def main() -> None:
     }
 
     apply_unist_2027_overrides(payload)
+    from audit_2027 import apply as apply_audit
+    apply_audit(payload)
+    events = payload["events"]
     PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
     (PUBLIC_DATA_DIR / "admissions.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",

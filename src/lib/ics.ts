@@ -1,4 +1,5 @@
 import { CATEGORY_UI } from "./categories";
+import { deadlineTimeLabel } from "./eventInfo";
 import type { AdmissionEvent } from "../types";
 
 /**
@@ -73,12 +74,14 @@ function alarmTrigger(dateKey: string, kstTime: string) {
 }
 
 function buildAlarms(event: AdmissionEvent) {
+  if (/미확인/.test(event.rawSchedule)) return [];
   const noun = CATEGORY_UI[event.categoryId].noun;
-  const time = event.timeLabels[0];
+  const dateQualified = !event.timeLabels.length && /이전/.test(event.rawSchedule);
+  const detail = deadlineTimeLabel(event) ?? (dateQualified ? `${event.deadlineDate} 이전 ${noun}` : `${noun}${/예정/.test(event.rawSchedule) ? " 예정" : ""}`);
   const stamps = [
-    { at: alarmTrigger(shiftDay(event.deadlineDate, -3), "09:00"), text: `3일 뒤 ${noun}` },
-    { at: alarmTrigger(shiftDay(event.deadlineDate, -1), "09:00"), text: `내일 ${noun}` },
-    { at: alarmTrigger(event.deadlineDate, "08:00"), text: time ? `오늘 ${time} ${noun}` : `오늘 ${noun}` },
+    { at: alarmTrigger(shiftDay(event.deadlineDate, -3), "09:00"), text: dateQualified ? `발표 확인 — ${detail}` : `3일 뒤 ${detail}` },
+    { at: alarmTrigger(shiftDay(event.deadlineDate, -1), "09:00"), text: dateQualified ? `발표 확인 — ${detail}` : `내일 ${detail}` },
+    { at: alarmTrigger(event.deadlineDate, "08:00"), text: dateQualified ? `발표 여부 확인 — ${detail}` : `오늘 ${detail}` },
   ];
 
   return stamps.flatMap(({ at, text }) => [
@@ -92,11 +95,12 @@ function buildAlarms(event: AdmissionEvent) {
 
 function buildEvent(event: AdmissionEvent, stamp: string) {
   const meta = CATEGORY_UI[event.categoryId];
-  const time = event.timeLabels[0];
-  const summary = [event.university, meta.label, time ? `${time} ${meta.noun}` : meta.noun].join(" ");
+  const summary = `${event.university} ${meta.label} ${deadlineTimeLabel(event) ?? meta.noun} — ${event.admissionDetail} — ${event.rawSchedule}`;
   const description = [
     `전형: ${event.admissionDetail}`,
     `원문 표기: ${event.rawSchedule}`,
+    event.note,
+    event.isDateRange && event.categoryId === "additional-result" ? "충원 운영기간이며 매일 발표한다는 뜻이 아닙니다. 차수별 공지를 확인하세요." : "",
     event.excludedDates.length ? `제외: ${event.excludedDates.join(", ")}` : "",
     "일정은 바뀔 수 있습니다. 지원 전 입학처 모집요강에서 다시 확인하세요.",
   ]
@@ -108,14 +112,30 @@ function buildEvent(event: AdmissionEvent, stamp: string) {
     `UID:${event.uid}`,
     `DTSTAMP:${stamp}`,
     `DTSTART;VALUE=DATE:${toIcsDate(event.startDate)}`,
-    `DTEND;VALUE=DATE:${toIcsDate(shiftDay(event.deadlineDate, 1))}`,
+    `DTEND;VALUE=DATE:${toIcsDate(shiftDay(event.endDate, 1))}`,
     foldLine(`SUMMARY:${escapeText(summary)}`),
     foldLine(`DESCRIPTION:${escapeText(description)}`),
     foldLine(`CATEGORIES:${escapeText(`${meta.label},${event.university}`)}`),
     "TRANSP:TRANSPARENT",
-    ...buildAlarms(event),
+    ...(event.endDate === event.deadlineDate ? buildAlarms(event) : []),
     "END:VEVENT",
   ];
+}
+
+/** 제외일을 실제 날짜 공백으로 내보낸다. 원 UID는 첫 구간에서 유지한다. */
+export function calendarSegments(event: AdmissionEvent): AdmissionEvent[] {
+  const segments: AdmissionEvent[] = [];
+  let start: string | null = null;
+  for (let day = event.startDate; day <= event.endDate; day = shiftDay(day, 1)) {
+    if (!event.excludedDates.includes(day)) {
+      start ??= day;
+    } else if (start !== null) {
+      segments.push({ ...event, startDate: start, endDate: shiftDay(day, -1) });
+      start = null;
+    }
+  }
+  if (start !== null) segments.push({ ...event, startDate: start });
+  return segments.map((segment, i) => ({ ...segment, uid: i ? event.uid.replace(/(@|$)/, `-part-${segment.startDate}$1`) : event.uid }));
 }
 
 export function buildIcsFile(events: AdmissionEvent[], calendarName = "2027 수시 일정") {
@@ -128,7 +148,7 @@ export function buildIcsFile(events: AdmissionEvent[], calendarName = "2027 수�
     "METHOD:PUBLISH",
     foldLine(`X-WR-CALNAME:${escapeText(calendarName)}`),
     "X-WR-TIMEZONE:Asia/Seoul",
-    ...events.flatMap((event) => buildEvent(event, stamp)),
+    ...events.flatMap((event) => calendarSegments(event).flatMap((segment) => buildEvent(segment, stamp))),
     "END:VCALENDAR",
   ];
 

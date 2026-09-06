@@ -82,6 +82,11 @@
 .cat-interview         { --cat: #d50000; } /* Tomato     — 5.48:1 */
 .cat-final-result      { --cat: #0b8043; } /* Basil      — 5.02:1 */
 .cat-registration      { --cat: #00796b; }
+.event-row__schedule { display: block; font-size: 0.82rem; line-height: 1.5; color: var(--text); white-space: pre-wrap; overflow-wrap: anywhere; }
+.cat-written-exam { --cat: #a61b57; }
+.cat-exam-notice { --cat: #546e7a; }
+.cat-stage-fee { --cat: #795548; }
+.cat-registration-program { --cat: #00695c; }
 .cat-additional-result { --cat: #8e24aa; } /* Grape      — 7.04:1 */
 
 /* --cat-soft 가 살아남는 자리는 필터 다이얼로그의 선택 배경 하나뿐이다.
@@ -96,7 +101,11 @@
 .cat-interview,
 .cat-final-result,
 .cat-additional-result,
-.cat-registration {
+.cat-registration,
+.cat-written-exam,
+.cat-exam-notice,
+.cat-stage-fee,
+.cat-registration-program {
   --cat-soft: var(--surface-2);
   --cat-soft: color-mix(in srgb, var(--cat) 12%, var(--surface));
 }
@@ -146,6 +155,10 @@
   :root:not([data-theme="light"]) .cat-interview         { --cat: #f28b82; } /* Red 300   5.44:1 */
   :root:not([data-theme="light"]) .cat-final-result      { --cat: #81c995; } /* Green 300 6.64:1 */
   :root:not([data-theme="light"]) .cat-registration { --cat: #80cbc4; }
+  :root:not([data-theme="light"]) .cat-written-exam { --cat: #f48fb1; }
+  :root:not([data-theme="light"]) .cat-exam-notice { --cat: #b0bec5; }
+  :root:not([data-theme="light"]) .cat-stage-fee { --cat: #bcaaa4; }
+  :root:not([data-theme="light"]) .cat-registration-program { --cat: #80cbc4; }
   :root:not([data-theme="light"]) .cat-additional-result { --cat: #d7aefb; } /* Purple 300 7.02:1 */
 }
 
@@ -189,6 +202,10 @@
 :root[data-theme="dark"] .cat-interview         { --cat: #f28b82; }
 :root[data-theme="dark"] .cat-final-result      { --cat: #81c995; }
 :root[data-theme="dark"] .cat-registration { --cat: #80cbc4; }
+:root[data-theme="dark"] .cat-written-exam { --cat: #f48fb1; }
+:root[data-theme="dark"] .cat-exam-notice { --cat: #b0bec5; }
+:root[data-theme="dark"] .cat-stage-fee { --cat: #bcaaa4; }
+:root[data-theme="dark"] .cat-registration-program { --cat: #80cbc4; }
 :root[data-theme="dark"] .cat-additional-result { --cat: #d7aefb; }
 
 /* ========================================================================= */
@@ -1461,14 +1478,16 @@ a {
 }
 
 .schedule-table td {
-  min-width: 101px;
+  min-width: 180px;
+  max-width: 300px;
+  overflow-wrap: anywhere;
   padding: 12px 10px;
   border-right: 1px solid var(--line-grid);
   border-bottom: 1px solid var(--line-grid);
   color: var(--ink-2);
   line-height: var(--lh-tight);
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .schedule-table td:last-child {

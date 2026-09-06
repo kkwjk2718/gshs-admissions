@@ -7,7 +7,11 @@ export type CategoryId =
   | "interview"
   | "final-result"
   | "additional-result"
-  | "registration";
+  | "registration"
+  | "written-exam"
+  | "exam-notice"
+  | "stage-fee"
+  | "registration-program";
 
 export interface CategoryMeta {
   id: CategoryId;

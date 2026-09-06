@@ -30,7 +30,11 @@ export function statusLabel(event: AdmissionEvent, today = todayKey()) {
 export function deadlineTimeLabel(event: AdmissionEvent) {
   const time = event.timeLabels[0];
   if (!time) return null;
-  return `${time} ${CATEGORY_UI[event.categoryId].noun}`;
+  if (/미확인/.test(event.rawSchedule)) return `${time} · 공식 근거 미확인`;
+  if (event.categoryId === "interview" && event.rawSchedule.includes(`${time}까지 입실`)) return `${time} 입실 마감`;
+  const qualifier = event.rawSchedule.match(new RegExp(`${time}\\s*(이전|이후|까지)`))?.[1];
+  const uncertain = /미확인/.test(event.rawSchedule) ? " · 미확인" : /예정/.test(event.rawSchedule) ? " · 예정" : "";
+  return `${time}${qualifier ? ` ${qualifier}` : ""} ${CATEGORY_UI[event.categoryId].noun}${uncertain}`;
 }
 
 /** 마감이 있는 종류. 발표·면접은 시각이 원문에 없는 게 정상이다. */
@@ -48,10 +52,20 @@ function postmarkDate(raw: string) {
 export function eventBadges(event: AdmissionEvent): string[] {
   const badges: string[] = [];
   const raw = event.rawSchedule;
+  if (/미확인/.test(raw)) badges.push("공식 근거 미확인");
+  if (/예정/.test(raw)) badges.push("예정");
+  if (event.timeLabels[0] && new RegExp(`${event.timeLabels[0]}\\s*이후`).test(raw)) badges.push("표기 시각 이후");
+  if (/도착/.test(raw)) badges.push("도착 기준");
+  if (/입실/.test(raw)) badges.push("입실 마감 확인");
 
-  const opening = raw.match(/\d{1,2}\.\d{1,2}\s*\([^)]*\)\s*(\d{1,2}:\d{2})\s*~/);
+  const opening = raw.match(/(?:20\d{2}[-./])?\d{1,2}[-./]\d{1,2}\s*(?:\([^)]*\))?\s*(\d{1,2}:\d{2})\s*~/)
+    ?? raw.match(/시작\s*(\d{1,2}:\d{2})/)
+    ?? raw.match(/(\d{1,2}:\d{2})\s*(?:납부\s*)?시작/);
   if (opening && event.isDateRange) badges.push(`${opening[1]} 시작`);
-  if (/이전/.test(raw)) badges.push(`${formatMonthDay(event.deadlineDate)} 이전`);
+  if (/이전/.test(raw) && ["first-result", "final-result", "additional-result"].includes(event.categoryId)) {
+    const beforeTime = raw.match(/(\d{1,2}:\d{2})\s*이전/)?.[1];
+    badges.push(beforeTime ? `${beforeTime} 이전` : `${formatMonthDay(event.deadlineDate)} 이전`);
+  }
 
   const postmark = postmarkDate(raw);
   if (postmark) badges.push(`${Number(postmark[0])}월 ${Number(postmark[1])}일 소인까지 유효`);

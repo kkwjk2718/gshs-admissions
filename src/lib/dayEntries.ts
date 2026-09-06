@@ -38,6 +38,10 @@ const START_LABEL: Record<CategoryId, string> = {
   "final-result": "최종 발표 시작",
   "additional-result": "추합 발표 시작",
   registration: "합격자 등록 시작",
+  "written-exam": "논술고사 시작",
+  "exam-notice": "고사장 안내 시작",
+  "stage-fee": "전형료 납부 시작",
+  "registration-program": "등록 프로그램 시작",
 };
 
 function endLabel(categoryId: CategoryId) {
@@ -80,6 +84,7 @@ export function buildDayEntries(events: AdmissionEvent[], dateKey: string): DayE
   const starting: AdmissionEvent[] = [];
 
   for (const event of events) {
+    if (event.excludedDates.includes(dateKey)) continue;
     if (event.deadlineDate === dateKey) {
       const list = ending.get(event.categoryId);
       if (list) list.push(event);
@@ -140,6 +145,7 @@ export function ongoingCountOn(events: AdmissionEvent[], dateKey: string) {
   return events.filter(
     (event) =>
       event.isDateRange &&
+      !event.excludedDates.includes(dateKey) &&
       event.startDate < dateKey &&
       dateKey < event.deadlineDate,
   ).length;

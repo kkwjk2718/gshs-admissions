@@ -7,7 +7,8 @@ export interface AdmissionGuide {
   verifiedAt: string
 }
 
-const verifiedAt = '2026-09-03'
+// 제공된 검증 보고서의 자료 확인 기준일 (후속 공지 전체 검증을 뜻하지 않음)
+const verifiedAt = '2026-09-06'
 
 export const admissionGuides: Record<string, AdmissionGuide> = {
   DGIST: {
@@ -41,7 +42,7 @@ export const admissionGuides: Record<string, AdmissionGuide> = {
     verifiedAt,
   },
   UNIST: {
-    url: 'https://adm-u.unist.ac.kr/admission/guide/regular-recruitment.do?articleNo=105834&attachNo=575154&mode=download',
+    url: 'https://adm-u.unist.ac.kr/admission/guide/admissions-process.do?articleNo=105830&attachNo=591638&mode=download',
     label: '2027학년도 학부 모집요강',
     kind: 'guide',
     verifiedAt,
@@ -59,13 +60,13 @@ export const admissionGuides: Record<string, AdmissionGuide> = {
     verifiedAt,
   },
   경희대: {
-    url: 'https://iphak.khu.ac.kr/file/download.do?ofn=2027%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90+%EC%88%98%EC%8B%9C+%EB%AA%A8%EC%A7%91%EC%9A%94%EA%B0%95-%EC%B5%9C%EC%A2%85.pdf&sfn=20260513065257380_2027%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90+%EC%88%98%EC%8B%9C+%EB%AA%A8%EC%A7%91%EC%9A%94%EA%B0%95-%EC%B5%9C%EC%A2%85.pdf',
+    url: 'https://iphak.khu.ac.kr/submenu.do?menuurl=iRpJZN81uYxYKEjgpdzo4Q%3D%3D',
     label: '2027학년도 수시 모집요강',
     kind: 'guide',
     verifiedAt,
   },
   고려대: {
-    url: 'https://oku.korea.ac.kr/attach/202605/1780023076409_0.pdf',
+    url: 'https://oku.korea.ac.kr/attach/202607/1783652032558_0.pdf',
     label: '2027학년도 수시 모집요강',
     kind: 'guide',
     verifiedAt,
@@ -77,7 +78,7 @@ export const admissionGuides: Record<string, AdmissionGuide> = {
     verifiedAt,
   },
   동국대: {
-    url: 'https://ipsi.dongguk.edu/upload/file/20260601115911UVEHWG.PDF',
+    url: 'https://ipsi.dongguk.edu/upload/file/20260715140521FRWQXB.PDF',
     label: '2027학년도 수시 모집요강',
     kind: 'guide',
     verifiedAt,
